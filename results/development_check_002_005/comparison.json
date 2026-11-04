@@ -1,0 +1,431 @@
+{
+  "recorded_date": "2026-10-31",
+  "scope": "Unchanged nearest feasible neighbour and baseline, newly run on days 002\u2013005; verified existing day 001 included for context. These are development scenarios.",
+  "aggregation": "Paired per-day results and win counts only; no pooled or mean overall score selected.",
+  "policy_tuning": false,
+  "day_001_source_and_log_hashes_verified": true,
+  "new_simulations_completed": 8,
+  "comparisons": [
+    {
+      "day": "day_001",
+      "new_run_this_check": false,
+      "metrics_paths": {
+        "baseline": "results/baseline/day_001/metrics.json",
+        "nearest_neighbour": "results/nearest_neighbour/day_001/metrics.json"
+      },
+      "baseline": {
+        "total_parcels": 799,
+        "delivered_parcels": 349,
+        "on_time_parcels": 213,
+        "early_parcels": 0,
+        "late_parcels": 136,
+        "undelivered_parcels": 450,
+        "completion_rate_pct": 43.67959949937422,
+        "on_time_service_rate_pct": 26.658322903629536,
+        "score_a": {
+          "completion_rate_pct": 43.67959949937422,
+          "on_time_tiebreak_pct": 26.658322903629536
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 35.16896120150188,
+        "score_b_sensitivity": {
+          "0.25": 30.913642052565706,
+          "0.5": 35.16896120150188,
+          "0.75": 39.424280350438046
+        },
+        "number_of_trips": 20,
+        "total_distance_km": 5243.271,
+        "average_load_utilisation_pct": 55.95
+      },
+      "nearest_neighbour": {
+        "total_parcels": 799,
+        "delivered_parcels": 763,
+        "on_time_parcels": 523,
+        "early_parcels": 138,
+        "late_parcels": 102,
+        "undelivered_parcels": 36,
+        "completion_rate_pct": 95.49436795994994,
+        "on_time_service_rate_pct": 65.45682102628285,
+        "score_a": {
+          "completion_rate_pct": 95.49436795994994,
+          "on_time_tiebreak_pct": 65.45682102628285
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 80.47559449311639,
+        "score_b_sensitivity": {
+          "0.25": 72.96620775969963,
+          "0.5": 80.47559449311639,
+          "0.75": 87.98498122653316
+        },
+        "number_of_trips": 35,
+        "total_distance_km": 4214.046,
+        "average_load_utilisation_pct": 69.38095238095238
+      },
+      "nearest_minus_baseline": {
+        "delivered_parcels": 414,
+        "on_time_parcels": 310,
+        "early_parcels": 138,
+        "late_parcels": -34,
+        "undelivered_parcels": -414,
+        "completion_rate_pct": 51.81476846057572,
+        "on_time_service_rate_pct": 38.798498122653314,
+        "score_b": 45.30663329161451,
+        "number_of_trips": 15,
+        "total_distance_km": -1029.2249999999995,
+        "average_load_utilisation_pct": 13.430952380952377
+      },
+      "distance_reduction_pct": 19.629445054432615,
+      "scoring_a_winner": "nearest_neighbour",
+      "scoring_b_winner": "nearest_neighbour",
+      "sensitivity_winners": {
+        "0.25": "nearest_neighbour",
+        "0.5": "nearest_neighbour",
+        "0.75": "nearest_neighbour"
+      }
+    },
+    {
+      "day": "day_002",
+      "new_run_this_check": true,
+      "metrics_paths": {
+        "baseline": "results/development_check_002_005/baseline/day_002/metrics.json",
+        "nearest_neighbour": "results/development_check_002_005/nearest_neighbour/day_002/metrics.json"
+      },
+      "baseline": {
+        "total_parcels": 772,
+        "delivered_parcels": 274,
+        "on_time_parcels": 224,
+        "early_parcels": 0,
+        "late_parcels": 50,
+        "undelivered_parcels": 498,
+        "completion_rate_pct": 35.49222797927461,
+        "on_time_service_rate_pct": 29.015544041450777,
+        "score_a": {
+          "completion_rate_pct": 35.49222797927461,
+          "on_time_tiebreak_pct": 29.015544041450777
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 32.25388601036269,
+        "score_b_sensitivity": {
+          "0.25": 30.634715025906736,
+          "0.5": 32.25388601036269,
+          "0.75": 33.873056994818654
+        },
+        "number_of_trips": 20,
+        "total_distance_km": 5232.828,
+        "average_load_utilisation_pct": 45.333333333333336
+      },
+      "nearest_neighbour": {
+        "total_parcels": 772,
+        "delivered_parcels": 734,
+        "on_time_parcels": 556,
+        "early_parcels": 93,
+        "late_parcels": 85,
+        "undelivered_parcels": 38,
+        "completion_rate_pct": 95.07772020725389,
+        "on_time_service_rate_pct": 72.02072538860104,
+        "score_a": {
+          "completion_rate_pct": 95.07772020725389,
+          "on_time_tiebreak_pct": 72.02072538860104
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 83.54922279792746,
+        "score_b_sensitivity": {
+          "0.25": 77.78497409326425,
+          "0.5": 83.54922279792746,
+          "0.75": 89.31347150259067
+        },
+        "number_of_trips": 32,
+        "total_distance_km": 4187.526,
+        "average_load_utilisation_pct": 75.5
+      },
+      "nearest_minus_baseline": {
+        "delivered_parcels": 460,
+        "on_time_parcels": 332,
+        "early_parcels": 93,
+        "late_parcels": 35,
+        "undelivered_parcels": -460,
+        "completion_rate_pct": 59.58549222797928,
+        "on_time_service_rate_pct": 43.005181347150256,
+        "score_b": 51.295336787564764,
+        "number_of_trips": 12,
+        "total_distance_km": -1045.3020000000006,
+        "average_load_utilisation_pct": 30.166666666666664
+      },
+      "distance_reduction_pct": 19.975852445369892,
+      "scoring_a_winner": "nearest_neighbour",
+      "scoring_b_winner": "nearest_neighbour",
+      "sensitivity_winners": {
+        "0.25": "nearest_neighbour",
+        "0.5": "nearest_neighbour",
+        "0.75": "nearest_neighbour"
+      }
+    },
+    {
+      "day": "day_003",
+      "new_run_this_check": true,
+      "metrics_paths": {
+        "baseline": "results/development_check_002_005/baseline/day_003/metrics.json",
+        "nearest_neighbour": "results/development_check_002_005/nearest_neighbour/day_003/metrics.json"
+      },
+      "baseline": {
+        "total_parcels": 794,
+        "delivered_parcels": 315,
+        "on_time_parcels": 210,
+        "early_parcels": 0,
+        "late_parcels": 105,
+        "undelivered_parcels": 479,
+        "completion_rate_pct": 39.67254408060453,
+        "on_time_service_rate_pct": 26.448362720403022,
+        "score_a": {
+          "completion_rate_pct": 39.67254408060453,
+          "on_time_tiebreak_pct": 26.448362720403022
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 33.060453400503775,
+        "score_b_sensitivity": {
+          "0.25": 29.7544080604534,
+          "0.5": 33.060453400503775,
+          "0.75": 36.36649874055416
+        },
+        "number_of_trips": 21,
+        "total_distance_km": 5193.693,
+        "average_load_utilisation_pct": 48.12698412698413
+      },
+      "nearest_neighbour": {
+        "total_parcels": 794,
+        "delivered_parcels": 757,
+        "on_time_parcels": 430,
+        "early_parcels": 211,
+        "late_parcels": 116,
+        "undelivered_parcels": 37,
+        "completion_rate_pct": 95.34005037783375,
+        "on_time_service_rate_pct": 54.15617128463476,
+        "score_a": {
+          "completion_rate_pct": 95.34005037783375,
+          "on_time_tiebreak_pct": 54.15617128463476
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 74.74811083123426,
+        "score_b_sensitivity": {
+          "0.25": 64.45214105793451,
+          "0.5": 74.74811083123426,
+          "0.75": 85.044080604534
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 3926.565,
+        "average_load_utilisation_pct": 73.34343434343434
+      },
+      "nearest_minus_baseline": {
+        "delivered_parcels": 442,
+        "on_time_parcels": 220,
+        "early_parcels": 211,
+        "late_parcels": 11,
+        "undelivered_parcels": -442,
+        "completion_rate_pct": 55.66750629722922,
+        "on_time_service_rate_pct": 27.707808564231737,
+        "score_b": 41.68765743073048,
+        "number_of_trips": 12,
+        "total_distance_km": -1267.1280000000002,
+        "average_load_utilisation_pct": 25.216450216450212
+      },
+      "distance_reduction_pct": 24.39743743036025,
+      "scoring_a_winner": "nearest_neighbour",
+      "scoring_b_winner": "nearest_neighbour",
+      "sensitivity_winners": {
+        "0.25": "nearest_neighbour",
+        "0.5": "nearest_neighbour",
+        "0.75": "nearest_neighbour"
+      }
+    },
+    {
+      "day": "day_004",
+      "new_run_this_check": true,
+      "metrics_paths": {
+        "baseline": "results/development_check_002_005/baseline/day_004/metrics.json",
+        "nearest_neighbour": "results/development_check_002_005/nearest_neighbour/day_004/metrics.json"
+      },
+      "baseline": {
+        "total_parcels": 808,
+        "delivered_parcels": 341,
+        "on_time_parcels": 205,
+        "early_parcels": 0,
+        "late_parcels": 136,
+        "undelivered_parcels": 467,
+        "completion_rate_pct": 42.2029702970297,
+        "on_time_service_rate_pct": 25.371287128712872,
+        "score_a": {
+          "completion_rate_pct": 42.2029702970297,
+          "on_time_tiebreak_pct": 25.371287128712872
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 33.78712871287129,
+        "score_b_sensitivity": {
+          "0.25": 29.57920792079208,
+          "0.5": 33.78712871287129,
+          "0.75": 37.995049504950494
+        },
+        "number_of_trips": 20,
+        "total_distance_km": 5258.442,
+        "average_load_utilisation_pct": 52.76666666666667
+      },
+      "nearest_neighbour": {
+        "total_parcels": 808,
+        "delivered_parcels": 778,
+        "on_time_parcels": 529,
+        "early_parcels": 184,
+        "late_parcels": 65,
+        "undelivered_parcels": 30,
+        "completion_rate_pct": 96.2871287128713,
+        "on_time_service_rate_pct": 65.47029702970298,
+        "score_a": {
+          "completion_rate_pct": 96.2871287128713,
+          "on_time_tiebreak_pct": 65.47029702970298
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 80.87871287128714,
+        "score_b_sensitivity": {
+          "0.25": 73.17450495049505,
+          "0.5": 80.87871287128714,
+          "0.75": 88.58292079207921
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 4127.142,
+        "average_load_utilisation_pct": 73.45454545454545
+      },
+      "nearest_minus_baseline": {
+        "delivered_parcels": 437,
+        "on_time_parcels": 324,
+        "early_parcels": 184,
+        "late_parcels": -71,
+        "undelivered_parcels": -437,
+        "completion_rate_pct": 54.08415841584159,
+        "on_time_service_rate_pct": 40.099009900990104,
+        "score_b": 47.09158415841585,
+        "number_of_trips": 13,
+        "total_distance_km": -1131.3000000000002,
+        "average_load_utilisation_pct": 20.68787878787878
+      },
+      "distance_reduction_pct": 21.513976953629996,
+      "scoring_a_winner": "nearest_neighbour",
+      "scoring_b_winner": "nearest_neighbour",
+      "sensitivity_winners": {
+        "0.25": "nearest_neighbour",
+        "0.5": "nearest_neighbour",
+        "0.75": "nearest_neighbour"
+      }
+    },
+    {
+      "day": "day_005",
+      "new_run_this_check": true,
+      "metrics_paths": {
+        "baseline": "results/development_check_002_005/baseline/day_005/metrics.json",
+        "nearest_neighbour": "results/development_check_002_005/nearest_neighbour/day_005/metrics.json"
+      },
+      "baseline": {
+        "total_parcels": 806,
+        "delivered_parcels": 358,
+        "on_time_parcels": 230,
+        "early_parcels": 0,
+        "late_parcels": 128,
+        "undelivered_parcels": 448,
+        "completion_rate_pct": 44.416873449131515,
+        "on_time_service_rate_pct": 28.535980148883375,
+        "score_a": {
+          "completion_rate_pct": 44.416873449131515,
+          "on_time_tiebreak_pct": 28.535980148883375
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 36.47642679900744,
+        "score_b_sensitivity": {
+          "0.25": 32.50620347394541,
+          "0.5": 36.47642679900744,
+          "0.75": 40.44665012406948
+        },
+        "number_of_trips": 21,
+        "total_distance_km": 5152.386,
+        "average_load_utilisation_pct": 51.857142857142854
+      },
+      "nearest_neighbour": {
+        "total_parcels": 806,
+        "delivered_parcels": 783,
+        "on_time_parcels": 562,
+        "early_parcels": 128,
+        "late_parcels": 93,
+        "undelivered_parcels": 23,
+        "completion_rate_pct": 97.14640198511167,
+        "on_time_service_rate_pct": 69.72704714640199,
+        "score_a": {
+          "completion_rate_pct": 97.14640198511167,
+          "on_time_tiebreak_pct": 69.72704714640199
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 83.43672456575682,
+        "score_b_sensitivity": {
+          "0.25": 76.58188585607941,
+          "0.5": 83.43672456575682,
+          "0.75": 90.29156327543424
+        },
+        "number_of_trips": 34,
+        "total_distance_km": 4085.025,
+        "average_load_utilisation_pct": 72.18627450980392
+      },
+      "nearest_minus_baseline": {
+        "delivered_parcels": 425,
+        "on_time_parcels": 332,
+        "early_parcels": 128,
+        "late_parcels": -35,
+        "undelivered_parcels": -425,
+        "completion_rate_pct": 52.72952853598015,
+        "on_time_service_rate_pct": 41.19106699751861,
+        "score_b": 46.96029776674938,
+        "number_of_trips": 13,
+        "total_distance_km": -1067.3610000000003,
+        "average_load_utilisation_pct": 20.32913165266107
+      },
+      "distance_reduction_pct": 20.715858633262343,
+      "scoring_a_winner": "nearest_neighbour",
+      "scoring_b_winner": "nearest_neighbour",
+      "sensitivity_winners": {
+        "0.25": "nearest_neighbour",
+        "0.5": "nearest_neighbour",
+        "0.75": "nearest_neighbour"
+      }
+    }
+  ],
+  "paired_day_win_counts": {
+    "scoring_a_winner": 5,
+    "scoring_b_winner": 5
+  },
+  "sensitivity_nearest_wins": {
+    "0.25": 5,
+    "0.5": 5,
+    "0.75": 5
+  },
+  "nearest_completion_range_pct": [
+    95.07772020725389,
+    97.14640198511167
+  ],
+  "nearest_score_b_range": [
+    74.74811083123426,
+    83.54922279792746
+  ],
+  "distance_reduction_range_pct": [
+    19.629445054432615,
+    24.39743743036025
+  ],
+  "nearest_late_count_worse_days": [
+    "day_002",
+    "day_003"
+  ],
+  "remaining_evaluation_days": "006\u2013020 have not been evaluated in this check. Final holdout split and remaining policies remain open.",
+  "run_manifest": "results/development_check_002_005/run_manifest.json",
+  "verification": {
+    "all_8_new_runs_independently_validated": true,
+    "metric_mismatches": 0,
+    "route_rule_mismatches": 0,
+    "policy_and_monitor_unchanged": true,
+    "independent_validation": "results/development_check_002_005/independent_validation.json",
+    "independent_validation_sha256": "a14cd38d1be87c43f93086fa96d0ee2bb5fcb839ac0682be88b06f548b2289c2",
+    "checks": "Independent input/log parsing, metrics, arrivals and planning coverage, directed travel timing, load/range/cutoff, commitment-time eligibility, route decisions including ties, and source/output hashes."
+  }
+}

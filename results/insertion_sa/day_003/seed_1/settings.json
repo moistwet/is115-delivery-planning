@@ -1,0 +1,14 @@
+{
+  "day": "day_003",
+  "seed": 1,
+  "constructor": "solution.policies.greedy_insertion.dispatch",
+  "iterations_per_trip": 2000,
+  "initial_temperature": 0.41529177254126864,
+  "initial_acceptance_for_half_credit_loss": 0.3,
+  "cooling_rate_per_attempt": 0.995,
+  "objective": "raw route service credit: on-time 1, early/late 0.5",
+  "best_route_rule": "greatest credit, then least full-trip distance; seed included",
+  "neighbourhood": "uniform random swap of two distinct parcel positions",
+  "membership": "fixed within each trip; constructor called fresh per dispatch",
+  "random_stream": "dedicated random.Random(seed), initialised once per run"
+}

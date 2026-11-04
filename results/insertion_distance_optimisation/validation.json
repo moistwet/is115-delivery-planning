@@ -1,0 +1,40 @@
+{
+  "all_passed": true,
+  "scope": "All seven policies, twenty days, five SA seeds",
+  "successful_day_runs": 220,
+  "byte_identical_run_output_files": 640,
+  "aggregate_files_byte_identical": [
+    "comparison.json",
+    "summary.csv",
+    "daily_scores.csv"
+  ],
+  "protected_files_unchanged": 675,
+  "only_modified_original_policy_sources": [
+    "solution/policies/_insertion_variants.py",
+    "solution/policies/greedy_insertion.py"
+  ],
+  "unit_tests_passed": 103,
+  "reference_validation": {
+    "path": "results/full_evaluation/independent_validation.json",
+    "sha256": "f875bf5f150b28519e59df5fac97aa673639e6fd0a7e5a3b34bb411f769deb3e",
+    "all_passed": true
+  },
+  "validation_basis": "Fresh successful simulations and output byte-equivalence to the previously independently replayed matrix; the full independent replay was not repeated.",
+  "benchmark": "Reported separately in benchmark.json; experiment process durations are not used as speed claims.",
+  "report_and_decision_docx_unchanged": true,
+  "benchmark_summary": {
+    "snapshot_count": 36,
+    "days": [
+      "day_001",
+      "day_010",
+      "day_020"
+    ],
+    "measured_passes_per_version": 5,
+    "constructor_elapsed_reduction_pct": {
+      "greedy_insertion": 19.86752890778485,
+      "greedy_insertion_efficiency": 19.937131230626882,
+      "greedy_insertion_protect": 17.644477478610867
+    },
+    "scope": "Constructor timings on fixed snapshots; not end-to-end simulation speed or a worst-case complexity reduction."
+  }
+}

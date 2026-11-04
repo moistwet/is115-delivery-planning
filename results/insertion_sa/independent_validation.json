@@ -1,0 +1,2107 @@
+{
+  "method": "Independent standard-library CSV/JSONL parsing, fresh greedy-constructor reconstruction, exact seeded SA draw/acceptance/cooling/best-route replay, and metrics. No project module imports or simulator executions. Identical constructor contexts are cached after independent reconstruction; every SA attempt in every run is replayed.",
+  "source_audit": {
+    "issues": [],
+    "raw_credit_delta_correct": true,
+    "dedicated_rng_once_per_run": true,
+    "cool_every_attempt": true,
+    "fixed_membership": true,
+    "seed_included_in_saved_best": true,
+    "return_best_not_last": true,
+    "additional_sa_time": "O(I*r)",
+    "additional_sa_space": "O(r)"
+  },
+  "all_passed": true,
+  "manifest_process_statuses_successful": true,
+  "hash_checks": {
+    "data/config.json": true,
+    "data/demand/day_001.csv": true,
+    "data/demand/day_002.csv": true,
+    "data/demand/day_003.csv": true,
+    "data/demand/day_004.csv": true,
+    "data/demand/day_005.csv": true,
+    "data/demand/day_006.csv": true,
+    "data/demand/day_007.csv": true,
+    "data/demand/day_008.csv": true,
+    "data/demand/day_009.csv": true,
+    "data/demand/day_010.csv": true,
+    "data/demand/day_011.csv": true,
+    "data/demand/day_012.csv": true,
+    "data/demand/day_013.csv": true,
+    "data/demand/day_014.csv": true,
+    "data/demand/day_015.csv": true,
+    "data/demand/day_016.csv": true,
+    "data/demand/day_017.csv": true,
+    "data/demand/day_018.csv": true,
+    "data/demand/day_019.csv": true,
+    "data/demand/day_020.csv": true,
+    "data/dist.csv": true,
+    "simulator/__init__.py": true,
+    "simulator/__main__.py": true,
+    "simulator/loaders.py": true,
+    "simulator/models.py": true,
+    "simulator/simulator.py": true,
+    "solution/__init__.py": true,
+    "solution/performance_monitor.py": true,
+    "solution/policies/__init__.py": true,
+    "solution/policies/_insertion_variants.py": true,
+    "solution/policies/baseline.py": true,
+    "solution/policies/greedy_insertion.py": true,
+    "solution/policies/greedy_insertion_efficiency.py": true,
+    "solution/policies/greedy_insertion_protect.py": true,
+    "solution/policies/nearest_neighbour.py": true,
+    "solution/policies/window_first_nearest.py": true,
+    "solution/policies/insertion_sa.py": true,
+    "solution/run_sa.py": true,
+    "results/greedy_insertion/day_001/log.txt": true,
+    "results/greedy_insertion/day_001/metrics.json": true,
+    "results/greedy_insertion/day_002/log.txt": true,
+    "results/greedy_insertion/day_002/metrics.json": true,
+    "results/greedy_insertion/day_003/log.txt": true,
+    "results/greedy_insertion/day_003/metrics.json": true,
+    "results/greedy_insertion/day_004/log.txt": true,
+    "results/greedy_insertion/day_004/metrics.json": true,
+    "results/greedy_insertion/day_005/log.txt": true,
+    "results/greedy_insertion/day_005/metrics.json": true,
+    "results/window_first_nearest/day_001/log.txt": true,
+    "results/window_first_nearest/day_001/metrics.json": true,
+    "results/window_first_nearest/day_002/log.txt": true,
+    "results/window_first_nearest/day_002/metrics.json": true,
+    "results/window_first_nearest/day_003/log.txt": true,
+    "results/window_first_nearest/day_003/metrics.json": true,
+    "results/window_first_nearest/day_004/log.txt": true,
+    "results/window_first_nearest/day_004/metrics.json": true,
+    "results/window_first_nearest/day_005/log.txt": true,
+    "results/window_first_nearest/day_005/metrics.json": true,
+    "results/insertion_sa/day_001/seed_0/log.txt": true,
+    "results/insertion_sa/day_001/seed_0/metrics.json": true,
+    "results/insertion_sa/day_001/seed_0/settings.json": true,
+    "results/insertion_sa/day_001/seed_0/planning_audit.jsonl": true,
+    "results/insertion_sa/day_001/seed_1/log.txt": true,
+    "results/insertion_sa/day_001/seed_1/metrics.json": true,
+    "results/insertion_sa/day_001/seed_1/settings.json": true,
+    "results/insertion_sa/day_001/seed_1/planning_audit.jsonl": true,
+    "results/insertion_sa/day_001/seed_2/log.txt": true,
+    "results/insertion_sa/day_001/seed_2/metrics.json": true,
+    "results/insertion_sa/day_001/seed_2/settings.json": true,
+    "results/insertion_sa/day_001/seed_2/planning_audit.jsonl": true,
+    "results/insertion_sa/day_001/seed_3/log.txt": true,
+    "results/insertion_sa/day_001/seed_3/metrics.json": true,
+    "results/insertion_sa/day_001/seed_3/settings.json": true,
+    "results/insertion_sa/day_001/seed_3/planning_audit.jsonl": true,
+    "results/insertion_sa/day_001/seed_4/log.txt": true,
+    "results/insertion_sa/day_001/seed_4/metrics.json": true,
+    "results/insertion_sa/day_001/seed_4/settings.json": true,
+    "results/insertion_sa/day_001/seed_4/planning_audit.jsonl": true,
+    "results/insertion_sa/day_002/seed_0/log.txt": true,
+    "results/insertion_sa/day_002/seed_0/metrics.json": true,
+    "results/insertion_sa/day_002/seed_0/settings.json": true,
+    "results/insertion_sa/day_002/seed_0/planning_audit.jsonl": true,
+    "results/insertion_sa/day_002/seed_1/log.txt": true,
+    "results/insertion_sa/day_002/seed_1/metrics.json": true,
+    "results/insertion_sa/day_002/seed_1/settings.json": true,
+    "results/insertion_sa/day_002/seed_1/planning_audit.jsonl": true,
+    "results/insertion_sa/day_002/seed_2/log.txt": true,
+    "results/insertion_sa/day_002/seed_2/metrics.json": true,
+    "results/insertion_sa/day_002/seed_2/settings.json": true,
+    "results/insertion_sa/day_002/seed_2/planning_audit.jsonl": true,
+    "results/insertion_sa/day_002/seed_3/log.txt": true,
+    "results/insertion_sa/day_002/seed_3/metrics.json": true,
+    "results/insertion_sa/day_002/seed_3/settings.json": true,
+    "results/insertion_sa/day_002/seed_3/planning_audit.jsonl": true,
+    "results/insertion_sa/day_002/seed_4/log.txt": true,
+    "results/insertion_sa/day_002/seed_4/metrics.json": true,
+    "results/insertion_sa/day_002/seed_4/settings.json": true,
+    "results/insertion_sa/day_002/seed_4/planning_audit.jsonl": true,
+    "results/insertion_sa/day_003/seed_0/log.txt": true,
+    "results/insertion_sa/day_003/seed_0/metrics.json": true,
+    "results/insertion_sa/day_003/seed_0/settings.json": true,
+    "results/insertion_sa/day_003/seed_0/planning_audit.jsonl": true,
+    "results/insertion_sa/day_003/seed_1/log.txt": true,
+    "results/insertion_sa/day_003/seed_1/metrics.json": true,
+    "results/insertion_sa/day_003/seed_1/settings.json": true,
+    "results/insertion_sa/day_003/seed_1/planning_audit.jsonl": true,
+    "results/insertion_sa/day_003/seed_2/log.txt": true,
+    "results/insertion_sa/day_003/seed_2/metrics.json": true,
+    "results/insertion_sa/day_003/seed_2/settings.json": true,
+    "results/insertion_sa/day_003/seed_2/planning_audit.jsonl": true,
+    "results/insertion_sa/day_003/seed_3/log.txt": true,
+    "results/insertion_sa/day_003/seed_3/metrics.json": true,
+    "results/insertion_sa/day_003/seed_3/settings.json": true,
+    "results/insertion_sa/day_003/seed_3/planning_audit.jsonl": true,
+    "results/insertion_sa/day_003/seed_4/log.txt": true,
+    "results/insertion_sa/day_003/seed_4/metrics.json": true,
+    "results/insertion_sa/day_003/seed_4/settings.json": true,
+    "results/insertion_sa/day_003/seed_4/planning_audit.jsonl": true,
+    "results/insertion_sa/day_004/seed_0/log.txt": true,
+    "results/insertion_sa/day_004/seed_0/metrics.json": true,
+    "results/insertion_sa/day_004/seed_0/settings.json": true,
+    "results/insertion_sa/day_004/seed_0/planning_audit.jsonl": true,
+    "results/insertion_sa/day_004/seed_1/log.txt": true,
+    "results/insertion_sa/day_004/seed_1/metrics.json": true,
+    "results/insertion_sa/day_004/seed_1/settings.json": true,
+    "results/insertion_sa/day_004/seed_1/planning_audit.jsonl": true,
+    "results/insertion_sa/day_004/seed_2/log.txt": true,
+    "results/insertion_sa/day_004/seed_2/metrics.json": true,
+    "results/insertion_sa/day_004/seed_2/settings.json": true,
+    "results/insertion_sa/day_004/seed_2/planning_audit.jsonl": true,
+    "results/insertion_sa/day_004/seed_3/log.txt": true,
+    "results/insertion_sa/day_004/seed_3/metrics.json": true,
+    "results/insertion_sa/day_004/seed_3/settings.json": true,
+    "results/insertion_sa/day_004/seed_3/planning_audit.jsonl": true,
+    "results/insertion_sa/day_004/seed_4/log.txt": true,
+    "results/insertion_sa/day_004/seed_4/metrics.json": true,
+    "results/insertion_sa/day_004/seed_4/settings.json": true,
+    "results/insertion_sa/day_004/seed_4/planning_audit.jsonl": true,
+    "results/insertion_sa/day_005/seed_0/log.txt": true,
+    "results/insertion_sa/day_005/seed_0/metrics.json": true,
+    "results/insertion_sa/day_005/seed_0/settings.json": true,
+    "results/insertion_sa/day_005/seed_0/planning_audit.jsonl": true,
+    "results/insertion_sa/day_005/seed_1/log.txt": true,
+    "results/insertion_sa/day_005/seed_1/metrics.json": true,
+    "results/insertion_sa/day_005/seed_1/settings.json": true,
+    "results/insertion_sa/day_005/seed_1/planning_audit.jsonl": true,
+    "results/insertion_sa/day_005/seed_2/log.txt": true,
+    "results/insertion_sa/day_005/seed_2/metrics.json": true,
+    "results/insertion_sa/day_005/seed_2/settings.json": true,
+    "results/insertion_sa/day_005/seed_2/planning_audit.jsonl": true,
+    "results/insertion_sa/day_005/seed_3/log.txt": true,
+    "results/insertion_sa/day_005/seed_3/metrics.json": true,
+    "results/insertion_sa/day_005/seed_3/settings.json": true,
+    "results/insertion_sa/day_005/seed_3/planning_audit.jsonl": true,
+    "results/insertion_sa/day_005/seed_4/log.txt": true,
+    "results/insertion_sa/day_005/seed_4/metrics.json": true,
+    "results/insertion_sa/day_005/seed_4/settings.json": true,
+    "results/insertion_sa/day_005/seed_4/planning_audit.jsonl": true
+  },
+  "runs": [
+    {
+      "day": "day_001",
+      "seed": 0,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 77,
+      "swap_attempts_replayed": 62000,
+      "empty_decisions_checked": 44,
+      "single_parcel_decisions_checked": 2,
+      "independent_metrics": {
+        "total_parcels": 799,
+        "delivered_parcels": 763,
+        "on_time_parcels": 628,
+        "early_parcels": 0,
+        "late_parcels": 135,
+        "undelivered_parcels": 36,
+        "completion_rate_pct": 95.49436795994994,
+        "on_time_service_rate_pct": 78.5982478097622,
+        "score_a": {
+          "completion_rate_pct": 95.49436795994994,
+          "on_time_tiebreak_pct": 78.5982478097622
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 87.04630788485608,
+        "score_b_sensitivity": {
+          "0.25": 82.82227784730914,
+          "0.5": 87.04630788485608,
+          "0.75": 91.270337922403
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 4233.228,
+        "average_load_utilisation_pct": 73.46464646464646
+      }
+    },
+    {
+      "day": "day_001",
+      "seed": 1,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 77,
+      "swap_attempts_replayed": 62000,
+      "empty_decisions_checked": 44,
+      "single_parcel_decisions_checked": 2,
+      "independent_metrics": {
+        "total_parcels": 799,
+        "delivered_parcels": 763,
+        "on_time_parcels": 628,
+        "early_parcels": 0,
+        "late_parcels": 135,
+        "undelivered_parcels": 36,
+        "completion_rate_pct": 95.49436795994994,
+        "on_time_service_rate_pct": 78.5982478097622,
+        "score_a": {
+          "completion_rate_pct": 95.49436795994994,
+          "on_time_tiebreak_pct": 78.5982478097622
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 87.04630788485608,
+        "score_b_sensitivity": {
+          "0.25": 82.82227784730914,
+          "0.5": 87.04630788485608,
+          "0.75": 91.270337922403
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 4233.228,
+        "average_load_utilisation_pct": 73.46464646464646
+      }
+    },
+    {
+      "day": "day_001",
+      "seed": 2,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 77,
+      "swap_attempts_replayed": 62000,
+      "empty_decisions_checked": 44,
+      "single_parcel_decisions_checked": 2,
+      "independent_metrics": {
+        "total_parcels": 799,
+        "delivered_parcels": 763,
+        "on_time_parcels": 628,
+        "early_parcels": 0,
+        "late_parcels": 135,
+        "undelivered_parcels": 36,
+        "completion_rate_pct": 95.49436795994994,
+        "on_time_service_rate_pct": 78.5982478097622,
+        "score_a": {
+          "completion_rate_pct": 95.49436795994994,
+          "on_time_tiebreak_pct": 78.5982478097622
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 87.04630788485608,
+        "score_b_sensitivity": {
+          "0.25": 82.82227784730914,
+          "0.5": 87.04630788485608,
+          "0.75": 91.270337922403
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 4239.267,
+        "average_load_utilisation_pct": 73.46464646464646
+      }
+    },
+    {
+      "day": "day_001",
+      "seed": 3,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 77,
+      "swap_attempts_replayed": 62000,
+      "empty_decisions_checked": 44,
+      "single_parcel_decisions_checked": 2,
+      "independent_metrics": {
+        "total_parcels": 799,
+        "delivered_parcels": 763,
+        "on_time_parcels": 628,
+        "early_parcels": 0,
+        "late_parcels": 135,
+        "undelivered_parcels": 36,
+        "completion_rate_pct": 95.49436795994994,
+        "on_time_service_rate_pct": 78.5982478097622,
+        "score_a": {
+          "completion_rate_pct": 95.49436795994994,
+          "on_time_tiebreak_pct": 78.5982478097622
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 87.04630788485608,
+        "score_b_sensitivity": {
+          "0.25": 82.82227784730914,
+          "0.5": 87.04630788485608,
+          "0.75": 91.270337922403
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 4233.228,
+        "average_load_utilisation_pct": 73.46464646464646
+      }
+    },
+    {
+      "day": "day_001",
+      "seed": 4,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 77,
+      "swap_attempts_replayed": 62000,
+      "empty_decisions_checked": 44,
+      "single_parcel_decisions_checked": 2,
+      "independent_metrics": {
+        "total_parcels": 799,
+        "delivered_parcels": 763,
+        "on_time_parcels": 628,
+        "early_parcels": 0,
+        "late_parcels": 135,
+        "undelivered_parcels": 36,
+        "completion_rate_pct": 95.49436795994994,
+        "on_time_service_rate_pct": 78.5982478097622,
+        "score_a": {
+          "completion_rate_pct": 95.49436795994994,
+          "on_time_tiebreak_pct": 78.5982478097622
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 87.04630788485608,
+        "score_b_sensitivity": {
+          "0.25": 82.82227784730914,
+          "0.5": 87.04630788485608,
+          "0.75": 91.270337922403
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 4233.228,
+        "average_load_utilisation_pct": 73.46464646464646
+      }
+    },
+    {
+      "day": "day_002",
+      "seed": 0,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 78,
+      "swap_attempts_replayed": 60000,
+      "empty_decisions_checked": 46,
+      "single_parcel_decisions_checked": 2,
+      "independent_metrics": {
+        "total_parcels": 772,
+        "delivered_parcels": 738,
+        "on_time_parcels": 618,
+        "early_parcels": 0,
+        "late_parcels": 120,
+        "undelivered_parcels": 34,
+        "completion_rate_pct": 95.5958549222798,
+        "on_time_service_rate_pct": 80.05181347150258,
+        "score_a": {
+          "completion_rate_pct": 95.5958549222798,
+          "on_time_tiebreak_pct": 80.05181347150258
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 87.8238341968912,
+        "score_b_sensitivity": {
+          "0.25": 83.93782383419689,
+          "0.5": 87.8238341968912,
+          "0.75": 91.70984455958549
+        },
+        "number_of_trips": 32,
+        "total_distance_km": 4221.195,
+        "average_load_utilisation_pct": 75.75
+      }
+    },
+    {
+      "day": "day_002",
+      "seed": 1,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 79,
+      "swap_attempts_replayed": 60000,
+      "empty_decisions_checked": 47,
+      "single_parcel_decisions_checked": 2,
+      "independent_metrics": {
+        "total_parcels": 772,
+        "delivered_parcels": 738,
+        "on_time_parcels": 618,
+        "early_parcels": 0,
+        "late_parcels": 120,
+        "undelivered_parcels": 34,
+        "completion_rate_pct": 95.5958549222798,
+        "on_time_service_rate_pct": 80.05181347150258,
+        "score_a": {
+          "completion_rate_pct": 95.5958549222798,
+          "on_time_tiebreak_pct": 80.05181347150258
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 87.8238341968912,
+        "score_b_sensitivity": {
+          "0.25": 83.93782383419689,
+          "0.5": 87.8238341968912,
+          "0.75": 91.70984455958549
+        },
+        "number_of_trips": 32,
+        "total_distance_km": 4215.417,
+        "average_load_utilisation_pct": 75.75
+      }
+    },
+    {
+      "day": "day_002",
+      "seed": 2,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 79,
+      "swap_attempts_replayed": 60000,
+      "empty_decisions_checked": 47,
+      "single_parcel_decisions_checked": 2,
+      "independent_metrics": {
+        "total_parcels": 772,
+        "delivered_parcels": 738,
+        "on_time_parcels": 618,
+        "early_parcels": 0,
+        "late_parcels": 120,
+        "undelivered_parcels": 34,
+        "completion_rate_pct": 95.5958549222798,
+        "on_time_service_rate_pct": 80.05181347150258,
+        "score_a": {
+          "completion_rate_pct": 95.5958549222798,
+          "on_time_tiebreak_pct": 80.05181347150258
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 87.8238341968912,
+        "score_b_sensitivity": {
+          "0.25": 83.93782383419689,
+          "0.5": 87.8238341968912,
+          "0.75": 91.70984455958549
+        },
+        "number_of_trips": 32,
+        "total_distance_km": 4214.577,
+        "average_load_utilisation_pct": 75.75
+      }
+    },
+    {
+      "day": "day_002",
+      "seed": 3,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 78,
+      "swap_attempts_replayed": 60000,
+      "empty_decisions_checked": 46,
+      "single_parcel_decisions_checked": 2,
+      "independent_metrics": {
+        "total_parcels": 772,
+        "delivered_parcels": 738,
+        "on_time_parcels": 618,
+        "early_parcels": 0,
+        "late_parcels": 120,
+        "undelivered_parcels": 34,
+        "completion_rate_pct": 95.5958549222798,
+        "on_time_service_rate_pct": 80.05181347150258,
+        "score_a": {
+          "completion_rate_pct": 95.5958549222798,
+          "on_time_tiebreak_pct": 80.05181347150258
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 87.8238341968912,
+        "score_b_sensitivity": {
+          "0.25": 83.93782383419689,
+          "0.5": 87.8238341968912,
+          "0.75": 91.70984455958549
+        },
+        "number_of_trips": 32,
+        "total_distance_km": 4221.453,
+        "average_load_utilisation_pct": 75.75
+      }
+    },
+    {
+      "day": "day_002",
+      "seed": 4,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 79,
+      "swap_attempts_replayed": 60000,
+      "empty_decisions_checked": 47,
+      "single_parcel_decisions_checked": 2,
+      "independent_metrics": {
+        "total_parcels": 772,
+        "delivered_parcels": 738,
+        "on_time_parcels": 618,
+        "early_parcels": 0,
+        "late_parcels": 120,
+        "undelivered_parcels": 34,
+        "completion_rate_pct": 95.5958549222798,
+        "on_time_service_rate_pct": 80.05181347150258,
+        "score_a": {
+          "completion_rate_pct": 95.5958549222798,
+          "on_time_tiebreak_pct": 80.05181347150258
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 87.8238341968912,
+        "score_b_sensitivity": {
+          "0.25": 83.93782383419689,
+          "0.5": 87.8238341968912,
+          "0.75": 91.70984455958549
+        },
+        "number_of_trips": 32,
+        "total_distance_km": 4210.683,
+        "average_load_utilisation_pct": 75.75
+      }
+    },
+    {
+      "day": "day_003",
+      "seed": 0,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 100,
+      "swap_attempts_replayed": 60000,
+      "empty_decisions_checked": 67,
+      "single_parcel_decisions_checked": 3,
+      "independent_metrics": {
+        "total_parcels": 794,
+        "delivered_parcels": 759,
+        "on_time_parcels": 692,
+        "early_parcels": 2,
+        "late_parcels": 65,
+        "undelivered_parcels": 35,
+        "completion_rate_pct": 95.59193954659949,
+        "on_time_service_rate_pct": 87.15365239294711,
+        "score_a": {
+          "completion_rate_pct": 95.59193954659949,
+          "on_time_tiebreak_pct": 87.15365239294711
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 91.37279596977329,
+        "score_b_sensitivity": {
+          "0.25": 89.2632241813602,
+          "0.5": 91.37279596977329,
+          "0.75": 93.4823677581864
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 3981.306,
+        "average_load_utilisation_pct": 73.58585858585859
+      }
+    },
+    {
+      "day": "day_003",
+      "seed": 1,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 100,
+      "swap_attempts_replayed": 60000,
+      "empty_decisions_checked": 67,
+      "single_parcel_decisions_checked": 3,
+      "independent_metrics": {
+        "total_parcels": 794,
+        "delivered_parcels": 759,
+        "on_time_parcels": 692,
+        "early_parcels": 2,
+        "late_parcels": 65,
+        "undelivered_parcels": 35,
+        "completion_rate_pct": 95.59193954659949,
+        "on_time_service_rate_pct": 87.15365239294711,
+        "score_a": {
+          "completion_rate_pct": 95.59193954659949,
+          "on_time_tiebreak_pct": 87.15365239294711
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 91.37279596977329,
+        "score_b_sensitivity": {
+          "0.25": 89.2632241813602,
+          "0.5": 91.37279596977329,
+          "0.75": 93.4823677581864
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 3981.306,
+        "average_load_utilisation_pct": 73.58585858585859
+      }
+    },
+    {
+      "day": "day_003",
+      "seed": 2,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 100,
+      "swap_attempts_replayed": 60000,
+      "empty_decisions_checked": 67,
+      "single_parcel_decisions_checked": 3,
+      "independent_metrics": {
+        "total_parcels": 794,
+        "delivered_parcels": 759,
+        "on_time_parcels": 692,
+        "early_parcels": 2,
+        "late_parcels": 65,
+        "undelivered_parcels": 35,
+        "completion_rate_pct": 95.59193954659949,
+        "on_time_service_rate_pct": 87.15365239294711,
+        "score_a": {
+          "completion_rate_pct": 95.59193954659949,
+          "on_time_tiebreak_pct": 87.15365239294711
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 91.37279596977329,
+        "score_b_sensitivity": {
+          "0.25": 89.2632241813602,
+          "0.5": 91.37279596977329,
+          "0.75": 93.4823677581864
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 3981.306,
+        "average_load_utilisation_pct": 73.58585858585859
+      }
+    },
+    {
+      "day": "day_003",
+      "seed": 3,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 100,
+      "swap_attempts_replayed": 60000,
+      "empty_decisions_checked": 67,
+      "single_parcel_decisions_checked": 3,
+      "independent_metrics": {
+        "total_parcels": 794,
+        "delivered_parcels": 759,
+        "on_time_parcels": 692,
+        "early_parcels": 2,
+        "late_parcels": 65,
+        "undelivered_parcels": 35,
+        "completion_rate_pct": 95.59193954659949,
+        "on_time_service_rate_pct": 87.15365239294711,
+        "score_a": {
+          "completion_rate_pct": 95.59193954659949,
+          "on_time_tiebreak_pct": 87.15365239294711
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 91.37279596977329,
+        "score_b_sensitivity": {
+          "0.25": 89.2632241813602,
+          "0.5": 91.37279596977329,
+          "0.75": 93.4823677581864
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 3981.306,
+        "average_load_utilisation_pct": 73.58585858585859
+      }
+    },
+    {
+      "day": "day_003",
+      "seed": 4,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 100,
+      "swap_attempts_replayed": 60000,
+      "empty_decisions_checked": 67,
+      "single_parcel_decisions_checked": 3,
+      "independent_metrics": {
+        "total_parcels": 794,
+        "delivered_parcels": 759,
+        "on_time_parcels": 692,
+        "early_parcels": 2,
+        "late_parcels": 65,
+        "undelivered_parcels": 35,
+        "completion_rate_pct": 95.59193954659949,
+        "on_time_service_rate_pct": 87.15365239294711,
+        "score_a": {
+          "completion_rate_pct": 95.59193954659949,
+          "on_time_tiebreak_pct": 87.15365239294711
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 91.37279596977329,
+        "score_b_sensitivity": {
+          "0.25": 89.2632241813602,
+          "0.5": 91.37279596977329,
+          "0.75": 93.4823677581864
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 3981.306,
+        "average_load_utilisation_pct": 73.58585858585859
+      }
+    },
+    {
+      "day": "day_004",
+      "seed": 0,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 89,
+      "swap_attempts_replayed": 60000,
+      "empty_decisions_checked": 56,
+      "single_parcel_decisions_checked": 3,
+      "independent_metrics": {
+        "total_parcels": 808,
+        "delivered_parcels": 776,
+        "on_time_parcels": 668,
+        "early_parcels": 0,
+        "late_parcels": 108,
+        "undelivered_parcels": 32,
+        "completion_rate_pct": 96.03960396039604,
+        "on_time_service_rate_pct": 82.67326732673267,
+        "score_a": {
+          "completion_rate_pct": 96.03960396039604,
+          "on_time_tiebreak_pct": 82.67326732673267
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 89.35643564356435,
+        "score_b_sensitivity": {
+          "0.25": 86.01485148514851,
+          "0.5": 89.35643564356435,
+          "0.75": 92.6980198019802
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 4110.012,
+        "average_load_utilisation_pct": 73.25252525252525
+      }
+    },
+    {
+      "day": "day_004",
+      "seed": 1,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 89,
+      "swap_attempts_replayed": 60000,
+      "empty_decisions_checked": 56,
+      "single_parcel_decisions_checked": 3,
+      "independent_metrics": {
+        "total_parcels": 808,
+        "delivered_parcels": 776,
+        "on_time_parcels": 668,
+        "early_parcels": 0,
+        "late_parcels": 108,
+        "undelivered_parcels": 32,
+        "completion_rate_pct": 96.03960396039604,
+        "on_time_service_rate_pct": 82.67326732673267,
+        "score_a": {
+          "completion_rate_pct": 96.03960396039604,
+          "on_time_tiebreak_pct": 82.67326732673267
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 89.35643564356435,
+        "score_b_sensitivity": {
+          "0.25": 86.01485148514851,
+          "0.5": 89.35643564356435,
+          "0.75": 92.6980198019802
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 4110.012,
+        "average_load_utilisation_pct": 73.25252525252525
+      }
+    },
+    {
+      "day": "day_004",
+      "seed": 2,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 89,
+      "swap_attempts_replayed": 60000,
+      "empty_decisions_checked": 56,
+      "single_parcel_decisions_checked": 3,
+      "independent_metrics": {
+        "total_parcels": 808,
+        "delivered_parcels": 776,
+        "on_time_parcels": 668,
+        "early_parcels": 0,
+        "late_parcels": 108,
+        "undelivered_parcels": 32,
+        "completion_rate_pct": 96.03960396039604,
+        "on_time_service_rate_pct": 82.67326732673267,
+        "score_a": {
+          "completion_rate_pct": 96.03960396039604,
+          "on_time_tiebreak_pct": 82.67326732673267
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 89.35643564356435,
+        "score_b_sensitivity": {
+          "0.25": 86.01485148514851,
+          "0.5": 89.35643564356435,
+          "0.75": 92.6980198019802
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 4110.126,
+        "average_load_utilisation_pct": 73.25252525252525
+      }
+    },
+    {
+      "day": "day_004",
+      "seed": 3,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 89,
+      "swap_attempts_replayed": 60000,
+      "empty_decisions_checked": 56,
+      "single_parcel_decisions_checked": 3,
+      "independent_metrics": {
+        "total_parcels": 808,
+        "delivered_parcels": 776,
+        "on_time_parcels": 668,
+        "early_parcels": 0,
+        "late_parcels": 108,
+        "undelivered_parcels": 32,
+        "completion_rate_pct": 96.03960396039604,
+        "on_time_service_rate_pct": 82.67326732673267,
+        "score_a": {
+          "completion_rate_pct": 96.03960396039604,
+          "on_time_tiebreak_pct": 82.67326732673267
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 89.35643564356435,
+        "score_b_sensitivity": {
+          "0.25": 86.01485148514851,
+          "0.5": 89.35643564356435,
+          "0.75": 92.6980198019802
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 4110.012,
+        "average_load_utilisation_pct": 73.25252525252525
+      }
+    },
+    {
+      "day": "day_004",
+      "seed": 4,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 89,
+      "swap_attempts_replayed": 60000,
+      "empty_decisions_checked": 56,
+      "single_parcel_decisions_checked": 3,
+      "independent_metrics": {
+        "total_parcels": 808,
+        "delivered_parcels": 776,
+        "on_time_parcels": 668,
+        "early_parcels": 0,
+        "late_parcels": 108,
+        "undelivered_parcels": 32,
+        "completion_rate_pct": 96.03960396039604,
+        "on_time_service_rate_pct": 82.67326732673267,
+        "score_a": {
+          "completion_rate_pct": 96.03960396039604,
+          "on_time_tiebreak_pct": 82.67326732673267
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 89.35643564356435,
+        "score_b_sensitivity": {
+          "0.25": 86.01485148514851,
+          "0.5": 89.35643564356435,
+          "0.75": 92.6980198019802
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 4110.012,
+        "average_load_utilisation_pct": 73.25252525252525
+      }
+    },
+    {
+      "day": "day_005",
+      "seed": 0,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 87,
+      "swap_attempts_replayed": 62000,
+      "empty_decisions_checked": 53,
+      "single_parcel_decisions_checked": 3,
+      "independent_metrics": {
+        "total_parcels": 806,
+        "delivered_parcels": 780,
+        "on_time_parcels": 596,
+        "early_parcels": 2,
+        "late_parcels": 182,
+        "undelivered_parcels": 26,
+        "completion_rate_pct": 96.7741935483871,
+        "on_time_service_rate_pct": 73.9454094292804,
+        "score_a": {
+          "completion_rate_pct": 96.7741935483871,
+          "on_time_tiebreak_pct": 73.9454094292804
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 85.35980148883375,
+        "score_b_sensitivity": {
+          "0.25": 79.65260545905707,
+          "0.5": 85.35980148883375,
+          "0.75": 91.06699751861042
+        },
+        "number_of_trips": 34,
+        "total_distance_km": 4120.755,
+        "average_load_utilisation_pct": 71.92156862745098
+      }
+    },
+    {
+      "day": "day_005",
+      "seed": 1,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 88,
+      "swap_attempts_replayed": 62000,
+      "empty_decisions_checked": 54,
+      "single_parcel_decisions_checked": 3,
+      "independent_metrics": {
+        "total_parcels": 806,
+        "delivered_parcels": 780,
+        "on_time_parcels": 596,
+        "early_parcels": 2,
+        "late_parcels": 182,
+        "undelivered_parcels": 26,
+        "completion_rate_pct": 96.7741935483871,
+        "on_time_service_rate_pct": 73.9454094292804,
+        "score_a": {
+          "completion_rate_pct": 96.7741935483871,
+          "on_time_tiebreak_pct": 73.9454094292804
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 85.35980148883375,
+        "score_b_sensitivity": {
+          "0.25": 79.65260545905707,
+          "0.5": 85.35980148883375,
+          "0.75": 91.06699751861042
+        },
+        "number_of_trips": 34,
+        "total_distance_km": 4114.983,
+        "average_load_utilisation_pct": 71.92156862745098
+      }
+    },
+    {
+      "day": "day_005",
+      "seed": 2,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 87,
+      "swap_attempts_replayed": 62000,
+      "empty_decisions_checked": 53,
+      "single_parcel_decisions_checked": 3,
+      "independent_metrics": {
+        "total_parcels": 806,
+        "delivered_parcels": 780,
+        "on_time_parcels": 596,
+        "early_parcels": 2,
+        "late_parcels": 182,
+        "undelivered_parcels": 26,
+        "completion_rate_pct": 96.7741935483871,
+        "on_time_service_rate_pct": 73.9454094292804,
+        "score_a": {
+          "completion_rate_pct": 96.7741935483871,
+          "on_time_tiebreak_pct": 73.9454094292804
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 85.35980148883375,
+        "score_b_sensitivity": {
+          "0.25": 79.65260545905707,
+          "0.5": 85.35980148883375,
+          "0.75": 91.06699751861042
+        },
+        "number_of_trips": 34,
+        "total_distance_km": 4121.145,
+        "average_load_utilisation_pct": 71.92156862745098
+      }
+    },
+    {
+      "day": "day_005",
+      "seed": 3,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 87,
+      "swap_attempts_replayed": 62000,
+      "empty_decisions_checked": 53,
+      "single_parcel_decisions_checked": 3,
+      "independent_metrics": {
+        "total_parcels": 806,
+        "delivered_parcels": 779,
+        "on_time_parcels": 589,
+        "early_parcels": 2,
+        "late_parcels": 188,
+        "undelivered_parcels": 27,
+        "completion_rate_pct": 96.6501240694789,
+        "on_time_service_rate_pct": 73.07692307692308,
+        "score_a": {
+          "completion_rate_pct": 96.6501240694789,
+          "on_time_tiebreak_pct": 73.07692307692308
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 84.863523573201,
+        "score_b_sensitivity": {
+          "0.25": 78.97022332506204,
+          "0.5": 84.863523573201,
+          "0.75": 90.75682382133995
+        },
+        "number_of_trips": 34,
+        "total_distance_km": 4113.594,
+        "average_load_utilisation_pct": 71.84313725490196
+      }
+    },
+    {
+      "day": "day_005",
+      "seed": 4,
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_audit_mismatches": [],
+      "settings_mismatches": [],
+      "planning_decisions_reconstructed": 87,
+      "swap_attempts_replayed": 62000,
+      "empty_decisions_checked": 53,
+      "single_parcel_decisions_checked": 3,
+      "independent_metrics": {
+        "total_parcels": 806,
+        "delivered_parcels": 780,
+        "on_time_parcels": 596,
+        "early_parcels": 2,
+        "late_parcels": 182,
+        "undelivered_parcels": 26,
+        "completion_rate_pct": 96.7741935483871,
+        "on_time_service_rate_pct": 73.9454094292804,
+        "score_a": {
+          "completion_rate_pct": 96.7741935483871,
+          "on_time_tiebreak_pct": 73.9454094292804
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 85.35980148883375,
+        "score_b_sensitivity": {
+          "0.25": 79.65260545905707,
+          "0.5": 85.35980148883375,
+          "0.75": 91.06699751861042
+        },
+        "number_of_trips": 34,
+        "total_distance_km": 4122.321,
+        "average_load_utilisation_pct": 71.92156862745098
+      }
+    }
+  ],
+  "per_day_seed_summaries": [
+    {
+      "day": "day_001",
+      "seed_count": 5,
+      "score_b": {
+        "mean": 87.04630788485608,
+        "min": 87.04630788485608,
+        "max": 87.04630788485608,
+        "sample_standard_deviation": 0.0
+      },
+      "delivered_parcels": {
+        "mean": 763,
+        "min": 763,
+        "max": 763,
+        "sample_standard_deviation": 0.0
+      },
+      "on_time_parcels": {
+        "mean": 628,
+        "min": 628,
+        "max": 628,
+        "sample_standard_deviation": 0.0
+      },
+      "total_distance_km": {
+        "mean": 4234.4358,
+        "min": 4233.228,
+        "max": 4239.267,
+        "sample_standard_deviation": 2.7007229032241384
+      },
+      "score_b_seed_wins_vs_greedy_insertion": 0,
+      "score_b_seed_wins_vs_window_first_nearest": 0
+    },
+    {
+      "day": "day_002",
+      "seed_count": 5,
+      "score_b": {
+        "mean": 87.8238341968912,
+        "min": 87.8238341968912,
+        "max": 87.8238341968912,
+        "sample_standard_deviation": 0.0
+      },
+      "delivered_parcels": {
+        "mean": 738,
+        "min": 738,
+        "max": 738,
+        "sample_standard_deviation": 0.0
+      },
+      "on_time_parcels": {
+        "mean": 618,
+        "min": 618,
+        "max": 618,
+        "sample_standard_deviation": 0.0
+      },
+      "total_distance_km": {
+        "mean": 4216.665,
+        "min": 4210.683,
+        "max": 4221.453,
+        "sample_standard_deviation": 4.613767874525107
+      },
+      "score_b_seed_wins_vs_greedy_insertion": 5,
+      "score_b_seed_wins_vs_window_first_nearest": 0
+    },
+    {
+      "day": "day_003",
+      "seed_count": 5,
+      "score_b": {
+        "mean": 91.37279596977329,
+        "min": 91.37279596977329,
+        "max": 91.37279596977329,
+        "sample_standard_deviation": 0.0
+      },
+      "delivered_parcels": {
+        "mean": 759,
+        "min": 759,
+        "max": 759,
+        "sample_standard_deviation": 0.0
+      },
+      "on_time_parcels": {
+        "mean": 692,
+        "min": 692,
+        "max": 692,
+        "sample_standard_deviation": 0.0
+      },
+      "total_distance_km": {
+        "mean": 3981.306,
+        "min": 3981.306,
+        "max": 3981.306,
+        "sample_standard_deviation": 0.0
+      },
+      "score_b_seed_wins_vs_greedy_insertion": 0,
+      "score_b_seed_wins_vs_window_first_nearest": 5
+    },
+    {
+      "day": "day_004",
+      "seed_count": 5,
+      "score_b": {
+        "mean": 89.35643564356435,
+        "min": 89.35643564356435,
+        "max": 89.35643564356435,
+        "sample_standard_deviation": 0.0
+      },
+      "delivered_parcels": {
+        "mean": 776,
+        "min": 776,
+        "max": 776,
+        "sample_standard_deviation": 0.0
+      },
+      "on_time_parcels": {
+        "mean": 668,
+        "min": 668,
+        "max": 668,
+        "sample_standard_deviation": 0.0
+      },
+      "total_distance_km": {
+        "mean": 4110.034799999999,
+        "min": 4110.012,
+        "max": 4110.126,
+        "sample_standard_deviation": 0.050982349887213216
+      },
+      "score_b_seed_wins_vs_greedy_insertion": 0,
+      "score_b_seed_wins_vs_window_first_nearest": 0
+    },
+    {
+      "day": "day_005",
+      "seed_count": 5,
+      "score_b": {
+        "mean": 85.2605459057072,
+        "min": 84.863523573201,
+        "max": 85.35980148883375,
+        "sample_standard_deviation": 0.22194223101735133
+      },
+      "delivered_parcels": {
+        "mean": 779.8,
+        "min": 779,
+        "max": 780,
+        "sample_standard_deviation": 0.4472135954999579
+      },
+      "on_time_parcels": {
+        "mean": 594.6,
+        "min": 589,
+        "max": 596,
+        "sample_standard_deviation": 3.1304951684997055
+      },
+      "total_distance_km": {
+        "mean": 4118.5596000000005,
+        "min": 4113.594,
+        "max": 4122.321,
+        "sample_standard_deviation": 3.971821219541494
+      },
+      "score_b_seed_wins_vs_greedy_insertion": 4,
+      "score_b_seed_wins_vs_window_first_nearest": 0
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "day": "day_001",
+      "seed": 0,
+      "reference": "greedy_insertion",
+      "score_a_winner": "tied",
+      "score_b_winner": "tied",
+      "score_b_improvement_points": 0.0,
+      "sensitivity_winners": {
+        "0.25": "tied",
+        "0.5": "tied",
+        "0.75": "tied"
+      },
+      "delivered_change": 0,
+      "on_time_change": 0,
+      "distance_change_km": -6.03899999999976
+    },
+    {
+      "day": "day_001",
+      "seed": 0,
+      "reference": "window_first_nearest",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -3.692115143929911,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 1,
+      "on_time_change": -60,
+      "distance_change_km": 145.01999999999998
+    },
+    {
+      "day": "day_001",
+      "seed": 1,
+      "reference": "greedy_insertion",
+      "score_a_winner": "tied",
+      "score_b_winner": "tied",
+      "score_b_improvement_points": 0.0,
+      "sensitivity_winners": {
+        "0.25": "tied",
+        "0.5": "tied",
+        "0.75": "tied"
+      },
+      "delivered_change": 0,
+      "on_time_change": 0,
+      "distance_change_km": -6.03899999999976
+    },
+    {
+      "day": "day_001",
+      "seed": 1,
+      "reference": "window_first_nearest",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -3.692115143929911,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 1,
+      "on_time_change": -60,
+      "distance_change_km": 145.01999999999998
+    },
+    {
+      "day": "day_001",
+      "seed": 2,
+      "reference": "greedy_insertion",
+      "score_a_winner": "tied",
+      "score_b_winner": "tied",
+      "score_b_improvement_points": 0.0,
+      "sensitivity_winners": {
+        "0.25": "tied",
+        "0.5": "tied",
+        "0.75": "tied"
+      },
+      "delivered_change": 0,
+      "on_time_change": 0,
+      "distance_change_km": 0.0
+    },
+    {
+      "day": "day_001",
+      "seed": 2,
+      "reference": "window_first_nearest",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -3.692115143929911,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 1,
+      "on_time_change": -60,
+      "distance_change_km": 151.05899999999974
+    },
+    {
+      "day": "day_001",
+      "seed": 3,
+      "reference": "greedy_insertion",
+      "score_a_winner": "tied",
+      "score_b_winner": "tied",
+      "score_b_improvement_points": 0.0,
+      "sensitivity_winners": {
+        "0.25": "tied",
+        "0.5": "tied",
+        "0.75": "tied"
+      },
+      "delivered_change": 0,
+      "on_time_change": 0,
+      "distance_change_km": -6.03899999999976
+    },
+    {
+      "day": "day_001",
+      "seed": 3,
+      "reference": "window_first_nearest",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -3.692115143929911,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 1,
+      "on_time_change": -60,
+      "distance_change_km": 145.01999999999998
+    },
+    {
+      "day": "day_001",
+      "seed": 4,
+      "reference": "greedy_insertion",
+      "score_a_winner": "tied",
+      "score_b_winner": "tied",
+      "score_b_improvement_points": 0.0,
+      "sensitivity_winners": {
+        "0.25": "tied",
+        "0.5": "tied",
+        "0.75": "tied"
+      },
+      "delivered_change": 0,
+      "on_time_change": 0,
+      "distance_change_km": -6.03899999999976
+    },
+    {
+      "day": "day_001",
+      "seed": 4,
+      "reference": "window_first_nearest",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -3.692115143929911,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 1,
+      "on_time_change": -60,
+      "distance_change_km": 145.01999999999998
+    },
+    {
+      "day": "day_002",
+      "seed": 0,
+      "reference": "greedy_insertion",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "insertion_sa",
+      "score_b_improvement_points": 0.064766839378251,
+      "sensitivity_winners": {
+        "0.25": "insertion_sa",
+        "0.5": "insertion_sa",
+        "0.75": "insertion_sa"
+      },
+      "delivered_change": 0,
+      "on_time_change": 1,
+      "distance_change_km": 24.863999999999578
+    },
+    {
+      "day": "day_002",
+      "seed": 0,
+      "reference": "window_first_nearest",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -4.015544041450767,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 2,
+      "on_time_change": -64,
+      "distance_change_km": -9.72900000000027
+    },
+    {
+      "day": "day_002",
+      "seed": 1,
+      "reference": "greedy_insertion",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "insertion_sa",
+      "score_b_improvement_points": 0.064766839378251,
+      "sensitivity_winners": {
+        "0.25": "insertion_sa",
+        "0.5": "insertion_sa",
+        "0.75": "insertion_sa"
+      },
+      "delivered_change": 0,
+      "on_time_change": 1,
+      "distance_change_km": 19.08600000000024
+    },
+    {
+      "day": "day_002",
+      "seed": 1,
+      "reference": "window_first_nearest",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -4.015544041450767,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 2,
+      "on_time_change": -64,
+      "distance_change_km": -15.506999999999607
+    },
+    {
+      "day": "day_002",
+      "seed": 2,
+      "reference": "greedy_insertion",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "insertion_sa",
+      "score_b_improvement_points": 0.064766839378251,
+      "sensitivity_winners": {
+        "0.25": "insertion_sa",
+        "0.5": "insertion_sa",
+        "0.75": "insertion_sa"
+      },
+      "delivered_change": 0,
+      "on_time_change": 1,
+      "distance_change_km": 18.246000000000095
+    },
+    {
+      "day": "day_002",
+      "seed": 2,
+      "reference": "window_first_nearest",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -4.015544041450767,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 2,
+      "on_time_change": -64,
+      "distance_change_km": -16.346999999999753
+    },
+    {
+      "day": "day_002",
+      "seed": 3,
+      "reference": "greedy_insertion",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "insertion_sa",
+      "score_b_improvement_points": 0.064766839378251,
+      "sensitivity_winners": {
+        "0.25": "insertion_sa",
+        "0.5": "insertion_sa",
+        "0.75": "insertion_sa"
+      },
+      "delivered_change": 0,
+      "on_time_change": 1,
+      "distance_change_km": 25.1220000000003
+    },
+    {
+      "day": "day_002",
+      "seed": 3,
+      "reference": "window_first_nearest",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -4.015544041450767,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 2,
+      "on_time_change": -64,
+      "distance_change_km": -9.470999999999549
+    },
+    {
+      "day": "day_002",
+      "seed": 4,
+      "reference": "greedy_insertion",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "insertion_sa",
+      "score_b_improvement_points": 0.064766839378251,
+      "sensitivity_winners": {
+        "0.25": "insertion_sa",
+        "0.5": "insertion_sa",
+        "0.75": "insertion_sa"
+      },
+      "delivered_change": 0,
+      "on_time_change": 1,
+      "distance_change_km": 14.351999999999862
+    },
+    {
+      "day": "day_002",
+      "seed": 4,
+      "reference": "window_first_nearest",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -4.015544041450767,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 2,
+      "on_time_change": -64,
+      "distance_change_km": -20.240999999999985
+    },
+    {
+      "day": "day_003",
+      "seed": 0,
+      "reference": "greedy_insertion",
+      "score_a_winner": "greedy_insertion",
+      "score_b_winner": "greedy_insertion",
+      "score_b_improvement_points": -0.0629722921914464,
+      "sensitivity_winners": {
+        "0.25": "greedy_insertion",
+        "0.5": "greedy_insertion",
+        "0.75": "greedy_insertion"
+      },
+      "delivered_change": 0,
+      "on_time_change": -1,
+      "distance_change_km": -30.932999999999993
+    },
+    {
+      "day": "day_003",
+      "seed": 0,
+      "reference": "window_first_nearest",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "insertion_sa",
+      "score_b_improvement_points": 3.904282115869009,
+      "sensitivity_winners": {
+        "0.25": "insertion_sa",
+        "0.5": "insertion_sa",
+        "0.75": "insertion_sa"
+      },
+      "delivered_change": 1,
+      "on_time_change": 61,
+      "distance_change_km": -288.5130000000004
+    },
+    {
+      "day": "day_003",
+      "seed": 1,
+      "reference": "greedy_insertion",
+      "score_a_winner": "greedy_insertion",
+      "score_b_winner": "greedy_insertion",
+      "score_b_improvement_points": -0.0629722921914464,
+      "sensitivity_winners": {
+        "0.25": "greedy_insertion",
+        "0.5": "greedy_insertion",
+        "0.75": "greedy_insertion"
+      },
+      "delivered_change": 0,
+      "on_time_change": -1,
+      "distance_change_km": -30.932999999999993
+    },
+    {
+      "day": "day_003",
+      "seed": 1,
+      "reference": "window_first_nearest",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "insertion_sa",
+      "score_b_improvement_points": 3.904282115869009,
+      "sensitivity_winners": {
+        "0.25": "insertion_sa",
+        "0.5": "insertion_sa",
+        "0.75": "insertion_sa"
+      },
+      "delivered_change": 1,
+      "on_time_change": 61,
+      "distance_change_km": -288.5130000000004
+    },
+    {
+      "day": "day_003",
+      "seed": 2,
+      "reference": "greedy_insertion",
+      "score_a_winner": "greedy_insertion",
+      "score_b_winner": "greedy_insertion",
+      "score_b_improvement_points": -0.0629722921914464,
+      "sensitivity_winners": {
+        "0.25": "greedy_insertion",
+        "0.5": "greedy_insertion",
+        "0.75": "greedy_insertion"
+      },
+      "delivered_change": 0,
+      "on_time_change": -1,
+      "distance_change_km": -30.932999999999993
+    },
+    {
+      "day": "day_003",
+      "seed": 2,
+      "reference": "window_first_nearest",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "insertion_sa",
+      "score_b_improvement_points": 3.904282115869009,
+      "sensitivity_winners": {
+        "0.25": "insertion_sa",
+        "0.5": "insertion_sa",
+        "0.75": "insertion_sa"
+      },
+      "delivered_change": 1,
+      "on_time_change": 61,
+      "distance_change_km": -288.5130000000004
+    },
+    {
+      "day": "day_003",
+      "seed": 3,
+      "reference": "greedy_insertion",
+      "score_a_winner": "greedy_insertion",
+      "score_b_winner": "greedy_insertion",
+      "score_b_improvement_points": -0.0629722921914464,
+      "sensitivity_winners": {
+        "0.25": "greedy_insertion",
+        "0.5": "greedy_insertion",
+        "0.75": "greedy_insertion"
+      },
+      "delivered_change": 0,
+      "on_time_change": -1,
+      "distance_change_km": -30.932999999999993
+    },
+    {
+      "day": "day_003",
+      "seed": 3,
+      "reference": "window_first_nearest",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "insertion_sa",
+      "score_b_improvement_points": 3.904282115869009,
+      "sensitivity_winners": {
+        "0.25": "insertion_sa",
+        "0.5": "insertion_sa",
+        "0.75": "insertion_sa"
+      },
+      "delivered_change": 1,
+      "on_time_change": 61,
+      "distance_change_km": -288.5130000000004
+    },
+    {
+      "day": "day_003",
+      "seed": 4,
+      "reference": "greedy_insertion",
+      "score_a_winner": "greedy_insertion",
+      "score_b_winner": "greedy_insertion",
+      "score_b_improvement_points": -0.0629722921914464,
+      "sensitivity_winners": {
+        "0.25": "greedy_insertion",
+        "0.5": "greedy_insertion",
+        "0.75": "greedy_insertion"
+      },
+      "delivered_change": 0,
+      "on_time_change": -1,
+      "distance_change_km": -30.932999999999993
+    },
+    {
+      "day": "day_003",
+      "seed": 4,
+      "reference": "window_first_nearest",
+      "score_a_winner": "insertion_sa",
+      "score_b_winner": "insertion_sa",
+      "score_b_improvement_points": 3.904282115869009,
+      "sensitivity_winners": {
+        "0.25": "insertion_sa",
+        "0.5": "insertion_sa",
+        "0.75": "insertion_sa"
+      },
+      "delivered_change": 1,
+      "on_time_change": 61,
+      "distance_change_km": -288.5130000000004
+    },
+    {
+      "day": "day_004",
+      "seed": 0,
+      "reference": "greedy_insertion",
+      "score_a_winner": "tied",
+      "score_b_winner": "tied",
+      "score_b_improvement_points": 0.0,
+      "sensitivity_winners": {
+        "0.25": "tied",
+        "0.5": "tied",
+        "0.75": "tied"
+      },
+      "delivered_change": 0,
+      "on_time_change": 0,
+      "distance_change_km": -0.11400000000048749
+    },
+    {
+      "day": "day_004",
+      "seed": 0,
+      "reference": "window_first_nearest",
+      "score_a_winner": "window_first_nearest",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -0.6806930693069404,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": -3,
+      "on_time_change": -8,
+      "distance_change_km": 22.496999999999844
+    },
+    {
+      "day": "day_004",
+      "seed": 1,
+      "reference": "greedy_insertion",
+      "score_a_winner": "tied",
+      "score_b_winner": "tied",
+      "score_b_improvement_points": 0.0,
+      "sensitivity_winners": {
+        "0.25": "tied",
+        "0.5": "tied",
+        "0.75": "tied"
+      },
+      "delivered_change": 0,
+      "on_time_change": 0,
+      "distance_change_km": -0.11400000000048749
+    },
+    {
+      "day": "day_004",
+      "seed": 1,
+      "reference": "window_first_nearest",
+      "score_a_winner": "window_first_nearest",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -0.6806930693069404,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": -3,
+      "on_time_change": -8,
+      "distance_change_km": 22.496999999999844
+    },
+    {
+      "day": "day_004",
+      "seed": 2,
+      "reference": "greedy_insertion",
+      "score_a_winner": "tied",
+      "score_b_winner": "tied",
+      "score_b_improvement_points": 0.0,
+      "sensitivity_winners": {
+        "0.25": "tied",
+        "0.5": "tied",
+        "0.75": "tied"
+      },
+      "delivered_change": 0,
+      "on_time_change": 0,
+      "distance_change_km": 0.0
+    },
+    {
+      "day": "day_004",
+      "seed": 2,
+      "reference": "window_first_nearest",
+      "score_a_winner": "window_first_nearest",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -0.6806930693069404,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": -3,
+      "on_time_change": -8,
+      "distance_change_km": 22.61100000000033
+    },
+    {
+      "day": "day_004",
+      "seed": 3,
+      "reference": "greedy_insertion",
+      "score_a_winner": "tied",
+      "score_b_winner": "tied",
+      "score_b_improvement_points": 0.0,
+      "sensitivity_winners": {
+        "0.25": "tied",
+        "0.5": "tied",
+        "0.75": "tied"
+      },
+      "delivered_change": 0,
+      "on_time_change": 0,
+      "distance_change_km": -0.11400000000048749
+    },
+    {
+      "day": "day_004",
+      "seed": 3,
+      "reference": "window_first_nearest",
+      "score_a_winner": "window_first_nearest",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -0.6806930693069404,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": -3,
+      "on_time_change": -8,
+      "distance_change_km": 22.496999999999844
+    },
+    {
+      "day": "day_004",
+      "seed": 4,
+      "reference": "greedy_insertion",
+      "score_a_winner": "tied",
+      "score_b_winner": "tied",
+      "score_b_improvement_points": 0.0,
+      "sensitivity_winners": {
+        "0.25": "tied",
+        "0.5": "tied",
+        "0.75": "tied"
+      },
+      "delivered_change": 0,
+      "on_time_change": 0,
+      "distance_change_km": -0.11400000000048749
+    },
+    {
+      "day": "day_004",
+      "seed": 4,
+      "reference": "window_first_nearest",
+      "score_a_winner": "window_first_nearest",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -0.6806930693069404,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": -3,
+      "on_time_change": -8,
+      "distance_change_km": 22.496999999999844
+    },
+    {
+      "day": "day_005",
+      "seed": 0,
+      "reference": "greedy_insertion",
+      "score_a_winner": "greedy_insertion",
+      "score_b_winner": "insertion_sa",
+      "score_b_improvement_points": 0.3101736972704714,
+      "sensitivity_winners": {
+        "0.25": "insertion_sa",
+        "0.5": "insertion_sa",
+        "0.75": "insertion_sa"
+      },
+      "delivered_change": -1,
+      "on_time_change": 6,
+      "distance_change_km": 52.51200000000017
+    },
+    {
+      "day": "day_005",
+      "seed": 0,
+      "reference": "window_first_nearest",
+      "score_a_winner": "window_first_nearest",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -4.466501240694782,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": -1,
+      "on_time_change": -71,
+      "distance_change_km": 62.13000000000011
+    },
+    {
+      "day": "day_005",
+      "seed": 1,
+      "reference": "greedy_insertion",
+      "score_a_winner": "greedy_insertion",
+      "score_b_winner": "insertion_sa",
+      "score_b_improvement_points": 0.3101736972704714,
+      "sensitivity_winners": {
+        "0.25": "insertion_sa",
+        "0.5": "insertion_sa",
+        "0.75": "insertion_sa"
+      },
+      "delivered_change": -1,
+      "on_time_change": 6,
+      "distance_change_km": 46.74000000000024
+    },
+    {
+      "day": "day_005",
+      "seed": 1,
+      "reference": "window_first_nearest",
+      "score_a_winner": "window_first_nearest",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -4.466501240694782,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": -1,
+      "on_time_change": -71,
+      "distance_change_km": 56.358000000000175
+    },
+    {
+      "day": "day_005",
+      "seed": 2,
+      "reference": "greedy_insertion",
+      "score_a_winner": "greedy_insertion",
+      "score_b_winner": "insertion_sa",
+      "score_b_improvement_points": 0.3101736972704714,
+      "sensitivity_winners": {
+        "0.25": "insertion_sa",
+        "0.5": "insertion_sa",
+        "0.75": "insertion_sa"
+      },
+      "delivered_change": -1,
+      "on_time_change": 6,
+      "distance_change_km": 52.9020000000005
+    },
+    {
+      "day": "day_005",
+      "seed": 2,
+      "reference": "window_first_nearest",
+      "score_a_winner": "window_first_nearest",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -4.466501240694782,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": -1,
+      "on_time_change": -71,
+      "distance_change_km": 62.52000000000044
+    },
+    {
+      "day": "day_005",
+      "seed": 3,
+      "reference": "greedy_insertion",
+      "score_a_winner": "greedy_insertion",
+      "score_b_winner": "greedy_insertion",
+      "score_b_improvement_points": -0.18610421836228852,
+      "sensitivity_winners": {
+        "0.25": "greedy_insertion",
+        "0.5": "greedy_insertion",
+        "0.75": "greedy_insertion"
+      },
+      "delivered_change": -2,
+      "on_time_change": -1,
+      "distance_change_km": 45.35100000000011
+    },
+    {
+      "day": "day_005",
+      "seed": 3,
+      "reference": "window_first_nearest",
+      "score_a_winner": "window_first_nearest",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -4.962779156327542,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": -2,
+      "on_time_change": -78,
+      "distance_change_km": 54.96900000000005
+    },
+    {
+      "day": "day_005",
+      "seed": 4,
+      "reference": "greedy_insertion",
+      "score_a_winner": "greedy_insertion",
+      "score_b_winner": "insertion_sa",
+      "score_b_improvement_points": 0.3101736972704714,
+      "sensitivity_winners": {
+        "0.25": "insertion_sa",
+        "0.5": "insertion_sa",
+        "0.75": "insertion_sa"
+      },
+      "delivered_change": -1,
+      "on_time_change": 6,
+      "distance_change_km": 54.077999999999975
+    },
+    {
+      "day": "day_005",
+      "seed": 4,
+      "reference": "window_first_nearest",
+      "score_a_winner": "window_first_nearest",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -4.466501240694782,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": -1,
+      "on_time_change": -71,
+      "distance_change_km": 63.69599999999991
+    }
+  ],
+  "replay_summary": {
+    "run_count": 25,
+    "python_version": "3.15.2",
+    "matches_simulation_python_version": true,
+    "independent_days": 5,
+    "fixed_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "planning_decisions": 2159,
+    "swap_attempts": 1520000,
+    "constructors_computed": 251,
+    "identical_constructor_cache_hits": 1908,
+    "elapsed_seconds": 35.78986670899758
+  },
+  "limitations": [
+    "These are five development days with five seeded repetitions each, not25 independent days.",
+    "No pooled or mean score across days was selected; seed means and sample SD are reported separately per day.",
+    "Seeded variation does not establish statistical significance or performance on untested days.",
+    "Best dominance is per current constructor route; it does not guarantee higher complete-day service because earlier returns change later decisions."
+  ]
+}

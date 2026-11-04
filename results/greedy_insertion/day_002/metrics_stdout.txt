@@ -1,0 +1,1 @@
+Metrics report: results/greedy_insertion/day_002/metrics.json

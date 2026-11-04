@@ -1,0 +1,939 @@
+{
+  "recorded_date": "2026-10-31",
+  "scope": "Retrospective fixed-trip relocation example from the existing window-first day003 log; not a new policy or a complete-day simulation.",
+  "vehicle_id": 1,
+  "trip_id": 2,
+  "planning_clock": "12:30",
+  "departure_clock": "13:00",
+  "move": {
+    "parcel_id": "P000487",
+    "from_position_1_based": 1,
+    "to_position_1_based": 33,
+    "other_parcel_order_preserved": true
+  },
+  "before": {
+    "parcel_ids": [
+      "P000487",
+      "P000084",
+      "P000441",
+      "P000420",
+      "P000324",
+      "P000566",
+      "P000008",
+      "P000588",
+      "P000080",
+      "P000300",
+      "P000753",
+      "P000500",
+      "P000322",
+      "P000508",
+      "P000634",
+      "P000265",
+      "P000390",
+      "P000493",
+      "P000346",
+      "P000235",
+      "P000769",
+      "P000234",
+      "P000031",
+      "P000337",
+      "P000305",
+      "P000107",
+      "P000226",
+      "P000794",
+      "P000672",
+      "P000546",
+      "P000569",
+      "P000554",
+      "P000002"
+    ],
+    "parcel_count": 33,
+    "load": 29.9,
+    "timing_counts": {
+      "on_time": 5,
+      "early": 0,
+      "late": 28
+    },
+    "service_credit": 19.0,
+    "distance_km": 176.181,
+    "return_minutes": 956.181,
+    "return_clock": "15:56:10.86",
+    "feasible": true,
+    "deliveries": [
+      {
+        "parcel_id": "P000487",
+        "location": "L019",
+        "window": [
+          "09:07",
+          "10:34"
+        ],
+        "size": 0.5,
+        "delivery_minutes": 802.131,
+        "delivery_clock": "13:22:07.86",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000084",
+        "location": "L031",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.9,
+        "delivery_minutes": 858.384,
+        "delivery_clock": "14:18:23.04",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000441",
+        "location": "L031",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.3,
+        "delivery_minutes": 858.384,
+        "delivery_clock": "14:18:23.04",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000420",
+        "location": "L031",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.2,
+        "delivery_minutes": 858.384,
+        "delivery_clock": "14:18:23.04",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000324",
+        "location": "L018",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.4,
+        "delivery_minutes": 864.468,
+        "delivery_clock": "14:24:28.08",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000566",
+        "location": "L018",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.9,
+        "delivery_minutes": 864.468,
+        "delivery_clock": "14:24:28.08",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000008",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.8,
+        "delivery_minutes": 906.006,
+        "delivery_clock": "15:06:00.36",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000588",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.5,
+        "delivery_minutes": 906.006,
+        "delivery_clock": "15:06:00.36",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000080",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.7,
+        "delivery_minutes": 906.006,
+        "delivery_clock": "15:06:00.36",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000300",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.6,
+        "delivery_minutes": 906.006,
+        "delivery_clock": "15:06:00.36",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000753",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.3,
+        "delivery_minutes": 906.006,
+        "delivery_clock": "15:06:00.36",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000500",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.5,
+        "delivery_minutes": 906.006,
+        "delivery_clock": "15:06:00.36",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000322",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.9,
+        "delivery_minutes": 906.006,
+        "delivery_clock": "15:06:00.36",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000508",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.8,
+        "delivery_minutes": 906.006,
+        "delivery_clock": "15:06:00.36",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000634",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.3,
+        "delivery_minutes": 906.006,
+        "delivery_clock": "15:06:00.36",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000265",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.5,
+        "delivery_minutes": 906.006,
+        "delivery_clock": "15:06:00.36",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000390",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.4,
+        "delivery_minutes": 906.006,
+        "delivery_clock": "15:06:00.36",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000493",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.2,
+        "delivery_minutes": 906.006,
+        "delivery_clock": "15:06:00.36",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000346",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.7,
+        "delivery_minutes": 906.006,
+        "delivery_clock": "15:06:00.36",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000235",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.9,
+        "delivery_minutes": 906.006,
+        "delivery_clock": "15:06:00.36",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000769",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.7,
+        "delivery_minutes": 906.006,
+        "delivery_clock": "15:06:00.36",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000234",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.6,
+        "delivery_minutes": 909.0659999999999,
+        "delivery_clock": "15:09:03.96",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000031",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.2,
+        "delivery_minutes": 909.0659999999999,
+        "delivery_clock": "15:09:03.96",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000337",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.5,
+        "delivery_minutes": 909.0659999999999,
+        "delivery_clock": "15:09:03.96",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000305",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.9,
+        "delivery_minutes": 909.0659999999999,
+        "delivery_clock": "15:09:03.96",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000107",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.7,
+        "delivery_minutes": 909.0659999999999,
+        "delivery_clock": "15:09:03.96",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000226",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.5,
+        "delivery_minutes": 909.0659999999999,
+        "delivery_clock": "15:09:03.96",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000794",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.7,
+        "delivery_minutes": 909.0659999999999,
+        "delivery_clock": "15:09:03.96",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000672",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.9,
+        "delivery_minutes": 909.0659999999999,
+        "delivery_clock": "15:09:03.96",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000546",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.2,
+        "delivery_minutes": 909.0659999999999,
+        "delivery_clock": "15:09:03.96",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000569",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.3,
+        "delivery_minutes": 909.0659999999999,
+        "delivery_clock": "15:09:03.96",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000554",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.1,
+        "delivery_minutes": 909.0659999999999,
+        "delivery_clock": "15:09:03.96",
+        "status": "late"
+      },
+      {
+        "parcel_id": "P000002",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.3,
+        "delivery_minutes": 909.0659999999999,
+        "delivery_clock": "15:09:03.96",
+        "status": "late"
+      }
+    ]
+  },
+  "after": {
+    "parcel_ids": [
+      "P000084",
+      "P000441",
+      "P000420",
+      "P000324",
+      "P000566",
+      "P000008",
+      "P000588",
+      "P000080",
+      "P000300",
+      "P000753",
+      "P000500",
+      "P000322",
+      "P000508",
+      "P000634",
+      "P000265",
+      "P000390",
+      "P000493",
+      "P000346",
+      "P000235",
+      "P000769",
+      "P000234",
+      "P000031",
+      "P000337",
+      "P000305",
+      "P000107",
+      "P000226",
+      "P000794",
+      "P000672",
+      "P000546",
+      "P000569",
+      "P000554",
+      "P000002",
+      "P000487"
+    ],
+    "parcel_count": 33,
+    "load": 29.9,
+    "timing_counts": {
+      "on_time": 27,
+      "early": 5,
+      "late": 1
+    },
+    "service_credit": 30.0,
+    "distance_km": 138.738,
+    "return_minutes": 918.738,
+    "return_clock": "15:18:44.28",
+    "feasible": true,
+    "deliveries": [
+      {
+        "parcel_id": "P000084",
+        "location": "L031",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.9,
+        "delivery_minutes": 820.662,
+        "delivery_clock": "13:40:39.72",
+        "status": "early"
+      },
+      {
+        "parcel_id": "P000441",
+        "location": "L031",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.3,
+        "delivery_minutes": 820.662,
+        "delivery_clock": "13:40:39.72",
+        "status": "early"
+      },
+      {
+        "parcel_id": "P000420",
+        "location": "L031",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.2,
+        "delivery_minutes": 820.662,
+        "delivery_clock": "13:40:39.72",
+        "status": "early"
+      },
+      {
+        "parcel_id": "P000324",
+        "location": "L018",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.4,
+        "delivery_minutes": 826.746,
+        "delivery_clock": "13:46:44.76",
+        "status": "early"
+      },
+      {
+        "parcel_id": "P000566",
+        "location": "L018",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.9,
+        "delivery_minutes": 826.746,
+        "delivery_clock": "13:46:44.76",
+        "status": "early"
+      },
+      {
+        "parcel_id": "P000008",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.8,
+        "delivery_minutes": 868.284,
+        "delivery_clock": "14:28:17.04",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000588",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.5,
+        "delivery_minutes": 868.284,
+        "delivery_clock": "14:28:17.04",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000080",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.7,
+        "delivery_minutes": 868.284,
+        "delivery_clock": "14:28:17.04",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000300",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.6,
+        "delivery_minutes": 868.284,
+        "delivery_clock": "14:28:17.04",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000753",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.3,
+        "delivery_minutes": 868.284,
+        "delivery_clock": "14:28:17.04",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000500",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.5,
+        "delivery_minutes": 868.284,
+        "delivery_clock": "14:28:17.04",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000322",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.9,
+        "delivery_minutes": 868.284,
+        "delivery_clock": "14:28:17.04",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000508",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.8,
+        "delivery_minutes": 868.284,
+        "delivery_clock": "14:28:17.04",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000634",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.3,
+        "delivery_minutes": 868.284,
+        "delivery_clock": "14:28:17.04",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000265",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.5,
+        "delivery_minutes": 868.284,
+        "delivery_clock": "14:28:17.04",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000390",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.4,
+        "delivery_minutes": 868.284,
+        "delivery_clock": "14:28:17.04",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000493",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.2,
+        "delivery_minutes": 868.284,
+        "delivery_clock": "14:28:17.04",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000346",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.7,
+        "delivery_minutes": 868.284,
+        "delivery_clock": "14:28:17.04",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000235",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.9,
+        "delivery_minutes": 868.284,
+        "delivery_clock": "14:28:17.04",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000769",
+        "location": "L015",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.7,
+        "delivery_minutes": 868.284,
+        "delivery_clock": "14:28:17.04",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000234",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.6,
+        "delivery_minutes": 871.3439999999999,
+        "delivery_clock": "14:31:20.64",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000031",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.2,
+        "delivery_minutes": 871.3439999999999,
+        "delivery_clock": "14:31:20.64",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000337",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.5,
+        "delivery_minutes": 871.3439999999999,
+        "delivery_clock": "14:31:20.64",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000305",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.9,
+        "delivery_minutes": 871.3439999999999,
+        "delivery_clock": "14:31:20.64",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000107",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.7,
+        "delivery_minutes": 871.3439999999999,
+        "delivery_clock": "14:31:20.64",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000226",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.5,
+        "delivery_minutes": 871.3439999999999,
+        "delivery_clock": "14:31:20.64",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000794",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.7,
+        "delivery_minutes": 871.3439999999999,
+        "delivery_clock": "14:31:20.64",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000672",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.9,
+        "delivery_minutes": 871.3439999999999,
+        "delivery_clock": "14:31:20.64",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000546",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.2,
+        "delivery_minutes": 871.3439999999999,
+        "delivery_clock": "14:31:20.64",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000569",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.3,
+        "delivery_minutes": 871.3439999999999,
+        "delivery_clock": "14:31:20.64",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000554",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 1.1,
+        "delivery_minutes": 871.3439999999999,
+        "delivery_clock": "14:31:20.64",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000002",
+        "location": "L025",
+        "window": [
+          "13:58",
+          "15:03"
+        ],
+        "size": 0.3,
+        "delivery_minutes": 871.3439999999999,
+        "delivery_clock": "14:31:20.64",
+        "status": "on_time"
+      },
+      {
+        "parcel_id": "P000487",
+        "location": "L019",
+        "window": [
+          "09:07",
+          "10:34"
+        ],
+        "size": 0.5,
+        "delivery_minutes": 896.607,
+        "delivery_clock": "14:56:36.42",
+        "status": "late"
+      }
+    ]
+  },
+  "interpretation": "Same33 parcels and29.9load. Moving an already-late parcel to the end changes other ETAs; total service credit rises19to30 and distance falls. Whole-day performance is unknown until a new policy is agreed and simulated.",
+  "proposal_not_confirmed": {
+    "algorithm": "Local search by single-parcel relocation after window-first construction.",
+    "candidate_ranking": "More in-window deliveries first; shorter complete-trip distance only when count ties.",
+    "selection": "Scan all feasible single-parcel relocations, accept the best strict improvement, repeat.",
+    "stopping": "Stop with no improvement or after at most5complete neighbourhood scans;5 is a proposed computation budget, not optimal or tuned.",
+    "membership": "Keep the selected parcel set fixed.",
+    "global_metric_ties": "This route-selection tie rule does not settle the open overall ScoreB tie rule or aggregation method."
+  },
+  "sha256": {
+    "data/demand/day_003.csv": "0a096f1a766d6c27ffa4518eca6c0be76a3d8904de4c7810fcdd04a2f750fab1",
+    "data/dist.csv": "56a58884cdcbd609c14bd627c70691d272e2f2faf8262d3b9e9131423659c16a",
+    "data/config.json": "6041005abea965629ca15dbdb4d7038cdfc3f0a30ee0cd08f3efdb98cd04fdd8",
+    "results/window_first_nearest/day_003/log.txt": "a0c659903fd40382aa9bc924ace81077c48d573a985bd7c85eab17eb5932c5db",
+    "solution/policies/window_first_nearest.py": "9c97552eebc0561b588ef45ab25abb9d117a566050c2d920df95563037e0d508"
+  },
+  "verification": {
+    "original_delivery_times_match_logged_trip": true,
+    "independent_check": {
+      "passed": true,
+      "method": "Separate standard-library replay of CSV inputs, directed distance matrix, and logged trip; original delivery times, fixed membership/load, both complete-route constraints, and timing transitions independently confirmed.",
+      "timing_transitions": {
+        "late_to_on_time": 27,
+        "on_time_to_early": 5,
+        "moved_parcel_late_to_late": 1
+      },
+      "other_32_deliveries_earlier_minutes": 37.722,
+      "moved_parcel_later_minutes": 94.476
+    }
+  },
+  "design_status": "Not selected. User redirected to discussion of an independent greedy constructor rather than local-search refinement."
+}

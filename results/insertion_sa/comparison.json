@@ -1,0 +1,2601 @@
+{
+  "scope": "One fixed GI+SA configuration, five development days, five seeds per day. Replications are within-day seed variation, not 25 independent input days.",
+  "settings": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "iterations_per_trip": 2000,
+    "initial_temperature": 0.41529177254126864,
+    "initial_acceptance_for_half_credit_loss": 0.3,
+    "cooling_rate": 0.995,
+    "objective": "Rawroutecredit,on-time1/outside.5;distanceonlybest-route tiebreak",
+    "constructor": "original greedy insertion freshly called each dispatch",
+    "neighbourhood": "swap two distinct parcel positions, fixed membership",
+    "rng": "dedicatedRandom(seed)initialisedonceperrun",
+    "cooling": "onceperattemptincludinginfeasible"
+  },
+  "aggregation": {
+    "across_days_final_score": "Not selected; no pooled or mean overall Score B is reported.",
+    "within_day": "Arithmetic mean, range, and sample standard deviation across seeds 0\u20134.",
+    "paired_outcome_counts": "Descriptive counts only; each input day is repeated five times."
+  },
+  "days": {
+    "day_001": {
+      "references": {
+        "greedy_insertion": {
+          "total_parcels": 799,
+          "delivered_parcels": 763,
+          "on_time_parcels": 628,
+          "early_parcels": 0,
+          "late_parcels": 135,
+          "undelivered_parcels": 36,
+          "completion_rate_pct": 95.49436795994994,
+          "on_time_service_rate_pct": 78.5982478097622,
+          "score_a": {
+            "completion_rate_pct": 95.49436795994994,
+            "on_time_tiebreak_pct": 78.5982478097622
+          },
+          "outside_window_credit": 0.5,
+          "score_b": 87.04630788485608,
+          "score_b_sensitivity": {
+            "0.25": 82.82227784730914,
+            "0.5": 87.04630788485608,
+            "0.75": 91.270337922403
+          },
+          "number_of_trips": 33,
+          "total_distance_km": 4239.267,
+          "average_load_utilisation_pct": 73.46464646464646
+        },
+        "window_first_nearest": {
+          "total_parcels": 799,
+          "delivered_parcels": 762,
+          "on_time_parcels": 688,
+          "early_parcels": 0,
+          "late_parcels": 74,
+          "undelivered_parcels": 37,
+          "completion_rate_pct": 95.36921151439299,
+          "on_time_service_rate_pct": 86.10763454317897,
+          "score_a": {
+            "completion_rate_pct": 95.36921151439299,
+            "on_time_tiebreak_pct": 86.10763454317897
+          },
+          "outside_window_credit": 0.5,
+          "score_b": 90.73842302878599,
+          "score_b_sensitivity": {
+            "0.25": 88.42302878598248,
+            "0.5": 90.73842302878599,
+            "0.75": 93.05381727158948
+          },
+          "number_of_trips": 33,
+          "total_distance_km": 4088.208,
+          "average_load_utilisation_pct": 73.34343434343434
+        }
+      },
+      "runs": [
+        {
+          "seed": 0,
+          "metrics": {
+            "total_parcels": 799,
+            "delivered_parcels": 763,
+            "on_time_parcels": 628,
+            "early_parcels": 0,
+            "late_parcels": 135,
+            "undelivered_parcels": 36,
+            "completion_rate_pct": 95.49436795994994,
+            "on_time_service_rate_pct": 78.5982478097622,
+            "score_a": {
+              "completion_rate_pct": 95.49436795994994,
+              "on_time_tiebreak_pct": 78.5982478097622
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 87.04630788485608,
+            "score_b_sensitivity": {
+              "0.25": 82.82227784730914,
+              "0.5": 87.04630788485608,
+              "0.75": 91.270337922403
+            },
+            "number_of_trips": 33,
+            "total_distance_km": 4233.228,
+            "average_load_utilisation_pct": 73.46464646464646
+          },
+          "simulation_seconds": 4.718897958002344,
+          "planning_audit_counts": {
+            "dispatch_calls": 77,
+            "nonempty_routes": 33,
+            "searched_routes": 31,
+            "higher_credit_returned": 0,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 76,
+            "attempts": 62000,
+            "infeasible_proposals": 18162,
+            "accepted_better": 17,
+            "accepted_equal": 36024,
+            "accepted_worse": 17
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "tie",
+                "score_b": "tie",
+                "0.25": "tie",
+                "0.5": "tie",
+                "0.75": "tie"
+              },
+              "score_b_delta_points": 0.0,
+              "delivered_delta": 0,
+              "on_time_delta": 0,
+              "distance_delta_km": -6.03899999999976
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -3.692115143929911,
+              "delivered_delta": 1,
+              "on_time_delta": -60,
+              "distance_delta_km": 145.01999999999998
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "metrics": {
+            "total_parcels": 799,
+            "delivered_parcels": 763,
+            "on_time_parcels": 628,
+            "early_parcels": 0,
+            "late_parcels": 135,
+            "undelivered_parcels": 36,
+            "completion_rate_pct": 95.49436795994994,
+            "on_time_service_rate_pct": 78.5982478097622,
+            "score_a": {
+              "completion_rate_pct": 95.49436795994994,
+              "on_time_tiebreak_pct": 78.5982478097622
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 87.04630788485608,
+            "score_b_sensitivity": {
+              "0.25": 82.82227784730914,
+              "0.5": 87.04630788485608,
+              "0.75": 91.270337922403
+            },
+            "number_of_trips": 33,
+            "total_distance_km": 4233.228,
+            "average_load_utilisation_pct": 73.46464646464646
+          },
+          "simulation_seconds": 4.598434957999416,
+          "planning_audit_counts": {
+            "dispatch_calls": 77,
+            "nonempty_routes": 33,
+            "searched_routes": 31,
+            "higher_credit_returned": 0,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 76,
+            "attempts": 62000,
+            "infeasible_proposals": 18373,
+            "accepted_better": 9,
+            "accepted_equal": 35727,
+            "accepted_worse": 10
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "tie",
+                "score_b": "tie",
+                "0.25": "tie",
+                "0.5": "tie",
+                "0.75": "tie"
+              },
+              "score_b_delta_points": 0.0,
+              "delivered_delta": 0,
+              "on_time_delta": 0,
+              "distance_delta_km": -6.03899999999976
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -3.692115143929911,
+              "delivered_delta": 1,
+              "on_time_delta": -60,
+              "distance_delta_km": 145.01999999999998
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "metrics": {
+            "total_parcels": 799,
+            "delivered_parcels": 763,
+            "on_time_parcels": 628,
+            "early_parcels": 0,
+            "late_parcels": 135,
+            "undelivered_parcels": 36,
+            "completion_rate_pct": 95.49436795994994,
+            "on_time_service_rate_pct": 78.5982478097622,
+            "score_a": {
+              "completion_rate_pct": 95.49436795994994,
+              "on_time_tiebreak_pct": 78.5982478097622
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 87.04630788485608,
+            "score_b_sensitivity": {
+              "0.25": 82.82227784730914,
+              "0.5": 87.04630788485608,
+              "0.75": 91.270337922403
+            },
+            "number_of_trips": 33,
+            "total_distance_km": 4239.267,
+            "average_load_utilisation_pct": 73.46464646464646
+          },
+          "simulation_seconds": 4.648266750002222,
+          "planning_audit_counts": {
+            "dispatch_calls": 77,
+            "nonempty_routes": 33,
+            "searched_routes": 31,
+            "higher_credit_returned": 0,
+            "equal_credit_shorter_returned": 0,
+            "same_order_returned": 77,
+            "attempts": 62000,
+            "infeasible_proposals": 18045,
+            "accepted_better": 15,
+            "accepted_equal": 36238,
+            "accepted_worse": 15
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "tie",
+                "score_b": "tie",
+                "0.25": "tie",
+                "0.5": "tie",
+                "0.75": "tie"
+              },
+              "score_b_delta_points": 0.0,
+              "delivered_delta": 0,
+              "on_time_delta": 0,
+              "distance_delta_km": 0.0
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -3.692115143929911,
+              "delivered_delta": 1,
+              "on_time_delta": -60,
+              "distance_delta_km": 151.05899999999974
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "metrics": {
+            "total_parcels": 799,
+            "delivered_parcels": 763,
+            "on_time_parcels": 628,
+            "early_parcels": 0,
+            "late_parcels": 135,
+            "undelivered_parcels": 36,
+            "completion_rate_pct": 95.49436795994994,
+            "on_time_service_rate_pct": 78.5982478097622,
+            "score_a": {
+              "completion_rate_pct": 95.49436795994994,
+              "on_time_tiebreak_pct": 78.5982478097622
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 87.04630788485608,
+            "score_b_sensitivity": {
+              "0.25": 82.82227784730914,
+              "0.5": 87.04630788485608,
+              "0.75": 91.270337922403
+            },
+            "number_of_trips": 33,
+            "total_distance_km": 4233.228,
+            "average_load_utilisation_pct": 73.46464646464646
+          },
+          "simulation_seconds": 4.684695708001527,
+          "planning_audit_counts": {
+            "dispatch_calls": 77,
+            "nonempty_routes": 33,
+            "searched_routes": 31,
+            "higher_credit_returned": 0,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 76,
+            "attempts": 62000,
+            "infeasible_proposals": 17793,
+            "accepted_better": 15,
+            "accepted_equal": 36330,
+            "accepted_worse": 16
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "tie",
+                "score_b": "tie",
+                "0.25": "tie",
+                "0.5": "tie",
+                "0.75": "tie"
+              },
+              "score_b_delta_points": 0.0,
+              "delivered_delta": 0,
+              "on_time_delta": 0,
+              "distance_delta_km": -6.03899999999976
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -3.692115143929911,
+              "delivered_delta": 1,
+              "on_time_delta": -60,
+              "distance_delta_km": 145.01999999999998
+            }
+          }
+        },
+        {
+          "seed": 4,
+          "metrics": {
+            "total_parcels": 799,
+            "delivered_parcels": 763,
+            "on_time_parcels": 628,
+            "early_parcels": 0,
+            "late_parcels": 135,
+            "undelivered_parcels": 36,
+            "completion_rate_pct": 95.49436795994994,
+            "on_time_service_rate_pct": 78.5982478097622,
+            "score_a": {
+              "completion_rate_pct": 95.49436795994994,
+              "on_time_tiebreak_pct": 78.5982478097622
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 87.04630788485608,
+            "score_b_sensitivity": {
+              "0.25": 82.82227784730914,
+              "0.5": 87.04630788485608,
+              "0.75": 91.270337922403
+            },
+            "number_of_trips": 33,
+            "total_distance_km": 4233.228,
+            "average_load_utilisation_pct": 73.46464646464646
+          },
+          "simulation_seconds": 4.8609270000015385,
+          "planning_audit_counts": {
+            "dispatch_calls": 77,
+            "nonempty_routes": 33,
+            "searched_routes": 31,
+            "higher_credit_returned": 0,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 76,
+            "attempts": 62000,
+            "infeasible_proposals": 17736,
+            "accepted_better": 6,
+            "accepted_equal": 36658,
+            "accepted_worse": 7
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "tie",
+                "score_b": "tie",
+                "0.25": "tie",
+                "0.5": "tie",
+                "0.75": "tie"
+              },
+              "score_b_delta_points": 0.0,
+              "delivered_delta": 0,
+              "on_time_delta": 0,
+              "distance_delta_km": -6.03899999999976
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -3.692115143929911,
+              "delivered_delta": 1,
+              "on_time_delta": -60,
+              "distance_delta_km": 145.01999999999998
+            }
+          }
+        }
+      ],
+      "within_day_seed_summary": {
+        "delivered_parcels": {
+          "mean": 763,
+          "min": 763,
+          "max": 763,
+          "sample_sd": 0.0
+        },
+        "on_time_parcels": {
+          "mean": 628,
+          "min": 628,
+          "max": 628,
+          "sample_sd": 0.0
+        },
+        "early_parcels": {
+          "mean": 0,
+          "min": 0,
+          "max": 0,
+          "sample_sd": 0.0
+        },
+        "late_parcels": {
+          "mean": 135,
+          "min": 135,
+          "max": 135,
+          "sample_sd": 0.0
+        },
+        "undelivered_parcels": {
+          "mean": 36,
+          "min": 36,
+          "max": 36,
+          "sample_sd": 0.0
+        },
+        "completion_rate_pct": {
+          "mean": 95.49436795994994,
+          "min": 95.49436795994994,
+          "max": 95.49436795994994,
+          "sample_sd": 0.0
+        },
+        "on_time_service_rate_pct": {
+          "mean": 78.5982478097622,
+          "min": 78.5982478097622,
+          "max": 78.5982478097622,
+          "sample_sd": 0.0
+        },
+        "score_b": {
+          "mean": 87.04630788485608,
+          "min": 87.04630788485608,
+          "max": 87.04630788485608,
+          "sample_sd": 0.0
+        },
+        "number_of_trips": {
+          "mean": 33,
+          "min": 33,
+          "max": 33,
+          "sample_sd": 0.0
+        },
+        "total_distance_km": {
+          "mean": 4234.4358,
+          "min": 4233.228,
+          "max": 4239.267,
+          "sample_sd": 2.7007229032241384
+        },
+        "average_load_utilisation_pct": {
+          "mean": 73.46464646464646,
+          "min": 73.46464646464646,
+          "max": 73.46464646464646,
+          "sample_sd": 0.0
+        },
+        "simulation_seconds": {
+          "mean": 4.702244474801409,
+          "min": 4.598434957999416,
+          "max": 4.8609270000015385,
+          "sample_sd": 0.09931698253064565
+        }
+      },
+      "paired_summary": {
+        "greedy_insertion": {
+          "score_b_mean_delta_points": 0.0,
+          "score_b_seed_outcomes": {
+            "tie": 5
+          },
+          "score_a_seed_outcomes": {
+            "tie": 5
+          }
+        },
+        "window_first_nearest": {
+          "score_b_mean_delta_points": -3.692115143929911,
+          "score_b_seed_outcomes": {
+            "loss": 5
+          },
+          "score_a_seed_outcomes": {
+            "win": 5
+          }
+        }
+      }
+    },
+    "day_002": {
+      "references": {
+        "greedy_insertion": {
+          "total_parcels": 772,
+          "delivered_parcels": 738,
+          "on_time_parcels": 617,
+          "early_parcels": 1,
+          "late_parcels": 120,
+          "undelivered_parcels": 34,
+          "completion_rate_pct": 95.5958549222798,
+          "on_time_service_rate_pct": 79.92227979274611,
+          "score_a": {
+            "completion_rate_pct": 95.5958549222798,
+            "on_time_tiebreak_pct": 79.92227979274611
+          },
+          "outside_window_credit": 0.5,
+          "score_b": 87.75906735751295,
+          "score_b_sensitivity": {
+            "0.25": 83.84067357512953,
+            "0.5": 87.75906735751295,
+            "0.75": 91.67746113989638
+          },
+          "number_of_trips": 33,
+          "total_distance_km": 4196.331,
+          "average_load_utilisation_pct": 73.45454545454545
+        },
+        "window_first_nearest": {
+          "total_parcels": 772,
+          "delivered_parcels": 736,
+          "on_time_parcels": 682,
+          "early_parcels": 0,
+          "late_parcels": 54,
+          "undelivered_parcels": 36,
+          "completion_rate_pct": 95.33678756476684,
+          "on_time_service_rate_pct": 88.34196891191709,
+          "score_a": {
+            "completion_rate_pct": 95.33678756476684,
+            "on_time_tiebreak_pct": 88.34196891191709
+          },
+          "outside_window_credit": 0.5,
+          "score_b": 91.83937823834196,
+          "score_b_sensitivity": {
+            "0.25": 90.09067357512953,
+            "0.5": 91.83937823834196,
+            "0.75": 93.5880829015544
+          },
+          "number_of_trips": 33,
+          "total_distance_km": 4230.924,
+          "average_load_utilisation_pct": 73.35353535353535
+        }
+      },
+      "runs": [
+        {
+          "seed": 0,
+          "metrics": {
+            "total_parcels": 772,
+            "delivered_parcels": 738,
+            "on_time_parcels": 618,
+            "early_parcels": 0,
+            "late_parcels": 120,
+            "undelivered_parcels": 34,
+            "completion_rate_pct": 95.5958549222798,
+            "on_time_service_rate_pct": 80.05181347150258,
+            "score_a": {
+              "completion_rate_pct": 95.5958549222798,
+              "on_time_tiebreak_pct": 80.05181347150258
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 87.8238341968912,
+            "score_b_sensitivity": {
+              "0.25": 83.93782383419689,
+              "0.5": 87.8238341968912,
+              "0.75": 91.70984455958549
+            },
+            "number_of_trips": 32,
+            "total_distance_km": 4221.195,
+            "average_load_utilisation_pct": 75.75
+          },
+          "simulation_seconds": 3.7629397080017952,
+          "planning_audit_counts": {
+            "dispatch_calls": 78,
+            "nonempty_routes": 32,
+            "searched_routes": 30,
+            "higher_credit_returned": 1,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 76,
+            "attempts": 60000,
+            "infeasible_proposals": 18133,
+            "accepted_better": 21,
+            "accepted_equal": 35175,
+            "accepted_worse": 19
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "win",
+                "0.25": "win",
+                "0.5": "win",
+                "0.75": "win"
+              },
+              "score_b_delta_points": 0.064766839378251,
+              "delivered_delta": 0,
+              "on_time_delta": 1,
+              "distance_delta_km": 24.863999999999578
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -4.015544041450767,
+              "delivered_delta": 2,
+              "on_time_delta": -64,
+              "distance_delta_km": -9.72900000000027
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "metrics": {
+            "total_parcels": 772,
+            "delivered_parcels": 738,
+            "on_time_parcels": 618,
+            "early_parcels": 0,
+            "late_parcels": 120,
+            "undelivered_parcels": 34,
+            "completion_rate_pct": 95.5958549222798,
+            "on_time_service_rate_pct": 80.05181347150258,
+            "score_a": {
+              "completion_rate_pct": 95.5958549222798,
+              "on_time_tiebreak_pct": 80.05181347150258
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 87.8238341968912,
+            "score_b_sensitivity": {
+              "0.25": 83.93782383419689,
+              "0.5": 87.8238341968912,
+              "0.75": 91.70984455958549
+            },
+            "number_of_trips": 32,
+            "total_distance_km": 4215.417,
+            "average_load_utilisation_pct": 75.75
+          },
+          "simulation_seconds": 3.7358067919994937,
+          "planning_audit_counts": {
+            "dispatch_calls": 79,
+            "nonempty_routes": 32,
+            "searched_routes": 30,
+            "higher_credit_returned": 1,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 77,
+            "attempts": 60000,
+            "infeasible_proposals": 18202,
+            "accepted_better": 16,
+            "accepted_equal": 34731,
+            "accepted_worse": 16
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "win",
+                "0.25": "win",
+                "0.5": "win",
+                "0.75": "win"
+              },
+              "score_b_delta_points": 0.064766839378251,
+              "delivered_delta": 0,
+              "on_time_delta": 1,
+              "distance_delta_km": 19.08600000000024
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -4.015544041450767,
+              "delivered_delta": 2,
+              "on_time_delta": -64,
+              "distance_delta_km": -15.506999999999607
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "metrics": {
+            "total_parcels": 772,
+            "delivered_parcels": 738,
+            "on_time_parcels": 618,
+            "early_parcels": 0,
+            "late_parcels": 120,
+            "undelivered_parcels": 34,
+            "completion_rate_pct": 95.5958549222798,
+            "on_time_service_rate_pct": 80.05181347150258,
+            "score_a": {
+              "completion_rate_pct": 95.5958549222798,
+              "on_time_tiebreak_pct": 80.05181347150258
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 87.8238341968912,
+            "score_b_sensitivity": {
+              "0.25": 83.93782383419689,
+              "0.5": 87.8238341968912,
+              "0.75": 91.70984455958549
+            },
+            "number_of_trips": 32,
+            "total_distance_km": 4214.577,
+            "average_load_utilisation_pct": 75.75
+          },
+          "simulation_seconds": 3.79193508300159,
+          "planning_audit_counts": {
+            "dispatch_calls": 79,
+            "nonempty_routes": 32,
+            "searched_routes": 30,
+            "higher_credit_returned": 1,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 77,
+            "attempts": 60000,
+            "infeasible_proposals": 18272,
+            "accepted_better": 10,
+            "accepted_equal": 35157,
+            "accepted_worse": 10
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "win",
+                "0.25": "win",
+                "0.5": "win",
+                "0.75": "win"
+              },
+              "score_b_delta_points": 0.064766839378251,
+              "delivered_delta": 0,
+              "on_time_delta": 1,
+              "distance_delta_km": 18.246000000000095
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -4.015544041450767,
+              "delivered_delta": 2,
+              "on_time_delta": -64,
+              "distance_delta_km": -16.346999999999753
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "metrics": {
+            "total_parcels": 772,
+            "delivered_parcels": 738,
+            "on_time_parcels": 618,
+            "early_parcels": 0,
+            "late_parcels": 120,
+            "undelivered_parcels": 34,
+            "completion_rate_pct": 95.5958549222798,
+            "on_time_service_rate_pct": 80.05181347150258,
+            "score_a": {
+              "completion_rate_pct": 95.5958549222798,
+              "on_time_tiebreak_pct": 80.05181347150258
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 87.8238341968912,
+            "score_b_sensitivity": {
+              "0.25": 83.93782383419689,
+              "0.5": 87.8238341968912,
+              "0.75": 91.70984455958549
+            },
+            "number_of_trips": 32,
+            "total_distance_km": 4221.453,
+            "average_load_utilisation_pct": 75.75
+          },
+          "simulation_seconds": 3.8615325409991783,
+          "planning_audit_counts": {
+            "dispatch_calls": 78,
+            "nonempty_routes": 32,
+            "searched_routes": 30,
+            "higher_credit_returned": 1,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 76,
+            "attempts": 60000,
+            "infeasible_proposals": 17817,
+            "accepted_better": 23,
+            "accepted_equal": 35193,
+            "accepted_worse": 21
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "win",
+                "0.25": "win",
+                "0.5": "win",
+                "0.75": "win"
+              },
+              "score_b_delta_points": 0.064766839378251,
+              "delivered_delta": 0,
+              "on_time_delta": 1,
+              "distance_delta_km": 25.1220000000003
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -4.015544041450767,
+              "delivered_delta": 2,
+              "on_time_delta": -64,
+              "distance_delta_km": -9.470999999999549
+            }
+          }
+        },
+        {
+          "seed": 4,
+          "metrics": {
+            "total_parcels": 772,
+            "delivered_parcels": 738,
+            "on_time_parcels": 618,
+            "early_parcels": 0,
+            "late_parcels": 120,
+            "undelivered_parcels": 34,
+            "completion_rate_pct": 95.5958549222798,
+            "on_time_service_rate_pct": 80.05181347150258,
+            "score_a": {
+              "completion_rate_pct": 95.5958549222798,
+              "on_time_tiebreak_pct": 80.05181347150258
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 87.8238341968912,
+            "score_b_sensitivity": {
+              "0.25": 83.93782383419689,
+              "0.5": 87.8238341968912,
+              "0.75": 91.70984455958549
+            },
+            "number_of_trips": 32,
+            "total_distance_km": 4210.683,
+            "average_load_utilisation_pct": 75.75
+          },
+          "simulation_seconds": 3.899031291999563,
+          "planning_audit_counts": {
+            "dispatch_calls": 79,
+            "nonempty_routes": 32,
+            "searched_routes": 30,
+            "higher_credit_returned": 1,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 77,
+            "attempts": 60000,
+            "infeasible_proposals": 18124,
+            "accepted_better": 18,
+            "accepted_equal": 35160,
+            "accepted_worse": 19
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "win",
+                "0.25": "win",
+                "0.5": "win",
+                "0.75": "win"
+              },
+              "score_b_delta_points": 0.064766839378251,
+              "delivered_delta": 0,
+              "on_time_delta": 1,
+              "distance_delta_km": 14.351999999999862
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -4.015544041450767,
+              "delivered_delta": 2,
+              "on_time_delta": -64,
+              "distance_delta_km": -20.240999999999985
+            }
+          }
+        }
+      ],
+      "within_day_seed_summary": {
+        "delivered_parcels": {
+          "mean": 738,
+          "min": 738,
+          "max": 738,
+          "sample_sd": 0.0
+        },
+        "on_time_parcels": {
+          "mean": 618,
+          "min": 618,
+          "max": 618,
+          "sample_sd": 0.0
+        },
+        "early_parcels": {
+          "mean": 0,
+          "min": 0,
+          "max": 0,
+          "sample_sd": 0.0
+        },
+        "late_parcels": {
+          "mean": 120,
+          "min": 120,
+          "max": 120,
+          "sample_sd": 0.0
+        },
+        "undelivered_parcels": {
+          "mean": 34,
+          "min": 34,
+          "max": 34,
+          "sample_sd": 0.0
+        },
+        "completion_rate_pct": {
+          "mean": 95.5958549222798,
+          "min": 95.5958549222798,
+          "max": 95.5958549222798,
+          "sample_sd": 0.0
+        },
+        "on_time_service_rate_pct": {
+          "mean": 80.05181347150258,
+          "min": 80.05181347150258,
+          "max": 80.05181347150258,
+          "sample_sd": 0.0
+        },
+        "score_b": {
+          "mean": 87.8238341968912,
+          "min": 87.8238341968912,
+          "max": 87.8238341968912,
+          "sample_sd": 0.0
+        },
+        "number_of_trips": {
+          "mean": 32,
+          "min": 32,
+          "max": 32,
+          "sample_sd": 0.0
+        },
+        "total_distance_km": {
+          "mean": 4216.665,
+          "min": 4210.683,
+          "max": 4221.453,
+          "sample_sd": 4.613767874525107
+        },
+        "average_load_utilisation_pct": {
+          "mean": 75.75,
+          "min": 75.75,
+          "max": 75.75,
+          "sample_sd": 0.0
+        },
+        "simulation_seconds": {
+          "mean": 3.810249083200324,
+          "min": 3.7358067919994937,
+          "max": 3.899031291999563,
+          "sample_sd": 0.06824131436905023
+        }
+      },
+      "paired_summary": {
+        "greedy_insertion": {
+          "score_b_mean_delta_points": 0.064766839378251,
+          "score_b_seed_outcomes": {
+            "win": 5
+          },
+          "score_a_seed_outcomes": {
+            "win": 5
+          }
+        },
+        "window_first_nearest": {
+          "score_b_mean_delta_points": -4.015544041450767,
+          "score_b_seed_outcomes": {
+            "loss": 5
+          },
+          "score_a_seed_outcomes": {
+            "win": 5
+          }
+        }
+      }
+    },
+    "day_003": {
+      "references": {
+        "greedy_insertion": {
+          "total_parcels": 794,
+          "delivered_parcels": 759,
+          "on_time_parcels": 693,
+          "early_parcels": 1,
+          "late_parcels": 65,
+          "undelivered_parcels": 35,
+          "completion_rate_pct": 95.59193954659949,
+          "on_time_service_rate_pct": 87.27959697732997,
+          "score_a": {
+            "completion_rate_pct": 95.59193954659949,
+            "on_time_tiebreak_pct": 87.27959697732997
+          },
+          "outside_window_credit": 0.5,
+          "score_b": 91.43576826196474,
+          "score_b_sensitivity": {
+            "0.25": 89.35768261964735,
+            "0.5": 91.43576826196474,
+            "0.75": 93.51385390428212
+          },
+          "number_of_trips": 34,
+          "total_distance_km": 4012.239,
+          "average_load_utilisation_pct": 71.46078431372548
+        },
+        "window_first_nearest": {
+          "total_parcels": 794,
+          "delivered_parcels": 758,
+          "on_time_parcels": 631,
+          "early_parcels": 0,
+          "late_parcels": 127,
+          "undelivered_parcels": 36,
+          "completion_rate_pct": 95.46599496221663,
+          "on_time_service_rate_pct": 79.47103274559194,
+          "score_a": {
+            "completion_rate_pct": 95.46599496221663,
+            "on_time_tiebreak_pct": 79.47103274559194
+          },
+          "outside_window_credit": 0.5,
+          "score_b": 87.46851385390428,
+          "score_b_sensitivity": {
+            "0.25": 83.46977329974811,
+            "0.5": 87.46851385390428,
+            "0.75": 91.46725440806046
+          },
+          "number_of_trips": 32,
+          "total_distance_km": 4269.819,
+          "average_load_utilisation_pct": 75.71875
+        }
+      },
+      "runs": [
+        {
+          "seed": 0,
+          "metrics": {
+            "total_parcels": 794,
+            "delivered_parcels": 759,
+            "on_time_parcels": 692,
+            "early_parcels": 2,
+            "late_parcels": 65,
+            "undelivered_parcels": 35,
+            "completion_rate_pct": 95.59193954659949,
+            "on_time_service_rate_pct": 87.15365239294711,
+            "score_a": {
+              "completion_rate_pct": 95.59193954659949,
+              "on_time_tiebreak_pct": 87.15365239294711
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 91.37279596977329,
+            "score_b_sensitivity": {
+              "0.25": 89.2632241813602,
+              "0.5": 91.37279596977329,
+              "0.75": 93.4823677581864
+            },
+            "number_of_trips": 33,
+            "total_distance_km": 3981.306,
+            "average_load_utilisation_pct": 73.58585858585859
+          },
+          "simulation_seconds": 3.5180016250014887,
+          "planning_audit_counts": {
+            "dispatch_calls": 100,
+            "nonempty_routes": 33,
+            "searched_routes": 30,
+            "higher_credit_returned": 0,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 99,
+            "attempts": 60000,
+            "infeasible_proposals": 14780,
+            "accepted_better": 10,
+            "accepted_equal": 38451,
+            "accepted_worse": 10
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -0.0629722921914464,
+              "delivered_delta": 0,
+              "on_time_delta": -1,
+              "distance_delta_km": -30.932999999999993
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "win",
+                "0.25": "win",
+                "0.5": "win",
+                "0.75": "win"
+              },
+              "score_b_delta_points": 3.904282115869009,
+              "delivered_delta": 1,
+              "on_time_delta": 61,
+              "distance_delta_km": -288.5130000000004
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "metrics": {
+            "total_parcels": 794,
+            "delivered_parcels": 759,
+            "on_time_parcels": 692,
+            "early_parcels": 2,
+            "late_parcels": 65,
+            "undelivered_parcels": 35,
+            "completion_rate_pct": 95.59193954659949,
+            "on_time_service_rate_pct": 87.15365239294711,
+            "score_a": {
+              "completion_rate_pct": 95.59193954659949,
+              "on_time_tiebreak_pct": 87.15365239294711
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 91.37279596977329,
+            "score_b_sensitivity": {
+              "0.25": 89.2632241813602,
+              "0.5": 91.37279596977329,
+              "0.75": 93.4823677581864
+            },
+            "number_of_trips": 33,
+            "total_distance_km": 3981.306,
+            "average_load_utilisation_pct": 73.58585858585859
+          },
+          "simulation_seconds": 3.486579790998803,
+          "planning_audit_counts": {
+            "dispatch_calls": 100,
+            "nonempty_routes": 33,
+            "searched_routes": 30,
+            "higher_credit_returned": 0,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 99,
+            "attempts": 60000,
+            "infeasible_proposals": 14784,
+            "accepted_better": 6,
+            "accepted_equal": 38284,
+            "accepted_worse": 5
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -0.0629722921914464,
+              "delivered_delta": 0,
+              "on_time_delta": -1,
+              "distance_delta_km": -30.932999999999993
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "win",
+                "0.25": "win",
+                "0.5": "win",
+                "0.75": "win"
+              },
+              "score_b_delta_points": 3.904282115869009,
+              "delivered_delta": 1,
+              "on_time_delta": 61,
+              "distance_delta_km": -288.5130000000004
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "metrics": {
+            "total_parcels": 794,
+            "delivered_parcels": 759,
+            "on_time_parcels": 692,
+            "early_parcels": 2,
+            "late_parcels": 65,
+            "undelivered_parcels": 35,
+            "completion_rate_pct": 95.59193954659949,
+            "on_time_service_rate_pct": 87.15365239294711,
+            "score_a": {
+              "completion_rate_pct": 95.59193954659949,
+              "on_time_tiebreak_pct": 87.15365239294711
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 91.37279596977329,
+            "score_b_sensitivity": {
+              "0.25": 89.2632241813602,
+              "0.5": 91.37279596977329,
+              "0.75": 93.4823677581864
+            },
+            "number_of_trips": 33,
+            "total_distance_km": 3981.306,
+            "average_load_utilisation_pct": 73.58585858585859
+          },
+          "simulation_seconds": 3.499509332999878,
+          "planning_audit_counts": {
+            "dispatch_calls": 100,
+            "nonempty_routes": 33,
+            "searched_routes": 30,
+            "higher_credit_returned": 0,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 99,
+            "attempts": 60000,
+            "infeasible_proposals": 15324,
+            "accepted_better": 11,
+            "accepted_equal": 37957,
+            "accepted_worse": 11
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -0.0629722921914464,
+              "delivered_delta": 0,
+              "on_time_delta": -1,
+              "distance_delta_km": -30.932999999999993
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "win",
+                "0.25": "win",
+                "0.5": "win",
+                "0.75": "win"
+              },
+              "score_b_delta_points": 3.904282115869009,
+              "delivered_delta": 1,
+              "on_time_delta": 61,
+              "distance_delta_km": -288.5130000000004
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "metrics": {
+            "total_parcels": 794,
+            "delivered_parcels": 759,
+            "on_time_parcels": 692,
+            "early_parcels": 2,
+            "late_parcels": 65,
+            "undelivered_parcels": 35,
+            "completion_rate_pct": 95.59193954659949,
+            "on_time_service_rate_pct": 87.15365239294711,
+            "score_a": {
+              "completion_rate_pct": 95.59193954659949,
+              "on_time_tiebreak_pct": 87.15365239294711
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 91.37279596977329,
+            "score_b_sensitivity": {
+              "0.25": 89.2632241813602,
+              "0.5": 91.37279596977329,
+              "0.75": 93.4823677581864
+            },
+            "number_of_trips": 33,
+            "total_distance_km": 3981.306,
+            "average_load_utilisation_pct": 73.58585858585859
+          },
+          "simulation_seconds": 3.460927250001987,
+          "planning_audit_counts": {
+            "dispatch_calls": 100,
+            "nonempty_routes": 33,
+            "searched_routes": 30,
+            "higher_credit_returned": 0,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 99,
+            "attempts": 60000,
+            "infeasible_proposals": 14742,
+            "accepted_better": 14,
+            "accepted_equal": 38568,
+            "accepted_worse": 14
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -0.0629722921914464,
+              "delivered_delta": 0,
+              "on_time_delta": -1,
+              "distance_delta_km": -30.932999999999993
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "win",
+                "0.25": "win",
+                "0.5": "win",
+                "0.75": "win"
+              },
+              "score_b_delta_points": 3.904282115869009,
+              "delivered_delta": 1,
+              "on_time_delta": 61,
+              "distance_delta_km": -288.5130000000004
+            }
+          }
+        },
+        {
+          "seed": 4,
+          "metrics": {
+            "total_parcels": 794,
+            "delivered_parcels": 759,
+            "on_time_parcels": 692,
+            "early_parcels": 2,
+            "late_parcels": 65,
+            "undelivered_parcels": 35,
+            "completion_rate_pct": 95.59193954659949,
+            "on_time_service_rate_pct": 87.15365239294711,
+            "score_a": {
+              "completion_rate_pct": 95.59193954659949,
+              "on_time_tiebreak_pct": 87.15365239294711
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 91.37279596977329,
+            "score_b_sensitivity": {
+              "0.25": 89.2632241813602,
+              "0.5": 91.37279596977329,
+              "0.75": 93.4823677581864
+            },
+            "number_of_trips": 33,
+            "total_distance_km": 3981.306,
+            "average_load_utilisation_pct": 73.58585858585859
+          },
+          "simulation_seconds": 3.462700957999914,
+          "planning_audit_counts": {
+            "dispatch_calls": 100,
+            "nonempty_routes": 33,
+            "searched_routes": 30,
+            "higher_credit_returned": 0,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 99,
+            "attempts": 60000,
+            "infeasible_proposals": 14682,
+            "accepted_better": 15,
+            "accepted_equal": 38556,
+            "accepted_worse": 18
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -0.0629722921914464,
+              "delivered_delta": 0,
+              "on_time_delta": -1,
+              "distance_delta_km": -30.932999999999993
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "win",
+                "score_b": "win",
+                "0.25": "win",
+                "0.5": "win",
+                "0.75": "win"
+              },
+              "score_b_delta_points": 3.904282115869009,
+              "delivered_delta": 1,
+              "on_time_delta": 61,
+              "distance_delta_km": -288.5130000000004
+            }
+          }
+        }
+      ],
+      "within_day_seed_summary": {
+        "delivered_parcels": {
+          "mean": 759,
+          "min": 759,
+          "max": 759,
+          "sample_sd": 0.0
+        },
+        "on_time_parcels": {
+          "mean": 692,
+          "min": 692,
+          "max": 692,
+          "sample_sd": 0.0
+        },
+        "early_parcels": {
+          "mean": 2,
+          "min": 2,
+          "max": 2,
+          "sample_sd": 0.0
+        },
+        "late_parcels": {
+          "mean": 65,
+          "min": 65,
+          "max": 65,
+          "sample_sd": 0.0
+        },
+        "undelivered_parcels": {
+          "mean": 35,
+          "min": 35,
+          "max": 35,
+          "sample_sd": 0.0
+        },
+        "completion_rate_pct": {
+          "mean": 95.59193954659949,
+          "min": 95.59193954659949,
+          "max": 95.59193954659949,
+          "sample_sd": 0.0
+        },
+        "on_time_service_rate_pct": {
+          "mean": 87.15365239294711,
+          "min": 87.15365239294711,
+          "max": 87.15365239294711,
+          "sample_sd": 0.0
+        },
+        "score_b": {
+          "mean": 91.37279596977329,
+          "min": 91.37279596977329,
+          "max": 91.37279596977329,
+          "sample_sd": 0.0
+        },
+        "number_of_trips": {
+          "mean": 33,
+          "min": 33,
+          "max": 33,
+          "sample_sd": 0.0
+        },
+        "total_distance_km": {
+          "mean": 3981.306,
+          "min": 3981.306,
+          "max": 3981.306,
+          "sample_sd": 0.0
+        },
+        "average_load_utilisation_pct": {
+          "mean": 73.58585858585859,
+          "min": 73.58585858585859,
+          "max": 73.58585858585859,
+          "sample_sd": 0.0
+        },
+        "simulation_seconds": {
+          "mean": 3.4855437914004144,
+          "min": 3.460927250001987,
+          "max": 3.5180016250014887,
+          "sample_sd": 0.02437924197751415
+        }
+      },
+      "paired_summary": {
+        "greedy_insertion": {
+          "score_b_mean_delta_points": -0.0629722921914464,
+          "score_b_seed_outcomes": {
+            "loss": 5
+          },
+          "score_a_seed_outcomes": {
+            "loss": 5
+          }
+        },
+        "window_first_nearest": {
+          "score_b_mean_delta_points": 3.904282115869009,
+          "score_b_seed_outcomes": {
+            "win": 5
+          },
+          "score_a_seed_outcomes": {
+            "win": 5
+          }
+        }
+      }
+    },
+    "day_004": {
+      "references": {
+        "greedy_insertion": {
+          "total_parcels": 808,
+          "delivered_parcels": 776,
+          "on_time_parcels": 668,
+          "early_parcels": 0,
+          "late_parcels": 108,
+          "undelivered_parcels": 32,
+          "completion_rate_pct": 96.03960396039604,
+          "on_time_service_rate_pct": 82.67326732673267,
+          "score_a": {
+            "completion_rate_pct": 96.03960396039604,
+            "on_time_tiebreak_pct": 82.67326732673267
+          },
+          "outside_window_credit": 0.5,
+          "score_b": 89.35643564356435,
+          "score_b_sensitivity": {
+            "0.25": 86.01485148514851,
+            "0.5": 89.35643564356435,
+            "0.75": 92.6980198019802
+          },
+          "number_of_trips": 33,
+          "total_distance_km": 4110.126,
+          "average_load_utilisation_pct": 73.25252525252525
+        },
+        "window_first_nearest": {
+          "total_parcels": 808,
+          "delivered_parcels": 779,
+          "on_time_parcels": 676,
+          "early_parcels": 1,
+          "late_parcels": 102,
+          "undelivered_parcels": 29,
+          "completion_rate_pct": 96.41089108910892,
+          "on_time_service_rate_pct": 83.66336633663366,
+          "score_a": {
+            "completion_rate_pct": 96.41089108910892,
+            "on_time_tiebreak_pct": 83.66336633663366
+          },
+          "outside_window_credit": 0.5,
+          "score_b": 90.0371287128713,
+          "score_b_sensitivity": {
+            "0.25": 86.85024752475248,
+            "0.5": 90.0371287128713,
+            "0.75": 93.2240099009901
+          },
+          "number_of_trips": 34,
+          "total_distance_km": 4087.515,
+          "average_load_utilisation_pct": 71.34313725490196
+        }
+      },
+      "runs": [
+        {
+          "seed": 0,
+          "metrics": {
+            "total_parcels": 808,
+            "delivered_parcels": 776,
+            "on_time_parcels": 668,
+            "early_parcels": 0,
+            "late_parcels": 108,
+            "undelivered_parcels": 32,
+            "completion_rate_pct": 96.03960396039604,
+            "on_time_service_rate_pct": 82.67326732673267,
+            "score_a": {
+              "completion_rate_pct": 96.03960396039604,
+              "on_time_tiebreak_pct": 82.67326732673267
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 89.35643564356435,
+            "score_b_sensitivity": {
+              "0.25": 86.01485148514851,
+              "0.5": 89.35643564356435,
+              "0.75": 92.6980198019802
+            },
+            "number_of_trips": 33,
+            "total_distance_km": 4110.012,
+            "average_load_utilisation_pct": 73.25252525252525
+          },
+          "simulation_seconds": 4.675431457999366,
+          "planning_audit_counts": {
+            "dispatch_calls": 89,
+            "nonempty_routes": 33,
+            "searched_routes": 30,
+            "higher_credit_returned": 0,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 88,
+            "attempts": 60000,
+            "infeasible_proposals": 18170,
+            "accepted_better": 7,
+            "accepted_equal": 34672,
+            "accepted_worse": 7
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "tie",
+                "score_b": "tie",
+                "0.25": "tie",
+                "0.5": "tie",
+                "0.75": "tie"
+              },
+              "score_b_delta_points": 0.0,
+              "delivered_delta": 0,
+              "on_time_delta": 0,
+              "distance_delta_km": -0.11400000000048749
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -0.6806930693069404,
+              "delivered_delta": -3,
+              "on_time_delta": -8,
+              "distance_delta_km": 22.496999999999844
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "metrics": {
+            "total_parcels": 808,
+            "delivered_parcels": 776,
+            "on_time_parcels": 668,
+            "early_parcels": 0,
+            "late_parcels": 108,
+            "undelivered_parcels": 32,
+            "completion_rate_pct": 96.03960396039604,
+            "on_time_service_rate_pct": 82.67326732673267,
+            "score_a": {
+              "completion_rate_pct": 96.03960396039604,
+              "on_time_tiebreak_pct": 82.67326732673267
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 89.35643564356435,
+            "score_b_sensitivity": {
+              "0.25": 86.01485148514851,
+              "0.5": 89.35643564356435,
+              "0.75": 92.6980198019802
+            },
+            "number_of_trips": 33,
+            "total_distance_km": 4110.012,
+            "average_load_utilisation_pct": 73.25252525252525
+          },
+          "simulation_seconds": 4.7438262089999625,
+          "planning_audit_counts": {
+            "dispatch_calls": 89,
+            "nonempty_routes": 33,
+            "searched_routes": 30,
+            "higher_credit_returned": 0,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 88,
+            "attempts": 60000,
+            "infeasible_proposals": 18349,
+            "accepted_better": 16,
+            "accepted_equal": 34938,
+            "accepted_worse": 16
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "tie",
+                "score_b": "tie",
+                "0.25": "tie",
+                "0.5": "tie",
+                "0.75": "tie"
+              },
+              "score_b_delta_points": 0.0,
+              "delivered_delta": 0,
+              "on_time_delta": 0,
+              "distance_delta_km": -0.11400000000048749
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -0.6806930693069404,
+              "delivered_delta": -3,
+              "on_time_delta": -8,
+              "distance_delta_km": 22.496999999999844
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "metrics": {
+            "total_parcels": 808,
+            "delivered_parcels": 776,
+            "on_time_parcels": 668,
+            "early_parcels": 0,
+            "late_parcels": 108,
+            "undelivered_parcels": 32,
+            "completion_rate_pct": 96.03960396039604,
+            "on_time_service_rate_pct": 82.67326732673267,
+            "score_a": {
+              "completion_rate_pct": 96.03960396039604,
+              "on_time_tiebreak_pct": 82.67326732673267
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 89.35643564356435,
+            "score_b_sensitivity": {
+              "0.25": 86.01485148514851,
+              "0.5": 89.35643564356435,
+              "0.75": 92.6980198019802
+            },
+            "number_of_trips": 33,
+            "total_distance_km": 4110.126,
+            "average_load_utilisation_pct": 73.25252525252525
+          },
+          "simulation_seconds": 4.813218082999811,
+          "planning_audit_counts": {
+            "dispatch_calls": 89,
+            "nonempty_routes": 33,
+            "searched_routes": 30,
+            "higher_credit_returned": 0,
+            "equal_credit_shorter_returned": 0,
+            "same_order_returned": 89,
+            "attempts": 60000,
+            "infeasible_proposals": 18130,
+            "accepted_better": 9,
+            "accepted_equal": 35046,
+            "accepted_worse": 10
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "tie",
+                "score_b": "tie",
+                "0.25": "tie",
+                "0.5": "tie",
+                "0.75": "tie"
+              },
+              "score_b_delta_points": 0.0,
+              "delivered_delta": 0,
+              "on_time_delta": 0,
+              "distance_delta_km": 0.0
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -0.6806930693069404,
+              "delivered_delta": -3,
+              "on_time_delta": -8,
+              "distance_delta_km": 22.61100000000033
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "metrics": {
+            "total_parcels": 808,
+            "delivered_parcels": 776,
+            "on_time_parcels": 668,
+            "early_parcels": 0,
+            "late_parcels": 108,
+            "undelivered_parcels": 32,
+            "completion_rate_pct": 96.03960396039604,
+            "on_time_service_rate_pct": 82.67326732673267,
+            "score_a": {
+              "completion_rate_pct": 96.03960396039604,
+              "on_time_tiebreak_pct": 82.67326732673267
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 89.35643564356435,
+            "score_b_sensitivity": {
+              "0.25": 86.01485148514851,
+              "0.5": 89.35643564356435,
+              "0.75": 92.6980198019802
+            },
+            "number_of_trips": 33,
+            "total_distance_km": 4110.012,
+            "average_load_utilisation_pct": 73.25252525252525
+          },
+          "simulation_seconds": 4.795292750000954,
+          "planning_audit_counts": {
+            "dispatch_calls": 89,
+            "nonempty_routes": 33,
+            "searched_routes": 30,
+            "higher_credit_returned": 0,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 88,
+            "attempts": 60000,
+            "infeasible_proposals": 18453,
+            "accepted_better": 6,
+            "accepted_equal": 34685,
+            "accepted_worse": 6
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "tie",
+                "score_b": "tie",
+                "0.25": "tie",
+                "0.5": "tie",
+                "0.75": "tie"
+              },
+              "score_b_delta_points": 0.0,
+              "delivered_delta": 0,
+              "on_time_delta": 0,
+              "distance_delta_km": -0.11400000000048749
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -0.6806930693069404,
+              "delivered_delta": -3,
+              "on_time_delta": -8,
+              "distance_delta_km": 22.496999999999844
+            }
+          }
+        },
+        {
+          "seed": 4,
+          "metrics": {
+            "total_parcels": 808,
+            "delivered_parcels": 776,
+            "on_time_parcels": 668,
+            "early_parcels": 0,
+            "late_parcels": 108,
+            "undelivered_parcels": 32,
+            "completion_rate_pct": 96.03960396039604,
+            "on_time_service_rate_pct": 82.67326732673267,
+            "score_a": {
+              "completion_rate_pct": 96.03960396039604,
+              "on_time_tiebreak_pct": 82.67326732673267
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 89.35643564356435,
+            "score_b_sensitivity": {
+              "0.25": 86.01485148514851,
+              "0.5": 89.35643564356435,
+              "0.75": 92.6980198019802
+            },
+            "number_of_trips": 33,
+            "total_distance_km": 4110.012,
+            "average_load_utilisation_pct": 73.25252525252525
+          },
+          "simulation_seconds": 4.7010197499985225,
+          "planning_audit_counts": {
+            "dispatch_calls": 89,
+            "nonempty_routes": 33,
+            "searched_routes": 30,
+            "higher_credit_returned": 0,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 88,
+            "attempts": 60000,
+            "infeasible_proposals": 18084,
+            "accepted_better": 13,
+            "accepted_equal": 34414,
+            "accepted_worse": 13
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "tie",
+                "score_b": "tie",
+                "0.25": "tie",
+                "0.5": "tie",
+                "0.75": "tie"
+              },
+              "score_b_delta_points": 0.0,
+              "delivered_delta": 0,
+              "on_time_delta": 0,
+              "distance_delta_km": -0.11400000000048749
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -0.6806930693069404,
+              "delivered_delta": -3,
+              "on_time_delta": -8,
+              "distance_delta_km": 22.496999999999844
+            }
+          }
+        }
+      ],
+      "within_day_seed_summary": {
+        "delivered_parcels": {
+          "mean": 776,
+          "min": 776,
+          "max": 776,
+          "sample_sd": 0.0
+        },
+        "on_time_parcels": {
+          "mean": 668,
+          "min": 668,
+          "max": 668,
+          "sample_sd": 0.0
+        },
+        "early_parcels": {
+          "mean": 0,
+          "min": 0,
+          "max": 0,
+          "sample_sd": 0.0
+        },
+        "late_parcels": {
+          "mean": 108,
+          "min": 108,
+          "max": 108,
+          "sample_sd": 0.0
+        },
+        "undelivered_parcels": {
+          "mean": 32,
+          "min": 32,
+          "max": 32,
+          "sample_sd": 0.0
+        },
+        "completion_rate_pct": {
+          "mean": 96.03960396039604,
+          "min": 96.03960396039604,
+          "max": 96.03960396039604,
+          "sample_sd": 0.0
+        },
+        "on_time_service_rate_pct": {
+          "mean": 82.67326732673267,
+          "min": 82.67326732673267,
+          "max": 82.67326732673267,
+          "sample_sd": 0.0
+        },
+        "score_b": {
+          "mean": 89.35643564356435,
+          "min": 89.35643564356435,
+          "max": 89.35643564356435,
+          "sample_sd": 0.0
+        },
+        "number_of_trips": {
+          "mean": 33,
+          "min": 33,
+          "max": 33,
+          "sample_sd": 0.0
+        },
+        "total_distance_km": {
+          "mean": 4110.034799999999,
+          "min": 4110.012,
+          "max": 4110.126,
+          "sample_sd": 0.050982349887213216
+        },
+        "average_load_utilisation_pct": {
+          "mean": 73.25252525252525,
+          "min": 73.25252525252525,
+          "max": 73.25252525252525,
+          "sample_sd": 0.0
+        },
+        "simulation_seconds": {
+          "mean": 4.745757649999723,
+          "min": 4.675431457999366,
+          "max": 4.813218082999811,
+          "sample_sd": 0.05906695267832781
+        }
+      },
+      "paired_summary": {
+        "greedy_insertion": {
+          "score_b_mean_delta_points": 0.0,
+          "score_b_seed_outcomes": {
+            "tie": 5
+          },
+          "score_a_seed_outcomes": {
+            "tie": 5
+          }
+        },
+        "window_first_nearest": {
+          "score_b_mean_delta_points": -0.6806930693069404,
+          "score_b_seed_outcomes": {
+            "loss": 5
+          },
+          "score_a_seed_outcomes": {
+            "loss": 5
+          }
+        }
+      }
+    },
+    "day_005": {
+      "references": {
+        "greedy_insertion": {
+          "total_parcels": 806,
+          "delivered_parcels": 781,
+          "on_time_parcels": 590,
+          "early_parcels": 3,
+          "late_parcels": 188,
+          "undelivered_parcels": 25,
+          "completion_rate_pct": 96.89826302729529,
+          "on_time_service_rate_pct": 73.20099255583126,
+          "score_a": {
+            "completion_rate_pct": 96.89826302729529,
+            "on_time_tiebreak_pct": 73.20099255583126
+          },
+          "outside_window_credit": 0.5,
+          "score_b": 85.04962779156328,
+          "score_b_sensitivity": {
+            "0.25": 79.12531017369727,
+            "0.5": 85.04962779156328,
+            "0.75": 90.97394540942928
+          },
+          "number_of_trips": 34,
+          "total_distance_km": 4068.243,
+          "average_load_utilisation_pct": 72.08823529411765
+        },
+        "window_first_nearest": {
+          "total_parcels": 806,
+          "delivered_parcels": 781,
+          "on_time_parcels": 667,
+          "early_parcels": 12,
+          "late_parcels": 102,
+          "undelivered_parcels": 25,
+          "completion_rate_pct": 96.89826302729529,
+          "on_time_service_rate_pct": 82.75434243176178,
+          "score_a": {
+            "completion_rate_pct": 96.89826302729529,
+            "on_time_tiebreak_pct": 82.75434243176178
+          },
+          "outside_window_credit": 0.5,
+          "score_b": 89.82630272952854,
+          "score_b_sensitivity": {
+            "0.25": 86.29032258064517,
+            "0.5": 89.82630272952854,
+            "0.75": 93.3622828784119
+          },
+          "number_of_trips": 32,
+          "total_distance_km": 4058.625,
+          "average_load_utilisation_pct": 76.57291666666667
+        }
+      },
+      "runs": [
+        {
+          "seed": 0,
+          "metrics": {
+            "total_parcels": 806,
+            "delivered_parcels": 780,
+            "on_time_parcels": 596,
+            "early_parcels": 2,
+            "late_parcels": 182,
+            "undelivered_parcels": 26,
+            "completion_rate_pct": 96.7741935483871,
+            "on_time_service_rate_pct": 73.9454094292804,
+            "score_a": {
+              "completion_rate_pct": 96.7741935483871,
+              "on_time_tiebreak_pct": 73.9454094292804
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 85.35980148883375,
+            "score_b_sensitivity": {
+              "0.25": 79.65260545905707,
+              "0.5": 85.35980148883375,
+              "0.75": 91.06699751861042
+            },
+            "number_of_trips": 34,
+            "total_distance_km": 4120.755,
+            "average_load_utilisation_pct": 71.92156862745098
+          },
+          "simulation_seconds": 4.380651666000631,
+          "planning_audit_counts": {
+            "dispatch_calls": 87,
+            "nonempty_routes": 34,
+            "searched_routes": 31,
+            "higher_credit_returned": 1,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 85,
+            "attempts": 62000,
+            "infeasible_proposals": 17515,
+            "accepted_better": 13,
+            "accepted_equal": 38067,
+            "accepted_worse": 13
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "win",
+                "0.25": "win",
+                "0.5": "win",
+                "0.75": "win"
+              },
+              "score_b_delta_points": 0.3101736972704714,
+              "delivered_delta": -1,
+              "on_time_delta": 6,
+              "distance_delta_km": 52.51200000000017
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -4.466501240694782,
+              "delivered_delta": -1,
+              "on_time_delta": -71,
+              "distance_delta_km": 62.13000000000011
+            }
+          }
+        },
+        {
+          "seed": 1,
+          "metrics": {
+            "total_parcels": 806,
+            "delivered_parcels": 780,
+            "on_time_parcels": 596,
+            "early_parcels": 2,
+            "late_parcels": 182,
+            "undelivered_parcels": 26,
+            "completion_rate_pct": 96.7741935483871,
+            "on_time_service_rate_pct": 73.9454094292804,
+            "score_a": {
+              "completion_rate_pct": 96.7741935483871,
+              "on_time_tiebreak_pct": 73.9454094292804
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 85.35980148883375,
+            "score_b_sensitivity": {
+              "0.25": 79.65260545905707,
+              "0.5": 85.35980148883375,
+              "0.75": 91.06699751861042
+            },
+            "number_of_trips": 34,
+            "total_distance_km": 4114.983,
+            "average_load_utilisation_pct": 71.92156862745098
+          },
+          "simulation_seconds": 4.539956374999747,
+          "planning_audit_counts": {
+            "dispatch_calls": 88,
+            "nonempty_routes": 34,
+            "searched_routes": 31,
+            "higher_credit_returned": 1,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 86,
+            "attempts": 62000,
+            "infeasible_proposals": 18041,
+            "accepted_better": 8,
+            "accepted_equal": 37668,
+            "accepted_worse": 6
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "win",
+                "0.25": "win",
+                "0.5": "win",
+                "0.75": "win"
+              },
+              "score_b_delta_points": 0.3101736972704714,
+              "delivered_delta": -1,
+              "on_time_delta": 6,
+              "distance_delta_km": 46.74000000000024
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -4.466501240694782,
+              "delivered_delta": -1,
+              "on_time_delta": -71,
+              "distance_delta_km": 56.358000000000175
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "metrics": {
+            "total_parcels": 806,
+            "delivered_parcels": 780,
+            "on_time_parcels": 596,
+            "early_parcels": 2,
+            "late_parcels": 182,
+            "undelivered_parcels": 26,
+            "completion_rate_pct": 96.7741935483871,
+            "on_time_service_rate_pct": 73.9454094292804,
+            "score_a": {
+              "completion_rate_pct": 96.7741935483871,
+              "on_time_tiebreak_pct": 73.9454094292804
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 85.35980148883375,
+            "score_b_sensitivity": {
+              "0.25": 79.65260545905707,
+              "0.5": 85.35980148883375,
+              "0.75": 91.06699751861042
+            },
+            "number_of_trips": 34,
+            "total_distance_km": 4121.145,
+            "average_load_utilisation_pct": 71.92156862745098
+          },
+          "simulation_seconds": 4.376652457998716,
+          "planning_audit_counts": {
+            "dispatch_calls": 87,
+            "nonempty_routes": 34,
+            "searched_routes": 31,
+            "higher_credit_returned": 1,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 85,
+            "attempts": 62000,
+            "infeasible_proposals": 17633,
+            "accepted_better": 10,
+            "accepted_equal": 37986,
+            "accepted_worse": 9
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "win",
+                "0.25": "win",
+                "0.5": "win",
+                "0.75": "win"
+              },
+              "score_b_delta_points": 0.3101736972704714,
+              "delivered_delta": -1,
+              "on_time_delta": 6,
+              "distance_delta_km": 52.9020000000005
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -4.466501240694782,
+              "delivered_delta": -1,
+              "on_time_delta": -71,
+              "distance_delta_km": 62.52000000000044
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "metrics": {
+            "total_parcels": 806,
+            "delivered_parcels": 779,
+            "on_time_parcels": 589,
+            "early_parcels": 2,
+            "late_parcels": 188,
+            "undelivered_parcels": 27,
+            "completion_rate_pct": 96.6501240694789,
+            "on_time_service_rate_pct": 73.07692307692308,
+            "score_a": {
+              "completion_rate_pct": 96.6501240694789,
+              "on_time_tiebreak_pct": 73.07692307692308
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 84.863523573201,
+            "score_b_sensitivity": {
+              "0.25": 78.97022332506204,
+              "0.5": 84.863523573201,
+              "0.75": 90.75682382133995
+            },
+            "number_of_trips": 34,
+            "total_distance_km": 4113.594,
+            "average_load_utilisation_pct": 71.84313725490196
+          },
+          "simulation_seconds": 4.297494624999672,
+          "planning_audit_counts": {
+            "dispatch_calls": 87,
+            "nonempty_routes": 34,
+            "searched_routes": 31,
+            "higher_credit_returned": 1,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 85,
+            "attempts": 62000,
+            "infeasible_proposals": 17009,
+            "accepted_better": 15,
+            "accepted_equal": 39125,
+            "accepted_worse": 17
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -0.18610421836228852,
+              "delivered_delta": -2,
+              "on_time_delta": -1,
+              "distance_delta_km": 45.35100000000011
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -4.962779156327542,
+              "delivered_delta": -2,
+              "on_time_delta": -78,
+              "distance_delta_km": 54.96900000000005
+            }
+          }
+        },
+        {
+          "seed": 4,
+          "metrics": {
+            "total_parcels": 806,
+            "delivered_parcels": 780,
+            "on_time_parcels": 596,
+            "early_parcels": 2,
+            "late_parcels": 182,
+            "undelivered_parcels": 26,
+            "completion_rate_pct": 96.7741935483871,
+            "on_time_service_rate_pct": 73.9454094292804,
+            "score_a": {
+              "completion_rate_pct": 96.7741935483871,
+              "on_time_tiebreak_pct": 73.9454094292804
+            },
+            "outside_window_credit": 0.5,
+            "score_b": 85.35980148883375,
+            "score_b_sensitivity": {
+              "0.25": 79.65260545905707,
+              "0.5": 85.35980148883375,
+              "0.75": 91.06699751861042
+            },
+            "number_of_trips": 34,
+            "total_distance_km": 4122.321,
+            "average_load_utilisation_pct": 71.92156862745098
+          },
+          "simulation_seconds": 4.3444631669990486,
+          "planning_audit_counts": {
+            "dispatch_calls": 87,
+            "nonempty_routes": 34,
+            "searched_routes": 31,
+            "higher_credit_returned": 1,
+            "equal_credit_shorter_returned": 1,
+            "same_order_returned": 85,
+            "attempts": 62000,
+            "infeasible_proposals": 17761,
+            "accepted_better": 11,
+            "accepted_equal": 37771,
+            "accepted_worse": 11
+          },
+          "paired": {
+            "greedy_insertion": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "win",
+                "0.25": "win",
+                "0.5": "win",
+                "0.75": "win"
+              },
+              "score_b_delta_points": 0.3101736972704714,
+              "delivered_delta": -1,
+              "on_time_delta": 6,
+              "distance_delta_km": 54.077999999999975
+            },
+            "window_first_nearest": {
+              "rankings": {
+                "score_a": "loss",
+                "score_b": "loss",
+                "0.25": "loss",
+                "0.5": "loss",
+                "0.75": "loss"
+              },
+              "score_b_delta_points": -4.466501240694782,
+              "delivered_delta": -1,
+              "on_time_delta": -71,
+              "distance_delta_km": 63.69599999999991
+            }
+          }
+        }
+      ],
+      "within_day_seed_summary": {
+        "delivered_parcels": {
+          "mean": 779.8,
+          "min": 779,
+          "max": 780,
+          "sample_sd": 0.4472135954999579
+        },
+        "on_time_parcels": {
+          "mean": 594.6,
+          "min": 589,
+          "max": 596,
+          "sample_sd": 3.1304951684997055
+        },
+        "early_parcels": {
+          "mean": 2,
+          "min": 2,
+          "max": 2,
+          "sample_sd": 0.0
+        },
+        "late_parcels": {
+          "mean": 183.2,
+          "min": 182,
+          "max": 188,
+          "sample_sd": 2.6832815729997477
+        },
+        "undelivered_parcels": {
+          "mean": 26.2,
+          "min": 26,
+          "max": 27,
+          "sample_sd": 0.4472135954999579
+        },
+        "completion_rate_pct": {
+          "mean": 96.74937965260547,
+          "min": 96.6501240694789,
+          "max": 96.7741935483871,
+          "sample_sd": 0.05548555775434101
+        },
+        "on_time_service_rate_pct": {
+          "mean": 73.77171215880894,
+          "min": 73.07692307692308,
+          "max": 73.9454094292804,
+          "sample_sd": 0.38839890428036167
+        },
+        "score_b": {
+          "mean": 85.2605459057072,
+          "min": 84.863523573201,
+          "max": 85.35980148883375,
+          "sample_sd": 0.22194223101735133
+        },
+        "number_of_trips": {
+          "mean": 34,
+          "min": 34,
+          "max": 34,
+          "sample_sd": 0.0
+        },
+        "total_distance_km": {
+          "mean": 4118.5596000000005,
+          "min": 4113.594,
+          "max": 4122.321,
+          "sample_sd": 3.971821219541494
+        },
+        "average_load_utilisation_pct": {
+          "mean": 71.90588235294118,
+          "min": 71.84313725490196,
+          "max": 71.92156862745098,
+          "sample_sd": 0.035075576117643635
+        },
+        "simulation_seconds": {
+          "mean": 4.387843658199563,
+          "min": 4.297494624999672,
+          "max": 4.539956374999747,
+          "sample_sd": 0.09132368414465496
+        }
+      },
+      "paired_summary": {
+        "greedy_insertion": {
+          "score_b_mean_delta_points": 0.21091811414392225,
+          "score_b_seed_outcomes": {
+            "win": 4,
+            "loss": 1
+          },
+          "score_a_seed_outcomes": {
+            "loss": 5
+          }
+        },
+        "window_first_nearest": {
+          "score_b_mean_delta_points": -4.5657568238213315,
+          "score_b_seed_outcomes": {
+            "loss": 5
+          },
+          "score_a_seed_outcomes": {
+            "loss": 5
+          }
+        }
+      }
+    }
+  },
+  "paired_outcome_counts": {
+    "greedy_insertion": {
+      "score_a": {
+        "tie": 10,
+        "win": 5,
+        "loss": 10
+      },
+      "score_b": {
+        "tie": 10,
+        "win": 9,
+        "loss": 6
+      },
+      "0.25": {
+        "tie": 10,
+        "win": 9,
+        "loss": 6
+      },
+      "0.5": {
+        "tie": 10,
+        "win": 9,
+        "loss": 6
+      },
+      "0.75": {
+        "tie": 10,
+        "win": 9,
+        "loss": 6
+      }
+    },
+    "window_first_nearest": {
+      "score_a": {
+        "win": 15,
+        "loss": 10
+      },
+      "score_b": {
+        "loss": 20,
+        "win": 5
+      },
+      "0.25": {
+        "loss": 20,
+        "win": 5
+      },
+      "0.5": {
+        "loss": 20,
+        "win": 5
+      },
+      "0.75": {
+        "loss": 20,
+        "win": 5
+      }
+    }
+  },
+  "planning_audit_totals": {
+    "dispatch_calls": 2159,
+    "nonempty_routes": 825,
+    "searched_routes": 760,
+    "higher_credit_returned": 10,
+    "equal_credit_shorter_returned": 23,
+    "same_order_returned": 2126,
+    "attempts": 1520000,
+    "infeasible_proposals": 434114,
+    "accepted_better": 314,
+    "accepted_equal": 912581,
+    "accepted_worse": 316
+  },
+  "observed_simulation_seconds": {
+    "mean": 4.2263277315202865,
+    "min": 3.460927250001987,
+    "max": 4.8609270000015385,
+    "sample_sd": 0.5135312946786832
+  },
+  "runtime_note": "Observed command durations on this machine; not a controlled speed comparison with earlier policies.",
+  "verification": {
+    "unit_tests_passed": 82,
+    "new_sa_tests_passed": 16,
+    "independent_validation_all_passed": true,
+    "independent_replay": {
+      "run_count": 25,
+      "python_version": "3.15.2",
+      "matches_simulation_python_version": true,
+      "independent_days": 5,
+      "fixed_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "planning_decisions": 2159,
+      "swap_attempts": 1520000,
+      "constructors_computed": 251,
+      "identical_constructor_cache_hits": 1908,
+      "elapsed_seconds": 35.78986670899758
+    },
+    "sources_and_reference_results_unchanged": true,
+    "references": [
+      "run_manifest.json",
+      "independent_validation.json"
+    ]
+  },
+  "interpretation": [
+    "SA has a small, inconsistent Score B effect relative to original insertion on these five development days.",
+    "Day 005 has seed variation; reporting only its best seed would conceal a seed that loses to original insertion.",
+    "Every returned route dominates its fresh greedy seed by route credit then distance. Changed returns and later snapshots can still reduce full-day Score B, as on day 003.",
+    "Fixed membership limits the search to parcel order; it cannot directly repair which parcels or vehicles were selected.",
+    "All paired Score B winners remain unchanged at outside-window credits 0.25 and 0.75.",
+    "No further tuning or evaluation on days 006\u2013020 was performed."
+  ]
+}

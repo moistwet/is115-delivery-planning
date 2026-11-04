@@ -1,0 +1,564 @@
+{
+  "recorded_at_utc": "2026-10-31T12:15:22.374786+00:00",
+  "cwd": "/Users/isaac/Desktop/Algo/project",
+  "python": "3.15.2",
+  "scope": "Ten runs: two separately modified greedy insertion policies on preselected developmentdays001\u2013005. Eachchangesonepriorityrule. No combinedvariant/tuning/days006\u2013020. OriginalGIandWF frozenreference.",
+  "policy_rules": {
+    "greedy_insertion_efficiency": "Positivegainwithnonpositiveaddeddistancefirst(maxgain,leastdelta); otherwise maxgainperaddeddistance,thenmaxgain,leastdelta,arrival,ID,position. Noepsilon.",
+    "greedy_insertion_protect": "Maxpositivegain,thenfewestoldontimeIDsnotontimeafterinsertion,thenleastaddeddistance,arrival,ID,position."
+  },
+  "common_rules": "Startempty;fullrouteETAcreditandhardfeasibility;alphafixed.5;strictpositivegainstop;nowaiting. Finalmetricunchanged.",
+  "sha256_before": {
+    "data/config.json": "6041005abea965629ca15dbdb4d7038cdfc3f0a30ee0cd08f3efdb98cd04fdd8",
+    "data/demand/day_001.csv": "a73f06a9faf4c11f45a2b373f50fe2379c4dd23f0b733c8b0bdc36bfaa8226e7",
+    "data/demand/day_002.csv": "486fcf013d39ea1bf8eaf97650156d146fe2be852ebd2c4caa3cdc5c5592be8b",
+    "data/demand/day_003.csv": "0a096f1a766d6c27ffa4518eca6c0be76a3d8904de4c7810fcdd04a2f750fab1",
+    "data/demand/day_004.csv": "f70d2d1494fa34a93677f838459c57c39475427f06ae8a5ae27be4d7d658257d",
+    "data/demand/day_005.csv": "0428a18cc60a726a376fa5a6cb14f099bec806ab1807675d796401633cb0086b",
+    "data/demand/day_006.csv": "2cfc0c6cfe0346156f753e26dcdc7f743764fc0c778ef55ea9bdf27c7f937257",
+    "data/demand/day_007.csv": "634fdd58c914acb46d3c1e2a55e4c32f8ef18625c37f36a68a8d26e38d1860f8",
+    "data/demand/day_008.csv": "ff3c7a08692a84f244aa7d9a9f72d297e01138a8e8b63206d72e238dda055ebf",
+    "data/demand/day_009.csv": "7ed8de6633637ee940dfcb18c0570dbdc93c1f9599f73696503d746f4db8b7d5",
+    "data/demand/day_010.csv": "04609481a6b058c3ebf743f322113bdf1f673067c849690d5e5819b41c66219a",
+    "data/demand/day_011.csv": "ff7368ec9bde9fd4d39369d2817624f0f33693ac3e49110ed390f7b2e6d9995d",
+    "data/demand/day_012.csv": "fd52ad164433c76eda608438f668c56ac8d3d6e8caa6c4b3993961a8b782d09e",
+    "data/demand/day_013.csv": "e2ed35ce3b0811b97f61d06cb827b4bca711a607b1d546b46ab9093ee289c018",
+    "data/demand/day_014.csv": "251d077f1fcbcc83bc70c26499e6e917c58da5b7dccba9646348d32cd3d5d888",
+    "data/demand/day_015.csv": "63fd8a589044b11cc34e849f5789b2faba89631cfe94833ba16a2be218efc1fc",
+    "data/demand/day_016.csv": "e8ebf7ba942deae305786fa4848accfd7678fc0125edf6c9c5a8e09afdfe5a1d",
+    "data/demand/day_017.csv": "0b7fab749dbada5b54bdfbaeaed04763236bede6d987db89bdd82472e5e23678",
+    "data/demand/day_018.csv": "043d0d5bd306c7a5f80d5c62410fc1fd1e3c770f6cc243fd71778bd898bd1543",
+    "data/demand/day_019.csv": "062f78caa3426b3e119cdcf7661ce5448216f66f111fd0095db57e33604b1b84",
+    "data/demand/day_020.csv": "9cdac010186eb557d6f62436bbadce84f21d445e676d3d52ab5faa1c80cf87b8",
+    "data/dist.csv": "56a58884cdcbd609c14bd627c70691d272e2f2faf8262d3b9e9131423659c16a",
+    "simulator/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "simulator/__main__.py": "ce83b6b69c3e295bb142cbb07993f695b111da057444889620ef15acc1b33265",
+    "simulator/loaders.py": "35ae560a399a21ddb160db5a53771a0141336e42030f53d3c37fa9fc912f5891",
+    "simulator/models.py": "8989d3d64a183389c911cd257603e5e07dc846f5dbbe0f02700f4620fd9dfc52",
+    "simulator/simulator.py": "c8c7f874371665e34141a4f40b69127ef5d60e17126cade42ce4bad0f2a8f469",
+    "solution/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "solution/performance_monitor.py": "2e1f35b8cb0c057fdd34c4d743ce9cc0517b26597dddd3fc8d346235f43ae37b",
+    "solution/policies/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "solution/policies/baseline.py": "4df03c9828d9eb42140417752308ba7a8026219aa4c6c584483f8d18c6a33985",
+    "solution/policies/greedy_insertion.py": "4c3afdba1bde628b0966b4f2d721a2498d145e97371a6dd4914dbabd97ddb4d2",
+    "solution/policies/nearest_neighbour.py": "9e738b9cee6969441d80004edca314bd16646a1ee573b6ac0b753e202b501ede",
+    "solution/policies/window_first_nearest.py": "9c97552eebc0561b588ef45ab25abb9d117a566050c2d920df95563037e0d508",
+    "solution/policies/_insertion_variants.py": "d80da3546071a0063673858ed4367a0cd3b44adbe524eed6981a13832c1c38bb",
+    "solution/policies/greedy_insertion_efficiency.py": "c9e52a887c3b6790e0fd9078fc897121f89bb899eae3cd60584732f0918f27eb",
+    "solution/policies/greedy_insertion_protect.py": "6253e32b5618ad20f989c027da3a92b1e25343c0adb38f6c96ae9ebece8403a1"
+  },
+  "reference_result_sha256": {
+    "results/greedy_insertion/day_001/log.txt": "52d2d55bcc9b0bd4f89f2d7b02ea52c7da211348033d591ce6a4b5b77eb479ae",
+    "results/greedy_insertion/day_001/metrics.json": "a53f6e85a3b17f601b495f47815acb4e65fe4648a408eb1ba3a52fe5b50399c4",
+    "results/greedy_insertion/day_002/log.txt": "b35cd61fff95f51c60fd5a6f2ffaadb97c5fff922ea62c08421c872d13f4b138",
+    "results/greedy_insertion/day_002/metrics.json": "a32059c63e810011cfacd91f6c0dcd2e0bc1eaff84ebd3c70b06449e6dd50c4c",
+    "results/greedy_insertion/day_003/log.txt": "1e739f31d26c94f12d6eb5df55d70ef7704fdb75a56a55626fcd2e0b03580291",
+    "results/greedy_insertion/day_003/metrics.json": "5c1429652a94610f9a8f32f59c561cf906e51440ec8db7f36a67057033718f65",
+    "results/greedy_insertion/day_004/log.txt": "1a3467e3f202b272bbd0e9f47c57f46a54a64099f73b267fb05dd5d1ff802437",
+    "results/greedy_insertion/day_004/metrics.json": "5cb4523572a8ddf6e6f6399f831e7660de606dc4a7bf42aced018ceea4b6d3b2",
+    "results/greedy_insertion/day_005/log.txt": "4ffab82da969cc6bbeac6c01944c24dd797d7dc95fea0fe79f1709b7bcf5d010",
+    "results/greedy_insertion/day_005/metrics.json": "6f4f1889c09deb1418dd3e6bb431f074bd07c651a3daba8fdab7db5110aae74d",
+    "results/window_first_nearest/day_001/log.txt": "65833a7e05f856bb17ec7e09b4180f380132b48883fc766bfe94a3b2813e1763",
+    "results/window_first_nearest/day_001/metrics.json": "cd4079766f7ce049eb6319a3485a4bdd4859956bb2ac273856dc1b49c83567ee",
+    "results/window_first_nearest/day_002/log.txt": "4103d582936b259b592e75e6ecee94d1399e3bfde1d7ac17bec74a314a00bcbe",
+    "results/window_first_nearest/day_002/metrics.json": "e452170b53157c0db0098cc97d4ab7cc6ebccba12d60d736a5f2961f4f8ff5eb",
+    "results/window_first_nearest/day_003/log.txt": "a0c659903fd40382aa9bc924ace81077c48d573a985bd7c85eab17eb5932c5db",
+    "results/window_first_nearest/day_003/metrics.json": "a01d16c3c313682c0e164914f10afd858b140a06d327b096f20253a1fbe0f9df",
+    "results/window_first_nearest/day_004/log.txt": "e933a0e2aca0384bc57e41ee8de9c0ad638b8b3d94060d88e288439e1278b899",
+    "results/window_first_nearest/day_004/metrics.json": "dd692b9bd81922b2678c570488e5f7b0fb2cc2d97d0b2c808832d600f14d6b03",
+    "results/window_first_nearest/day_005/log.txt": "64b5c7cc71ffcc460b507e262cb6a96b3162f116795f4486d9cdc2c0d548d4cd",
+    "results/window_first_nearest/day_005/metrics.json": "eb9b9c7136af6c1b7107c2c1e67600bb8b3a8295f2165f46361c69646415b1bb"
+  },
+  "runs": [
+    {
+      "day": "day_001",
+      "policy": "greedy_insertion_efficiency",
+      "output_dir": "results/insertion_optimisation/greedy_insertion_efficiency/day_001",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "simulator",
+            "--policy",
+            "solution.policies.greedy_insertion_efficiency",
+            "--data",
+            "data",
+            "--day",
+            "day_001",
+            "--output",
+            "results/insertion_optimisation/greedy_insertion_efficiency/day_001"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.870583500000066
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_001",
+            "--log",
+            "results/insertion_optimisation/greedy_insertion_efficiency/day_001/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.03950108299977728
+        }
+      ],
+      "sha256": {
+        "results/insertion_optimisation/greedy_insertion_efficiency/day_001/log.txt": "0014e305a62c9f115ba2788269fad5a8b9a164b1c268b4520c8faa01325a31af",
+        "results/insertion_optimisation/greedy_insertion_efficiency/day_001/metrics.json": "29c9501ad04b2fe22d68df4660d50c15b1866ad4a81fea25bab9a0c9810f60d5"
+      }
+    },
+    {
+      "day": "day_002",
+      "policy": "greedy_insertion_efficiency",
+      "output_dir": "results/insertion_optimisation/greedy_insertion_efficiency/day_002",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "simulator",
+            "--policy",
+            "solution.policies.greedy_insertion_efficiency",
+            "--data",
+            "data",
+            "--day",
+            "day_002",
+            "--output",
+            "results/insertion_optimisation/greedy_insertion_efficiency/day_002"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.046246166999481
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_002",
+            "--log",
+            "results/insertion_optimisation/greedy_insertion_efficiency/day_002/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.04069879199960269
+        }
+      ],
+      "sha256": {
+        "results/insertion_optimisation/greedy_insertion_efficiency/day_002/log.txt": "baa2aa274735153bed4d5bde1a355fa020f28b24326b85194f9fd8e98e1a78f4",
+        "results/insertion_optimisation/greedy_insertion_efficiency/day_002/metrics.json": "ef6b172aa7446228b1eb43629ae1eedf38d9bb954c65bddd25f044bba5d240c6"
+      }
+    },
+    {
+      "day": "day_003",
+      "policy": "greedy_insertion_efficiency",
+      "output_dir": "results/insertion_optimisation/greedy_insertion_efficiency/day_003",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "simulator",
+            "--policy",
+            "solution.policies.greedy_insertion_efficiency",
+            "--data",
+            "data",
+            "--day",
+            "day_003",
+            "--output",
+            "results/insertion_optimisation/greedy_insertion_efficiency/day_003"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 3.620472749997134
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_003",
+            "--log",
+            "results/insertion_optimisation/greedy_insertion_efficiency/day_003/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.04041237500132411
+        }
+      ],
+      "sha256": {
+        "results/insertion_optimisation/greedy_insertion_efficiency/day_003/log.txt": "2d85badeb6683c3e7d3524354344ef634aee7e8094e3b697b27a2c1e13353eb7",
+        "results/insertion_optimisation/greedy_insertion_efficiency/day_003/metrics.json": "d7764f54ff9074344e9583a0110583101e7c51db0fb24fc06635ab56aefc7d24"
+      }
+    },
+    {
+      "day": "day_004",
+      "policy": "greedy_insertion_efficiency",
+      "output_dir": "results/insertion_optimisation/greedy_insertion_efficiency/day_004",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "simulator",
+            "--policy",
+            "solution.policies.greedy_insertion_efficiency",
+            "--data",
+            "data",
+            "--day",
+            "day_004",
+            "--output",
+            "results/insertion_optimisation/greedy_insertion_efficiency/day_004"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.7135280830007105
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_004",
+            "--log",
+            "results/insertion_optimisation/greedy_insertion_efficiency/day_004/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.041161209002893884
+        }
+      ],
+      "sha256": {
+        "results/insertion_optimisation/greedy_insertion_efficiency/day_004/log.txt": "7ce58cc6ed382d7153b67ab13861ef9e5e30ca9af57f2768cdaa8fc998975fa1",
+        "results/insertion_optimisation/greedy_insertion_efficiency/day_004/metrics.json": "7879558a9a08a358c6a9a5504c0ddcebdcae1b15bb07ea80d83a6758e1705e9d"
+      }
+    },
+    {
+      "day": "day_005",
+      "policy": "greedy_insertion_efficiency",
+      "output_dir": "results/insertion_optimisation/greedy_insertion_efficiency/day_005",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "simulator",
+            "--policy",
+            "solution.policies.greedy_insertion_efficiency",
+            "--data",
+            "data",
+            "--day",
+            "day_005",
+            "--output",
+            "results/insertion_optimisation/greedy_insertion_efficiency/day_005"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.378545874998963
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_005",
+            "--log",
+            "results/insertion_optimisation/greedy_insertion_efficiency/day_005/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.04104841700245743
+        }
+      ],
+      "sha256": {
+        "results/insertion_optimisation/greedy_insertion_efficiency/day_005/log.txt": "bc4c9e5ebb98f5bde35bf7b7e6a28398f7d34b92ad4b2d4e47e1b09f21ae8fe8",
+        "results/insertion_optimisation/greedy_insertion_efficiency/day_005/metrics.json": "6c0524f880e8eeb6a4744416367bcf43385de1c4fc86ac8fa11d752220cb2bd0"
+      }
+    },
+    {
+      "day": "day_001",
+      "policy": "greedy_insertion_protect",
+      "output_dir": "results/insertion_optimisation/greedy_insertion_protect/day_001",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "simulator",
+            "--policy",
+            "solution.policies.greedy_insertion_protect",
+            "--data",
+            "data",
+            "--day",
+            "day_001",
+            "--output",
+            "results/insertion_optimisation/greedy_insertion_protect/day_001"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.983003124998504
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_001",
+            "--log",
+            "results/insertion_optimisation/greedy_insertion_protect/day_001/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.03955445800238522
+        }
+      ],
+      "sha256": {
+        "results/insertion_optimisation/greedy_insertion_protect/day_001/log.txt": "52d2d55bcc9b0bd4f89f2d7b02ea52c7da211348033d591ce6a4b5b77eb479ae",
+        "results/insertion_optimisation/greedy_insertion_protect/day_001/metrics.json": "a53f6e85a3b17f601b495f47815acb4e65fe4648a408eb1ba3a52fe5b50399c4"
+      }
+    },
+    {
+      "day": "day_002",
+      "policy": "greedy_insertion_protect",
+      "output_dir": "results/insertion_optimisation/greedy_insertion_protect/day_002",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "simulator",
+            "--policy",
+            "solution.policies.greedy_insertion_protect",
+            "--data",
+            "data",
+            "--day",
+            "day_002",
+            "--output",
+            "results/insertion_optimisation/greedy_insertion_protect/day_002"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 3.884466582996538
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_002",
+            "--log",
+            "results/insertion_optimisation/greedy_insertion_protect/day_002/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.039460500000132015
+        }
+      ],
+      "sha256": {
+        "results/insertion_optimisation/greedy_insertion_protect/day_002/log.txt": "b35cd61fff95f51c60fd5a6f2ffaadb97c5fff922ea62c08421c872d13f4b138",
+        "results/insertion_optimisation/greedy_insertion_protect/day_002/metrics.json": "a32059c63e810011cfacd91f6c0dcd2e0bc1eaff84ebd3c70b06449e6dd50c4c"
+      }
+    },
+    {
+      "day": "day_003",
+      "policy": "greedy_insertion_protect",
+      "output_dir": "results/insertion_optimisation/greedy_insertion_protect/day_003",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "simulator",
+            "--policy",
+            "solution.policies.greedy_insertion_protect",
+            "--data",
+            "data",
+            "--day",
+            "day_003",
+            "--output",
+            "results/insertion_optimisation/greedy_insertion_protect/day_003"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 3.5735199999980978
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_003",
+            "--log",
+            "results/insertion_optimisation/greedy_insertion_protect/day_003/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.039191374999063555
+        }
+      ],
+      "sha256": {
+        "results/insertion_optimisation/greedy_insertion_protect/day_003/log.txt": "1e739f31d26c94f12d6eb5df55d70ef7704fdb75a56a55626fcd2e0b03580291",
+        "results/insertion_optimisation/greedy_insertion_protect/day_003/metrics.json": "5c1429652a94610f9a8f32f59c561cf906e51440ec8db7f36a67057033718f65"
+      }
+    },
+    {
+      "day": "day_004",
+      "policy": "greedy_insertion_protect",
+      "output_dir": "results/insertion_optimisation/greedy_insertion_protect/day_004",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "simulator",
+            "--policy",
+            "solution.policies.greedy_insertion_protect",
+            "--data",
+            "data",
+            "--day",
+            "day_004",
+            "--output",
+            "results/insertion_optimisation/greedy_insertion_protect/day_004"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.93756674999895
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_004",
+            "--log",
+            "results/insertion_optimisation/greedy_insertion_protect/day_004/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.045693499996559694
+        }
+      ],
+      "sha256": {
+        "results/insertion_optimisation/greedy_insertion_protect/day_004/log.txt": "1a3467e3f202b272bbd0e9f47c57f46a54a64099f73b267fb05dd5d1ff802437",
+        "results/insertion_optimisation/greedy_insertion_protect/day_004/metrics.json": "5cb4523572a8ddf6e6f6399f831e7660de606dc4a7bf42aced018ceea4b6d3b2"
+      }
+    },
+    {
+      "day": "day_005",
+      "policy": "greedy_insertion_protect",
+      "output_dir": "results/insertion_optimisation/greedy_insertion_protect/day_005",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "simulator",
+            "--policy",
+            "solution.policies.greedy_insertion_protect",
+            "--data",
+            "data",
+            "--day",
+            "day_005",
+            "--output",
+            "results/insertion_optimisation/greedy_insertion_protect/day_005"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.468758374998288
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_005",
+            "--log",
+            "results/insertion_optimisation/greedy_insertion_protect/day_005/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.03952637499969569
+        }
+      ],
+      "sha256": {
+        "results/insertion_optimisation/greedy_insertion_protect/day_005/log.txt": "4ffab82da969cc6bbeac6c01944c24dd797d7dc95fea0fe79f1709b7bcf5d010",
+        "results/insertion_optimisation/greedy_insertion_protect/day_005/metrics.json": "6f4f1889c09deb1418dd3e6bb431f074bd07c651a3daba8fdab7db5110aae74d"
+      }
+    }
+  ],
+  "sha256_after": {
+    "data/config.json": "6041005abea965629ca15dbdb4d7038cdfc3f0a30ee0cd08f3efdb98cd04fdd8",
+    "data/demand/day_001.csv": "a73f06a9faf4c11f45a2b373f50fe2379c4dd23f0b733c8b0bdc36bfaa8226e7",
+    "data/demand/day_002.csv": "486fcf013d39ea1bf8eaf97650156d146fe2be852ebd2c4caa3cdc5c5592be8b",
+    "data/demand/day_003.csv": "0a096f1a766d6c27ffa4518eca6c0be76a3d8904de4c7810fcdd04a2f750fab1",
+    "data/demand/day_004.csv": "f70d2d1494fa34a93677f838459c57c39475427f06ae8a5ae27be4d7d658257d",
+    "data/demand/day_005.csv": "0428a18cc60a726a376fa5a6cb14f099bec806ab1807675d796401633cb0086b",
+    "data/demand/day_006.csv": "2cfc0c6cfe0346156f753e26dcdc7f743764fc0c778ef55ea9bdf27c7f937257",
+    "data/demand/day_007.csv": "634fdd58c914acb46d3c1e2a55e4c32f8ef18625c37f36a68a8d26e38d1860f8",
+    "data/demand/day_008.csv": "ff3c7a08692a84f244aa7d9a9f72d297e01138a8e8b63206d72e238dda055ebf",
+    "data/demand/day_009.csv": "7ed8de6633637ee940dfcb18c0570dbdc93c1f9599f73696503d746f4db8b7d5",
+    "data/demand/day_010.csv": "04609481a6b058c3ebf743f322113bdf1f673067c849690d5e5819b41c66219a",
+    "data/demand/day_011.csv": "ff7368ec9bde9fd4d39369d2817624f0f33693ac3e49110ed390f7b2e6d9995d",
+    "data/demand/day_012.csv": "fd52ad164433c76eda608438f668c56ac8d3d6e8caa6c4b3993961a8b782d09e",
+    "data/demand/day_013.csv": "e2ed35ce3b0811b97f61d06cb827b4bca711a607b1d546b46ab9093ee289c018",
+    "data/demand/day_014.csv": "251d077f1fcbcc83bc70c26499e6e917c58da5b7dccba9646348d32cd3d5d888",
+    "data/demand/day_015.csv": "63fd8a589044b11cc34e849f5789b2faba89631cfe94833ba16a2be218efc1fc",
+    "data/demand/day_016.csv": "e8ebf7ba942deae305786fa4848accfd7678fc0125edf6c9c5a8e09afdfe5a1d",
+    "data/demand/day_017.csv": "0b7fab749dbada5b54bdfbaeaed04763236bede6d987db89bdd82472e5e23678",
+    "data/demand/day_018.csv": "043d0d5bd306c7a5f80d5c62410fc1fd1e3c770f6cc243fd71778bd898bd1543",
+    "data/demand/day_019.csv": "062f78caa3426b3e119cdcf7661ce5448216f66f111fd0095db57e33604b1b84",
+    "data/demand/day_020.csv": "9cdac010186eb557d6f62436bbadce84f21d445e676d3d52ab5faa1c80cf87b8",
+    "data/dist.csv": "56a58884cdcbd609c14bd627c70691d272e2f2faf8262d3b9e9131423659c16a",
+    "simulator/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "simulator/__main__.py": "ce83b6b69c3e295bb142cbb07993f695b111da057444889620ef15acc1b33265",
+    "simulator/loaders.py": "35ae560a399a21ddb160db5a53771a0141336e42030f53d3c37fa9fc912f5891",
+    "simulator/models.py": "8989d3d64a183389c911cd257603e5e07dc846f5dbbe0f02700f4620fd9dfc52",
+    "simulator/simulator.py": "c8c7f874371665e34141a4f40b69127ef5d60e17126cade42ce4bad0f2a8f469",
+    "solution/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "solution/performance_monitor.py": "2e1f35b8cb0c057fdd34c4d743ce9cc0517b26597dddd3fc8d346235f43ae37b",
+    "solution/policies/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "solution/policies/baseline.py": "4df03c9828d9eb42140417752308ba7a8026219aa4c6c584483f8d18c6a33985",
+    "solution/policies/greedy_insertion.py": "4c3afdba1bde628b0966b4f2d721a2498d145e97371a6dd4914dbabd97ddb4d2",
+    "solution/policies/nearest_neighbour.py": "9e738b9cee6969441d80004edca314bd16646a1ee573b6ac0b753e202b501ede",
+    "solution/policies/window_first_nearest.py": "9c97552eebc0561b588ef45ab25abb9d117a566050c2d920df95563037e0d508",
+    "solution/policies/_insertion_variants.py": "d80da3546071a0063673858ed4367a0cd3b44adbe524eed6981a13832c1c38bb",
+    "solution/policies/greedy_insertion_efficiency.py": "c9e52a887c3b6790e0fd9078fc897121f89bb899eae3cd60584732f0918f27eb",
+    "solution/policies/greedy_insertion_protect.py": "6253e32b5618ad20f989c027da3a92b1e25343c0adb38f6c96ae9ebece8403a1"
+  },
+  "sources_and_reference_results_unchanged": true
+}

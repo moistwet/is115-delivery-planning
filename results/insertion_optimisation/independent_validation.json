@@ -1,0 +1,815 @@
+{
+  "source_audit": {
+    "matches_two_separate_agreed_rules": true,
+    "starts_from_empty": true,
+    "no_previous_policy_calls": true,
+    "strictly_positive_net_credit_gate": true,
+    "full_existing_route_rescored": true,
+    "efficiency_nonpositive_distance_tier_before_ratio": true,
+    "protect_lost_old_on_time_ids_only_breaks_gain_ties": true,
+    "time_complexity": "O(n + m*(k+1)^3), hence O(n + m^4)",
+    "extra_space_complexity": "O(m+k)",
+    "issues": []
+  },
+  "method": "Independent standard-library input/JSONL parsing and planning replay; no solution, monitor, or simulator imports and no simulation executions.",
+  "all_passed": true,
+  "manifest_process_statuses_successful": true,
+  "hash_checks": {
+    "data/config.json": true,
+    "data/demand/day_001.csv": true,
+    "data/demand/day_002.csv": true,
+    "data/demand/day_003.csv": true,
+    "data/demand/day_004.csv": true,
+    "data/demand/day_005.csv": true,
+    "data/demand/day_006.csv": true,
+    "data/demand/day_007.csv": true,
+    "data/demand/day_008.csv": true,
+    "data/demand/day_009.csv": true,
+    "data/demand/day_010.csv": true,
+    "data/demand/day_011.csv": true,
+    "data/demand/day_012.csv": true,
+    "data/demand/day_013.csv": true,
+    "data/demand/day_014.csv": true,
+    "data/demand/day_015.csv": true,
+    "data/demand/day_016.csv": true,
+    "data/demand/day_017.csv": true,
+    "data/demand/day_018.csv": true,
+    "data/demand/day_019.csv": true,
+    "data/demand/day_020.csv": true,
+    "data/dist.csv": true,
+    "simulator/__init__.py": true,
+    "simulator/__main__.py": true,
+    "simulator/loaders.py": true,
+    "simulator/models.py": true,
+    "simulator/simulator.py": true,
+    "solution/__init__.py": true,
+    "solution/performance_monitor.py": true,
+    "solution/policies/__init__.py": true,
+    "solution/policies/baseline.py": true,
+    "solution/policies/greedy_insertion.py": true,
+    "solution/policies/nearest_neighbour.py": true,
+    "solution/policies/window_first_nearest.py": true,
+    "solution/policies/_insertion_variants.py": true,
+    "solution/policies/greedy_insertion_efficiency.py": true,
+    "solution/policies/greedy_insertion_protect.py": true,
+    "results/greedy_insertion/day_001/log.txt": true,
+    "results/greedy_insertion/day_001/metrics.json": true,
+    "results/greedy_insertion/day_002/log.txt": true,
+    "results/greedy_insertion/day_002/metrics.json": true,
+    "results/greedy_insertion/day_003/log.txt": true,
+    "results/greedy_insertion/day_003/metrics.json": true,
+    "results/greedy_insertion/day_004/log.txt": true,
+    "results/greedy_insertion/day_004/metrics.json": true,
+    "results/greedy_insertion/day_005/log.txt": true,
+    "results/greedy_insertion/day_005/metrics.json": true,
+    "results/window_first_nearest/day_001/log.txt": true,
+    "results/window_first_nearest/day_001/metrics.json": true,
+    "results/window_first_nearest/day_002/log.txt": true,
+    "results/window_first_nearest/day_002/metrics.json": true,
+    "results/window_first_nearest/day_003/log.txt": true,
+    "results/window_first_nearest/day_003/metrics.json": true,
+    "results/window_first_nearest/day_004/log.txt": true,
+    "results/window_first_nearest/day_004/metrics.json": true,
+    "results/window_first_nearest/day_005/log.txt": true,
+    "results/window_first_nearest/day_005/metrics.json": true,
+    "results/insertion_optimisation/greedy_insertion_efficiency/day_001/log.txt": true,
+    "results/insertion_optimisation/greedy_insertion_efficiency/day_001/metrics.json": true,
+    "results/insertion_optimisation/greedy_insertion_efficiency/day_002/log.txt": true,
+    "results/insertion_optimisation/greedy_insertion_efficiency/day_002/metrics.json": true,
+    "results/insertion_optimisation/greedy_insertion_efficiency/day_003/log.txt": true,
+    "results/insertion_optimisation/greedy_insertion_efficiency/day_003/metrics.json": true,
+    "results/insertion_optimisation/greedy_insertion_efficiency/day_004/log.txt": true,
+    "results/insertion_optimisation/greedy_insertion_efficiency/day_004/metrics.json": true,
+    "results/insertion_optimisation/greedy_insertion_efficiency/day_005/log.txt": true,
+    "results/insertion_optimisation/greedy_insertion_efficiency/day_005/metrics.json": true,
+    "results/insertion_optimisation/greedy_insertion_protect/day_001/log.txt": true,
+    "results/insertion_optimisation/greedy_insertion_protect/day_001/metrics.json": true,
+    "results/insertion_optimisation/greedy_insertion_protect/day_002/log.txt": true,
+    "results/insertion_optimisation/greedy_insertion_protect/day_002/metrics.json": true,
+    "results/insertion_optimisation/greedy_insertion_protect/day_003/log.txt": true,
+    "results/insertion_optimisation/greedy_insertion_protect/day_003/metrics.json": true,
+    "results/insertion_optimisation/greedy_insertion_protect/day_004/log.txt": true,
+    "results/insertion_optimisation/greedy_insertion_protect/day_004/metrics.json": true,
+    "results/insertion_optimisation/greedy_insertion_protect/day_005/log.txt": true,
+    "results/insertion_optimisation/greedy_insertion_protect/day_005/metrics.json": true
+  },
+  "runs": [
+    {
+      "policy": "greedy_insertion_efficiency",
+      "day": "day_001",
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_decisions_reconstructed": 86,
+      "independent_metrics": {
+        "total_parcels": 799,
+        "delivered_parcels": 762,
+        "on_time_parcels": 547,
+        "early_parcels": 55,
+        "late_parcels": 160,
+        "undelivered_parcels": 37,
+        "completion_rate_pct": 95.36921151439299,
+        "on_time_service_rate_pct": 68.46057571964957,
+        "score_a": {
+          "completion_rate_pct": 95.36921151439299,
+          "on_time_tiebreak_pct": 68.46057571964957
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 81.91489361702128,
+        "score_b_sensitivity": {
+          "0.25": 75.18773466833542,
+          "0.5": 81.91489361702128,
+          "0.75": 88.64205256570713
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 4114.089,
+        "average_load_utilisation_pct": 73.4040404040404
+      }
+    },
+    {
+      "policy": "greedy_insertion_efficiency",
+      "day": "day_002",
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_decisions_reconstructed": 94,
+      "independent_metrics": {
+        "total_parcels": 772,
+        "delivered_parcels": 740,
+        "on_time_parcels": 565,
+        "early_parcels": 66,
+        "late_parcels": 109,
+        "undelivered_parcels": 32,
+        "completion_rate_pct": 95.85492227979275,
+        "on_time_service_rate_pct": 73.18652849740933,
+        "score_a": {
+          "completion_rate_pct": 95.85492227979275,
+          "on_time_tiebreak_pct": 73.18652849740933
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 84.52072538860104,
+        "score_b_sensitivity": {
+          "0.25": 78.85362694300518,
+          "0.5": 84.52072538860104,
+          "0.75": 90.18782383419689
+        },
+        "number_of_trips": 34,
+        "total_distance_km": 4049.781,
+        "average_load_utilisation_pct": 71.5
+      }
+    },
+    {
+      "policy": "greedy_insertion_efficiency",
+      "day": "day_003",
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_decisions_reconstructed": 88,
+      "independent_metrics": {
+        "total_parcels": 794,
+        "delivered_parcels": 760,
+        "on_time_parcels": 634,
+        "early_parcels": 32,
+        "late_parcels": 94,
+        "undelivered_parcels": 34,
+        "completion_rate_pct": 95.71788413098237,
+        "on_time_service_rate_pct": 79.84886649874055,
+        "score_a": {
+          "completion_rate_pct": 95.71788413098237,
+          "on_time_tiebreak_pct": 79.84886649874055
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 87.78337531486146,
+        "score_b_sensitivity": {
+          "0.25": 83.816120906801,
+          "0.5": 87.78337531486146,
+          "0.75": 91.75062972292191
+        },
+        "number_of_trips": 34,
+        "total_distance_km": 4122.96,
+        "average_load_utilisation_pct": 71.48039215686275
+      }
+    },
+    {
+      "policy": "greedy_insertion_efficiency",
+      "day": "day_004",
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_decisions_reconstructed": 90,
+      "independent_metrics": {
+        "total_parcels": 808,
+        "delivered_parcels": 779,
+        "on_time_parcels": 625,
+        "early_parcels": 58,
+        "late_parcels": 96,
+        "undelivered_parcels": 29,
+        "completion_rate_pct": 96.41089108910892,
+        "on_time_service_rate_pct": 77.35148514851485,
+        "score_a": {
+          "completion_rate_pct": 96.41089108910892,
+          "on_time_tiebreak_pct": 77.35148514851485
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 86.88118811881188,
+        "score_b_sensitivity": {
+          "0.25": 82.11633663366337,
+          "0.5": 86.88118811881188,
+          "0.75": 91.64603960396039
+        },
+        "number_of_trips": 34,
+        "total_distance_km": 4109.124,
+        "average_load_utilisation_pct": 71.32352941176471
+      }
+    },
+    {
+      "policy": "greedy_insertion_efficiency",
+      "day": "day_005",
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_decisions_reconstructed": 80,
+      "independent_metrics": {
+        "total_parcels": 806,
+        "delivered_parcels": 781,
+        "on_time_parcels": 594,
+        "early_parcels": 19,
+        "late_parcels": 168,
+        "undelivered_parcels": 25,
+        "completion_rate_pct": 96.89826302729529,
+        "on_time_service_rate_pct": 73.69727047146402,
+        "score_a": {
+          "completion_rate_pct": 96.89826302729529,
+          "on_time_tiebreak_pct": 73.69727047146402
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 85.29776674937965,
+        "score_b_sensitivity": {
+          "0.25": 79.49751861042184,
+          "0.5": 85.29776674937965,
+          "0.75": 91.09801488833747
+        },
+        "number_of_trips": 31,
+        "total_distance_km": 4277.16,
+        "average_load_utilisation_pct": 79.04301075268818
+      }
+    },
+    {
+      "policy": "greedy_insertion_protect",
+      "day": "day_001",
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_decisions_reconstructed": 77,
+      "independent_metrics": {
+        "total_parcels": 799,
+        "delivered_parcels": 763,
+        "on_time_parcels": 628,
+        "early_parcels": 0,
+        "late_parcels": 135,
+        "undelivered_parcels": 36,
+        "completion_rate_pct": 95.49436795994994,
+        "on_time_service_rate_pct": 78.5982478097622,
+        "score_a": {
+          "completion_rate_pct": 95.49436795994994,
+          "on_time_tiebreak_pct": 78.5982478097622
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 87.04630788485608,
+        "score_b_sensitivity": {
+          "0.25": 82.82227784730914,
+          "0.5": 87.04630788485608,
+          "0.75": 91.270337922403
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 4239.267,
+        "average_load_utilisation_pct": 73.46464646464646
+      }
+    },
+    {
+      "policy": "greedy_insertion_protect",
+      "day": "day_002",
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_decisions_reconstructed": 79,
+      "independent_metrics": {
+        "total_parcels": 772,
+        "delivered_parcels": 738,
+        "on_time_parcels": 617,
+        "early_parcels": 1,
+        "late_parcels": 120,
+        "undelivered_parcels": 34,
+        "completion_rate_pct": 95.5958549222798,
+        "on_time_service_rate_pct": 79.92227979274611,
+        "score_a": {
+          "completion_rate_pct": 95.5958549222798,
+          "on_time_tiebreak_pct": 79.92227979274611
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 87.75906735751295,
+        "score_b_sensitivity": {
+          "0.25": 83.84067357512953,
+          "0.5": 87.75906735751295,
+          "0.75": 91.67746113989638
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 4196.331,
+        "average_load_utilisation_pct": 73.45454545454545
+      }
+    },
+    {
+      "policy": "greedy_insertion_protect",
+      "day": "day_003",
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_decisions_reconstructed": 94,
+      "independent_metrics": {
+        "total_parcels": 794,
+        "delivered_parcels": 759,
+        "on_time_parcels": 693,
+        "early_parcels": 1,
+        "late_parcels": 65,
+        "undelivered_parcels": 35,
+        "completion_rate_pct": 95.59193954659949,
+        "on_time_service_rate_pct": 87.27959697732997,
+        "score_a": {
+          "completion_rate_pct": 95.59193954659949,
+          "on_time_tiebreak_pct": 87.27959697732997
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 91.43576826196474,
+        "score_b_sensitivity": {
+          "0.25": 89.35768261964735,
+          "0.5": 91.43576826196474,
+          "0.75": 93.51385390428212
+        },
+        "number_of_trips": 34,
+        "total_distance_km": 4012.239,
+        "average_load_utilisation_pct": 71.46078431372548
+      }
+    },
+    {
+      "policy": "greedy_insertion_protect",
+      "day": "day_004",
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_decisions_reconstructed": 89,
+      "independent_metrics": {
+        "total_parcels": 808,
+        "delivered_parcels": 776,
+        "on_time_parcels": 668,
+        "early_parcels": 0,
+        "late_parcels": 108,
+        "undelivered_parcels": 32,
+        "completion_rate_pct": 96.03960396039604,
+        "on_time_service_rate_pct": 82.67326732673267,
+        "score_a": {
+          "completion_rate_pct": 96.03960396039604,
+          "on_time_tiebreak_pct": 82.67326732673267
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 89.35643564356435,
+        "score_b_sensitivity": {
+          "0.25": 86.01485148514851,
+          "0.5": 89.35643564356435,
+          "0.75": 92.6980198019802
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 4110.126,
+        "average_load_utilisation_pct": 73.25252525252525
+      }
+    },
+    {
+      "policy": "greedy_insertion_protect",
+      "day": "day_005",
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_decisions_reconstructed": 91,
+      "independent_metrics": {
+        "total_parcels": 806,
+        "delivered_parcels": 781,
+        "on_time_parcels": 590,
+        "early_parcels": 3,
+        "late_parcels": 188,
+        "undelivered_parcels": 25,
+        "completion_rate_pct": 96.89826302729529,
+        "on_time_service_rate_pct": 73.20099255583126,
+        "score_a": {
+          "completion_rate_pct": 96.89826302729529,
+          "on_time_tiebreak_pct": 73.20099255583126
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 85.04962779156328,
+        "score_b_sensitivity": {
+          "0.25": 79.12531017369727,
+          "0.5": 85.04962779156328,
+          "0.75": 90.97394540942928
+        },
+        "number_of_trips": 34,
+        "total_distance_km": 4068.243,
+        "average_load_utilisation_pct": 72.08823529411765
+      }
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "policy": "greedy_insertion_efficiency",
+      "reference": "greedy_insertion",
+      "day": "day_001",
+      "score_a_winner": "greedy_insertion",
+      "score_b_winner": "greedy_insertion",
+      "score_b_improvement_points": -5.131414267834799,
+      "sensitivity_winners": {
+        "0.25": "greedy_insertion",
+        "0.5": "greedy_insertion",
+        "0.75": "greedy_insertion"
+      },
+      "delivered_change": -1,
+      "on_time_change": -81,
+      "early_change": 55,
+      "late_change": 25,
+      "distance_change_km": -125.17799999999988,
+      "distance_change_pct": -2.952821796787036
+    },
+    {
+      "policy": "greedy_insertion_efficiency",
+      "reference": "window_first_nearest",
+      "day": "day_001",
+      "score_a_winner": "window_first_nearest",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -8.82352941176471,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 0,
+      "on_time_change": -141,
+      "early_change": 55,
+      "late_change": 86,
+      "distance_change_km": 25.880999999999858,
+      "distance_change_pct": 0.6330646581582898
+    },
+    {
+      "policy": "greedy_insertion_efficiency",
+      "reference": "greedy_insertion",
+      "day": "day_002",
+      "score_a_winner": "greedy_insertion_efficiency",
+      "score_b_winner": "greedy_insertion",
+      "score_b_improvement_points": -3.238341968911911,
+      "sensitivity_winners": {
+        "0.25": "greedy_insertion",
+        "0.5": "greedy_insertion",
+        "0.75": "greedy_insertion"
+      },
+      "delivered_change": 2,
+      "on_time_change": -52,
+      "early_change": 65,
+      "late_change": -11,
+      "distance_change_km": -146.55000000000018,
+      "distance_change_pct": -3.492336519688275
+    },
+    {
+      "policy": "greedy_insertion_efficiency",
+      "reference": "window_first_nearest",
+      "day": "day_002",
+      "score_a_winner": "greedy_insertion_efficiency",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -7.3186528497409284,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 4,
+      "on_time_change": -117,
+      "early_change": 66,
+      "late_change": 55,
+      "distance_change_km": -181.14300000000003,
+      "distance_change_pct": -4.281405196595355
+    },
+    {
+      "policy": "greedy_insertion_efficiency",
+      "reference": "greedy_insertion",
+      "day": "day_003",
+      "score_a_winner": "greedy_insertion_efficiency",
+      "score_b_winner": "greedy_insertion",
+      "score_b_improvement_points": -3.65239294710328,
+      "sensitivity_winners": {
+        "0.25": "greedy_insertion",
+        "0.5": "greedy_insertion",
+        "0.75": "greedy_insertion"
+      },
+      "delivered_change": 1,
+      "on_time_change": -59,
+      "early_change": 31,
+      "late_change": 29,
+      "distance_change_km": 110.721,
+      "distance_change_pct": 2.7595813709003876
+    },
+    {
+      "policy": "greedy_insertion_efficiency",
+      "reference": "window_first_nearest",
+      "day": "day_003",
+      "score_a_winner": "greedy_insertion_efficiency",
+      "score_b_winner": "greedy_insertion_efficiency",
+      "score_b_improvement_points": 0.31486146095717515,
+      "sensitivity_winners": {
+        "0.25": "greedy_insertion_efficiency",
+        "0.5": "greedy_insertion_efficiency",
+        "0.75": "greedy_insertion_efficiency"
+      },
+      "delivered_change": 2,
+      "on_time_change": 3,
+      "early_change": 32,
+      "late_change": -33,
+      "distance_change_km": -146.85900000000038,
+      "distance_change_pct": -3.439466637812993
+    },
+    {
+      "policy": "greedy_insertion_efficiency",
+      "reference": "greedy_insertion",
+      "day": "day_004",
+      "score_a_winner": "greedy_insertion_efficiency",
+      "score_b_winner": "greedy_insertion",
+      "score_b_improvement_points": -2.4752475247524757,
+      "sensitivity_winners": {
+        "0.25": "greedy_insertion",
+        "0.5": "greedy_insertion",
+        "0.75": "greedy_insertion"
+      },
+      "delivered_change": 3,
+      "on_time_change": -43,
+      "early_change": 58,
+      "late_change": -12,
+      "distance_change_km": -1.0020000000004075,
+      "distance_change_pct": -0.024378814664085903
+    },
+    {
+      "policy": "greedy_insertion_efficiency",
+      "reference": "window_first_nearest",
+      "day": "day_004",
+      "score_a_winner": "window_first_nearest",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -3.155940594059416,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 0,
+      "on_time_change": -51,
+      "early_change": 57,
+      "late_change": -6,
+      "distance_change_km": 21.608999999999924,
+      "distance_change_pct": 0.5286586104271158
+    },
+    {
+      "policy": "greedy_insertion_efficiency",
+      "reference": "greedy_insertion",
+      "day": "day_005",
+      "score_a_winner": "greedy_insertion_efficiency",
+      "score_b_winner": "greedy_insertion_efficiency",
+      "score_b_improvement_points": 0.24813895781636575,
+      "sensitivity_winners": {
+        "0.25": "greedy_insertion_efficiency",
+        "0.5": "greedy_insertion_efficiency",
+        "0.75": "greedy_insertion_efficiency"
+      },
+      "delivered_change": 0,
+      "on_time_change": 4,
+      "early_change": 16,
+      "late_change": -20,
+      "distance_change_km": 208.91699999999992,
+      "distance_change_pct": 5.1353127136210865
+    },
+    {
+      "policy": "greedy_insertion_efficiency",
+      "reference": "window_first_nearest",
+      "day": "day_005",
+      "score_a_winner": "window_first_nearest",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -4.528535980148888,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 0,
+      "on_time_change": -73,
+      "early_change": 7,
+      "late_change": 66,
+      "distance_change_km": 218.53499999999985,
+      "distance_change_pct": 5.384459022452182
+    },
+    {
+      "policy": "greedy_insertion_protect",
+      "reference": "greedy_insertion",
+      "day": "day_001",
+      "score_a_winner": "tied",
+      "score_b_winner": "tied",
+      "score_b_improvement_points": 0.0,
+      "sensitivity_winners": {
+        "0.25": "tied",
+        "0.5": "tied",
+        "0.75": "tied"
+      },
+      "delivered_change": 0,
+      "on_time_change": 0,
+      "early_change": 0,
+      "late_change": 0,
+      "distance_change_km": 0.0,
+      "distance_change_pct": 0.0
+    },
+    {
+      "policy": "greedy_insertion_protect",
+      "reference": "window_first_nearest",
+      "day": "day_001",
+      "score_a_winner": "greedy_insertion_protect",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -3.692115143929911,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 1,
+      "on_time_change": -60,
+      "early_change": 0,
+      "late_change": 61,
+      "distance_change_km": 151.05899999999974,
+      "distance_change_pct": 3.694993014054073
+    },
+    {
+      "policy": "greedy_insertion_protect",
+      "reference": "greedy_insertion",
+      "day": "day_002",
+      "score_a_winner": "tied",
+      "score_b_winner": "tied",
+      "score_b_improvement_points": 0.0,
+      "sensitivity_winners": {
+        "0.25": "tied",
+        "0.5": "tied",
+        "0.75": "tied"
+      },
+      "delivered_change": 0,
+      "on_time_change": 0,
+      "early_change": 0,
+      "late_change": 0,
+      "distance_change_km": 0.0,
+      "distance_change_pct": 0.0
+    },
+    {
+      "policy": "greedy_insertion_protect",
+      "reference": "window_first_nearest",
+      "day": "day_002",
+      "score_a_winner": "greedy_insertion_protect",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -4.080310880829018,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 2,
+      "on_time_change": -65,
+      "early_change": 1,
+      "late_change": 66,
+      "distance_change_km": -34.59299999999985,
+      "distance_change_pct": -0.8176228171434856
+    },
+    {
+      "policy": "greedy_insertion_protect",
+      "reference": "greedy_insertion",
+      "day": "day_003",
+      "score_a_winner": "tied",
+      "score_b_winner": "tied",
+      "score_b_improvement_points": 0.0,
+      "sensitivity_winners": {
+        "0.25": "tied",
+        "0.5": "tied",
+        "0.75": "tied"
+      },
+      "delivered_change": 0,
+      "on_time_change": 0,
+      "early_change": 0,
+      "late_change": 0,
+      "distance_change_km": 0.0,
+      "distance_change_pct": 0.0
+    },
+    {
+      "policy": "greedy_insertion_protect",
+      "reference": "window_first_nearest",
+      "day": "day_003",
+      "score_a_winner": "greedy_insertion_protect",
+      "score_b_winner": "greedy_insertion_protect",
+      "score_b_improvement_points": 3.9672544080604553,
+      "sensitivity_winners": {
+        "0.25": "greedy_insertion_protect",
+        "0.5": "greedy_insertion_protect",
+        "0.75": "greedy_insertion_protect"
+      },
+      "delivered_change": 1,
+      "on_time_change": 62,
+      "early_change": 1,
+      "late_change": -62,
+      "distance_change_km": -257.5800000000004,
+      "distance_change_pct": -6.032574214504183
+    },
+    {
+      "policy": "greedy_insertion_protect",
+      "reference": "greedy_insertion",
+      "day": "day_004",
+      "score_a_winner": "tied",
+      "score_b_winner": "tied",
+      "score_b_improvement_points": 0.0,
+      "sensitivity_winners": {
+        "0.25": "tied",
+        "0.5": "tied",
+        "0.75": "tied"
+      },
+      "delivered_change": 0,
+      "on_time_change": 0,
+      "early_change": 0,
+      "late_change": 0,
+      "distance_change_km": 0.0,
+      "distance_change_pct": 0.0
+    },
+    {
+      "policy": "greedy_insertion_protect",
+      "reference": "window_first_nearest",
+      "day": "day_004",
+      "score_a_winner": "window_first_nearest",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -0.6806930693069404,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": -3,
+      "on_time_change": -8,
+      "early_change": -1,
+      "late_change": 6,
+      "distance_change_km": 22.61100000000033,
+      "distance_change_pct": 0.5531722819365882
+    },
+    {
+      "policy": "greedy_insertion_protect",
+      "reference": "greedy_insertion",
+      "day": "day_005",
+      "score_a_winner": "tied",
+      "score_b_winner": "tied",
+      "score_b_improvement_points": 0.0,
+      "sensitivity_winners": {
+        "0.25": "tied",
+        "0.5": "tied",
+        "0.75": "tied"
+      },
+      "delivered_change": 0,
+      "on_time_change": 0,
+      "early_change": 0,
+      "late_change": 0,
+      "distance_change_km": 0.0,
+      "distance_change_pct": 0.0
+    },
+    {
+      "policy": "greedy_insertion_protect",
+      "reference": "window_first_nearest",
+      "day": "day_005",
+      "score_a_winner": "window_first_nearest",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": -4.776674937965254,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 0,
+      "on_time_change": -77,
+      "early_change": -9,
+      "late_change": 86,
+      "distance_change_km": 9.617999999999938,
+      "distance_change_pct": 0.23697680864824758
+    }
+  ],
+  "limitations": [
+    "Development days001\u2013005 only; no overall aggregation method selected.",
+    "Per-day comparisons do not establish statistical significance or performance on untested days.",
+    "Greedy positive-credit insertion has no guarantee of globally optimal daily service."
+  ]
+}

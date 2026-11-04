@@ -1,0 +1,1331 @@
+{
+  "recorded_at_utc": "2026-10-31T12:34:33.840082+00:00",
+  "cwd": "/Users/isaac/Desktop/Algo/project",
+  "python": "3.15.2",
+  "scope": "25 stochasticGI+SA runs: fixedseeds0\u20134 on developmentdays001\u2013005. OriginalGI andWFreferencesfrozen; no otherdays/tuning.",
+  "settings": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "iterations_per_trip": 2000,
+    "initial_temperature": 0.41529177254126864,
+    "initial_acceptance_for_half_credit_loss": 0.3,
+    "cooling_rate": 0.995,
+    "objective": "Rawroutecredit,on-time1/outside.5;distanceonlybest-route tiebreak",
+    "constructor": "original greedy insertion freshly called each dispatch",
+    "neighbourhood": "swap two distinct parcel positions, fixed membership",
+    "rng": "dedicatedRandom(seed)initialisedonceperrun",
+    "cooling": "onceperattemptincludinginfeasible"
+  },
+  "sha256_before": {
+    "data/config.json": "6041005abea965629ca15dbdb4d7038cdfc3f0a30ee0cd08f3efdb98cd04fdd8",
+    "data/demand/day_001.csv": "a73f06a9faf4c11f45a2b373f50fe2379c4dd23f0b733c8b0bdc36bfaa8226e7",
+    "data/demand/day_002.csv": "486fcf013d39ea1bf8eaf97650156d146fe2be852ebd2c4caa3cdc5c5592be8b",
+    "data/demand/day_003.csv": "0a096f1a766d6c27ffa4518eca6c0be76a3d8904de4c7810fcdd04a2f750fab1",
+    "data/demand/day_004.csv": "f70d2d1494fa34a93677f838459c57c39475427f06ae8a5ae27be4d7d658257d",
+    "data/demand/day_005.csv": "0428a18cc60a726a376fa5a6cb14f099bec806ab1807675d796401633cb0086b",
+    "data/demand/day_006.csv": "2cfc0c6cfe0346156f753e26dcdc7f743764fc0c778ef55ea9bdf27c7f937257",
+    "data/demand/day_007.csv": "634fdd58c914acb46d3c1e2a55e4c32f8ef18625c37f36a68a8d26e38d1860f8",
+    "data/demand/day_008.csv": "ff3c7a08692a84f244aa7d9a9f72d297e01138a8e8b63206d72e238dda055ebf",
+    "data/demand/day_009.csv": "7ed8de6633637ee940dfcb18c0570dbdc93c1f9599f73696503d746f4db8b7d5",
+    "data/demand/day_010.csv": "04609481a6b058c3ebf743f322113bdf1f673067c849690d5e5819b41c66219a",
+    "data/demand/day_011.csv": "ff7368ec9bde9fd4d39369d2817624f0f33693ac3e49110ed390f7b2e6d9995d",
+    "data/demand/day_012.csv": "fd52ad164433c76eda608438f668c56ac8d3d6e8caa6c4b3993961a8b782d09e",
+    "data/demand/day_013.csv": "e2ed35ce3b0811b97f61d06cb827b4bca711a607b1d546b46ab9093ee289c018",
+    "data/demand/day_014.csv": "251d077f1fcbcc83bc70c26499e6e917c58da5b7dccba9646348d32cd3d5d888",
+    "data/demand/day_015.csv": "63fd8a589044b11cc34e849f5789b2faba89631cfe94833ba16a2be218efc1fc",
+    "data/demand/day_016.csv": "e8ebf7ba942deae305786fa4848accfd7678fc0125edf6c9c5a8e09afdfe5a1d",
+    "data/demand/day_017.csv": "0b7fab749dbada5b54bdfbaeaed04763236bede6d987db89bdd82472e5e23678",
+    "data/demand/day_018.csv": "043d0d5bd306c7a5f80d5c62410fc1fd1e3c770f6cc243fd71778bd898bd1543",
+    "data/demand/day_019.csv": "062f78caa3426b3e119cdcf7661ce5448216f66f111fd0095db57e33604b1b84",
+    "data/demand/day_020.csv": "9cdac010186eb557d6f62436bbadce84f21d445e676d3d52ab5faa1c80cf87b8",
+    "data/dist.csv": "56a58884cdcbd609c14bd627c70691d272e2f2faf8262d3b9e9131423659c16a",
+    "simulator/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "simulator/__main__.py": "ce83b6b69c3e295bb142cbb07993f695b111da057444889620ef15acc1b33265",
+    "simulator/loaders.py": "35ae560a399a21ddb160db5a53771a0141336e42030f53d3c37fa9fc912f5891",
+    "simulator/models.py": "8989d3d64a183389c911cd257603e5e07dc846f5dbbe0f02700f4620fd9dfc52",
+    "simulator/simulator.py": "c8c7f874371665e34141a4f40b69127ef5d60e17126cade42ce4bad0f2a8f469",
+    "solution/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "solution/performance_monitor.py": "2e1f35b8cb0c057fdd34c4d743ce9cc0517b26597dddd3fc8d346235f43ae37b",
+    "solution/policies/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "solution/policies/_insertion_variants.py": "d80da3546071a0063673858ed4367a0cd3b44adbe524eed6981a13832c1c38bb",
+    "solution/policies/baseline.py": "4df03c9828d9eb42140417752308ba7a8026219aa4c6c584483f8d18c6a33985",
+    "solution/policies/greedy_insertion.py": "4c3afdba1bde628b0966b4f2d721a2498d145e97371a6dd4914dbabd97ddb4d2",
+    "solution/policies/greedy_insertion_efficiency.py": "c9e52a887c3b6790e0fd9078fc897121f89bb899eae3cd60584732f0918f27eb",
+    "solution/policies/greedy_insertion_protect.py": "6253e32b5618ad20f989c027da3a92b1e25343c0adb38f6c96ae9ebece8403a1",
+    "solution/policies/nearest_neighbour.py": "9e738b9cee6969441d80004edca314bd16646a1ee573b6ac0b753e202b501ede",
+    "solution/policies/window_first_nearest.py": "9c97552eebc0561b588ef45ab25abb9d117a566050c2d920df95563037e0d508",
+    "solution/policies/insertion_sa.py": "8356a14802b12435c40d6e8475031849d6418813fe2c0436b1a5bb7ac5f2c7c6",
+    "solution/run_sa.py": "288327567548b02612bf7bf263225bf943a0d543daba1cf9d966b2eee2a34b1f"
+  },
+  "reference_result_sha256": {
+    "results/greedy_insertion/day_001/log.txt": "52d2d55bcc9b0bd4f89f2d7b02ea52c7da211348033d591ce6a4b5b77eb479ae",
+    "results/greedy_insertion/day_001/metrics.json": "a53f6e85a3b17f601b495f47815acb4e65fe4648a408eb1ba3a52fe5b50399c4",
+    "results/greedy_insertion/day_002/log.txt": "b35cd61fff95f51c60fd5a6f2ffaadb97c5fff922ea62c08421c872d13f4b138",
+    "results/greedy_insertion/day_002/metrics.json": "a32059c63e810011cfacd91f6c0dcd2e0bc1eaff84ebd3c70b06449e6dd50c4c",
+    "results/greedy_insertion/day_003/log.txt": "1e739f31d26c94f12d6eb5df55d70ef7704fdb75a56a55626fcd2e0b03580291",
+    "results/greedy_insertion/day_003/metrics.json": "5c1429652a94610f9a8f32f59c561cf906e51440ec8db7f36a67057033718f65",
+    "results/greedy_insertion/day_004/log.txt": "1a3467e3f202b272bbd0e9f47c57f46a54a64099f73b267fb05dd5d1ff802437",
+    "results/greedy_insertion/day_004/metrics.json": "5cb4523572a8ddf6e6f6399f831e7660de606dc4a7bf42aced018ceea4b6d3b2",
+    "results/greedy_insertion/day_005/log.txt": "4ffab82da969cc6bbeac6c01944c24dd797d7dc95fea0fe79f1709b7bcf5d010",
+    "results/greedy_insertion/day_005/metrics.json": "6f4f1889c09deb1418dd3e6bb431f074bd07c651a3daba8fdab7db5110aae74d",
+    "results/window_first_nearest/day_001/log.txt": "65833a7e05f856bb17ec7e09b4180f380132b48883fc766bfe94a3b2813e1763",
+    "results/window_first_nearest/day_001/metrics.json": "cd4079766f7ce049eb6319a3485a4bdd4859956bb2ac273856dc1b49c83567ee",
+    "results/window_first_nearest/day_002/log.txt": "4103d582936b259b592e75e6ecee94d1399e3bfde1d7ac17bec74a314a00bcbe",
+    "results/window_first_nearest/day_002/metrics.json": "e452170b53157c0db0098cc97d4ab7cc6ebccba12d60d736a5f2961f4f8ff5eb",
+    "results/window_first_nearest/day_003/log.txt": "a0c659903fd40382aa9bc924ace81077c48d573a985bd7c85eab17eb5932c5db",
+    "results/window_first_nearest/day_003/metrics.json": "a01d16c3c313682c0e164914f10afd858b140a06d327b096f20253a1fbe0f9df",
+    "results/window_first_nearest/day_004/log.txt": "e933a0e2aca0384bc57e41ee8de9c0ad638b8b3d94060d88e288439e1278b899",
+    "results/window_first_nearest/day_004/metrics.json": "dd692b9bd81922b2678c570488e5f7b0fb2cc2d97d0b2c808832d600f14d6b03",
+    "results/window_first_nearest/day_005/log.txt": "64b5c7cc71ffcc460b507e262cb6a96b3162f116795f4486d9cdc2c0d548d4cd",
+    "results/window_first_nearest/day_005/metrics.json": "eb9b9c7136af6c1b7107c2c1e67600bb8b3a8295f2165f46361c69646415b1bb"
+  },
+  "runs": [
+    {
+      "day": "day_001",
+      "seed": 0,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_001/seed_0",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_001",
+            "--seed",
+            "0",
+            "--output",
+            "results/insertion_sa/day_001/seed_0"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.718897958002344
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_001",
+            "--log",
+            "results/insertion_sa/day_001/seed_0/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.0412123749993043
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_001/seed_0/log.txt": "40be54e6d00b432c1ff5fa91bd7777ec8dd17a3ff4251f28e46078306d8c1606",
+        "results/insertion_sa/day_001/seed_0/metrics.json": "7a44f1532731786d1f8b234fb79c832f4718300d0754fac99985a6d1739144f7",
+        "results/insertion_sa/day_001/seed_0/settings.json": "56e2795aebc4e347e2b62fcd12553a41ea028402af387479e2f6e887f9616eeb",
+        "results/insertion_sa/day_001/seed_0/planning_audit.jsonl": "9c986aed2bd731a874c7e0704ababacbb62b19db27210d2decf8a9e245795438"
+      }
+    },
+    {
+      "day": "day_001",
+      "seed": 1,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_001/seed_1",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_001",
+            "--seed",
+            "1",
+            "--output",
+            "results/insertion_sa/day_001/seed_1"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.598434957999416
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_001",
+            "--log",
+            "results/insertion_sa/day_001/seed_1/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.044965749999391846
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_001/seed_1/log.txt": "c337e7678fede0f316fe3c8abaa10a35810b932cc9081ec3341233dd0004fa72",
+        "results/insertion_sa/day_001/seed_1/metrics.json": "7a44f1532731786d1f8b234fb79c832f4718300d0754fac99985a6d1739144f7",
+        "results/insertion_sa/day_001/seed_1/settings.json": "41889c510b1368840da6097bf6f0a372457b4570ad8a5f1670fa195e6d3a2208",
+        "results/insertion_sa/day_001/seed_1/planning_audit.jsonl": "9e4585594bb9e71381b6f17cdd44c0911a3581252871c1fc59933253aac7a96c"
+      }
+    },
+    {
+      "day": "day_001",
+      "seed": 2,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_001/seed_2",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_001",
+            "--seed",
+            "2",
+            "--output",
+            "results/insertion_sa/day_001/seed_2"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.648266750002222
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_001",
+            "--log",
+            "results/insertion_sa/day_001/seed_2/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.039267791999009205
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_001/seed_2/log.txt": "52d2d55bcc9b0bd4f89f2d7b02ea52c7da211348033d591ce6a4b5b77eb479ae",
+        "results/insertion_sa/day_001/seed_2/metrics.json": "a53f6e85a3b17f601b495f47815acb4e65fe4648a408eb1ba3a52fe5b50399c4",
+        "results/insertion_sa/day_001/seed_2/settings.json": "7ad1e219a14b8334a9fd1dfb9a4dee5a1584b056af5aa76fd278d99f87831d7b",
+        "results/insertion_sa/day_001/seed_2/planning_audit.jsonl": "c397865605af54a6abe6b05647fb4c98cd5b26a8dd910a0d1f9940793dab6e02"
+      }
+    },
+    {
+      "day": "day_001",
+      "seed": 3,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_001/seed_3",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_001",
+            "--seed",
+            "3",
+            "--output",
+            "results/insertion_sa/day_001/seed_3"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.684695708001527
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_001",
+            "--log",
+            "results/insertion_sa/day_001/seed_3/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.04116283399707754
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_001/seed_3/log.txt": "2c0371f5f0b0f425c2ba110f4568f41ea3ddb40eca34921aa3a4b0a2192396f4",
+        "results/insertion_sa/day_001/seed_3/metrics.json": "7a44f1532731786d1f8b234fb79c832f4718300d0754fac99985a6d1739144f7",
+        "results/insertion_sa/day_001/seed_3/settings.json": "2847d943af724a02fb63ae20d8bef5ef8fa9e3d3b156311fdb51be4ebfd6699b",
+        "results/insertion_sa/day_001/seed_3/planning_audit.jsonl": "32c7b3d2826bfa6829a8af847cc1925e228703cb21ae68d9f037643469f093cb"
+      }
+    },
+    {
+      "day": "day_001",
+      "seed": 4,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_001/seed_4",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_001",
+            "--seed",
+            "4",
+            "--output",
+            "results/insertion_sa/day_001/seed_4"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.8609270000015385
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_001",
+            "--log",
+            "results/insertion_sa/day_001/seed_4/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.0396799159971124
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_001/seed_4/log.txt": "ee517202205b70472df4a9f6a308486c7d17b3ca35c89ac7c52159571e980ba0",
+        "results/insertion_sa/day_001/seed_4/metrics.json": "7a44f1532731786d1f8b234fb79c832f4718300d0754fac99985a6d1739144f7",
+        "results/insertion_sa/day_001/seed_4/settings.json": "0a60a63c327a2899f8e1b8e1def2245a94f36c64a542f7a0c4bae3d684b5d862",
+        "results/insertion_sa/day_001/seed_4/planning_audit.jsonl": "819fdfa4dc60ec0688dd6e7dd55575e2328bc48656ec1bb24e538617da0c9c1b"
+      }
+    },
+    {
+      "day": "day_002",
+      "seed": 0,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_002/seed_0",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_002",
+            "--seed",
+            "0",
+            "--output",
+            "results/insertion_sa/day_002/seed_0"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 3.7629397080017952
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_002",
+            "--log",
+            "results/insertion_sa/day_002/seed_0/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.04041408299963223
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_002/seed_0/log.txt": "921dfb1e60855bf6e9b1cfc356edcde9566a0a758290d9861f6147f41d7186b9",
+        "results/insertion_sa/day_002/seed_0/metrics.json": "1e3ac51aab1406be3c07e36c57dc6ce3d4c01a1dc9ccb40467a8f39c79b102b4",
+        "results/insertion_sa/day_002/seed_0/settings.json": "ce8cb458b5a57c695dbc566fa5fd8eb6c505e66935e64d431f357da487b7b130",
+        "results/insertion_sa/day_002/seed_0/planning_audit.jsonl": "7b9c33b4d3a64e1bf1263acb3502bbf39b4bbb2a5085ac5c1ee78b15168e3763"
+      }
+    },
+    {
+      "day": "day_002",
+      "seed": 1,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_002/seed_1",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_002",
+            "--seed",
+            "1",
+            "--output",
+            "results/insertion_sa/day_002/seed_1"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 3.7358067919994937
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_002",
+            "--log",
+            "results/insertion_sa/day_002/seed_1/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.04040112499933457
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_002/seed_1/log.txt": "5db71c4cdf0311a32032fea3b2cdf5c5a0b0752b3297ef5b6d7b526f7313af74",
+        "results/insertion_sa/day_002/seed_1/metrics.json": "76c6bfda8056db3cde38eea885a6e10c16ad19edac90508566517a0d90b83ba0",
+        "results/insertion_sa/day_002/seed_1/settings.json": "aed3b16035d4d765a992b34d3c22661424fa02a36fdea473eeaf2e486b486519",
+        "results/insertion_sa/day_002/seed_1/planning_audit.jsonl": "2b2049be744e90d89b1d50113a370af841c78bb74d3be4cb32df895b58be308d"
+      }
+    },
+    {
+      "day": "day_002",
+      "seed": 2,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_002/seed_2",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_002",
+            "--seed",
+            "2",
+            "--output",
+            "results/insertion_sa/day_002/seed_2"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 3.79193508300159
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_002",
+            "--log",
+            "results/insertion_sa/day_002/seed_2/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.03895766599816852
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_002/seed_2/log.txt": "53eef6c2ddedf5c00f1991ba40b91ebd0aabfd92ed611675e65a7ae6164e5a94",
+        "results/insertion_sa/day_002/seed_2/metrics.json": "4987cd2eb53ffd7aff28e288b7f986faf3749688788a0865ba68bc0ca45e421c",
+        "results/insertion_sa/day_002/seed_2/settings.json": "a16d50c47c4e2df166a70d6fb1c46973ac8fad8c25e28eeae780a75d06f11e09",
+        "results/insertion_sa/day_002/seed_2/planning_audit.jsonl": "176576eb46f055a8fccf7590bc92766489150c91d7f83259eb46cf77ae9dda51"
+      }
+    },
+    {
+      "day": "day_002",
+      "seed": 3,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_002/seed_3",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_002",
+            "--seed",
+            "3",
+            "--output",
+            "results/insertion_sa/day_002/seed_3"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 3.8615325409991783
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_002",
+            "--log",
+            "results/insertion_sa/day_002/seed_3/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.040507707999495324
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_002/seed_3/log.txt": "d083a2625734146851ce3a00e05f401e27caef6ac4ecf26724c050bfd0577d43",
+        "results/insertion_sa/day_002/seed_3/metrics.json": "e5c145894812d959e1b48a1009b1438e76ef753df738b587f8c81c0ea6448eea",
+        "results/insertion_sa/day_002/seed_3/settings.json": "edbf23f0124d189235141231864fb47321f5c11714e445218434b64b43cc204c",
+        "results/insertion_sa/day_002/seed_3/planning_audit.jsonl": "6943da0c449456d71535b5d6622f2ea31faff84ee55ad31d1847009689849319"
+      }
+    },
+    {
+      "day": "day_002",
+      "seed": 4,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_002/seed_4",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_002",
+            "--seed",
+            "4",
+            "--output",
+            "results/insertion_sa/day_002/seed_4"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 3.899031291999563
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_002",
+            "--log",
+            "results/insertion_sa/day_002/seed_4/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.04219079200265696
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_002/seed_4/log.txt": "9927123c9c03bdd1b24c80fbb68ebb22e2ed34de705fb36d652bb14a1c913818",
+        "results/insertion_sa/day_002/seed_4/metrics.json": "412b1a62eaa2eb713dfc949c26a5f08b2e4da467c0ae893e952a85dfc437743c",
+        "results/insertion_sa/day_002/seed_4/settings.json": "cb4536a00cc4bc6b1703577ec68f8dc141287a52bd0a0ef57af72eef6053c4bf",
+        "results/insertion_sa/day_002/seed_4/planning_audit.jsonl": "d34859fa9add95c23b4c36a8e7760537df8d833f23443e47252d1fab69a17c87"
+      }
+    },
+    {
+      "day": "day_003",
+      "seed": 0,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_003/seed_0",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_003",
+            "--seed",
+            "0",
+            "--output",
+            "results/insertion_sa/day_003/seed_0"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 3.5180016250014887
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_003",
+            "--log",
+            "results/insertion_sa/day_003/seed_0/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.04323783300060313
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_003/seed_0/log.txt": "f7bad6bcfa374bc6e0cafe3ea96ec0e516e9cfc99fe1a8d8eeae597c202daf79",
+        "results/insertion_sa/day_003/seed_0/metrics.json": "711239cbd822b5ab23014b812c27ca2e1bf88ac349cf25db0d2ed5f03665d2ba",
+        "results/insertion_sa/day_003/seed_0/settings.json": "a9c7162661cacb1027f3d07509a6f603d72dbae15b183717e3d38861e0c07f3a",
+        "results/insertion_sa/day_003/seed_0/planning_audit.jsonl": "ccb02031ccf66291b2b111c59a60a2ef2eb6aa550ba28ae44218e71f2fc22516"
+      }
+    },
+    {
+      "day": "day_003",
+      "seed": 1,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_003/seed_1",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_003",
+            "--seed",
+            "1",
+            "--output",
+            "results/insertion_sa/day_003/seed_1"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 3.486579790998803
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_003",
+            "--log",
+            "results/insertion_sa/day_003/seed_1/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.0434093749972817
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_003/seed_1/log.txt": "1a960d7a2744f94cd46af672c1912e777283096e33a99fa02a8125ead774bf2e",
+        "results/insertion_sa/day_003/seed_1/metrics.json": "711239cbd822b5ab23014b812c27ca2e1bf88ac349cf25db0d2ed5f03665d2ba",
+        "results/insertion_sa/day_003/seed_1/settings.json": "63f6b30d3bd6667f4ef70e3830ebbff516eb3b8f63953d2e51ba4af3ea4cf6e5",
+        "results/insertion_sa/day_003/seed_1/planning_audit.jsonl": "67b6c975f6399a409adc3ac97858c48ab791fed74b4e8509393943b86e2e123e"
+      }
+    },
+    {
+      "day": "day_003",
+      "seed": 2,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_003/seed_2",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_003",
+            "--seed",
+            "2",
+            "--output",
+            "results/insertion_sa/day_003/seed_2"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 3.499509332999878
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_003",
+            "--log",
+            "results/insertion_sa/day_003/seed_2/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.03989762499986682
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_003/seed_2/log.txt": "f7bad6bcfa374bc6e0cafe3ea96ec0e516e9cfc99fe1a8d8eeae597c202daf79",
+        "results/insertion_sa/day_003/seed_2/metrics.json": "711239cbd822b5ab23014b812c27ca2e1bf88ac349cf25db0d2ed5f03665d2ba",
+        "results/insertion_sa/day_003/seed_2/settings.json": "0fb795fec1a465d82b9802f9de37c266d2cb1607ccd835098ed9aab79cafe538",
+        "results/insertion_sa/day_003/seed_2/planning_audit.jsonl": "2ca12df43bccd911777e88d0a364b5effe5206edcb8bac64074f6da4315861d5"
+      }
+    },
+    {
+      "day": "day_003",
+      "seed": 3,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_003/seed_3",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_003",
+            "--seed",
+            "3",
+            "--output",
+            "results/insertion_sa/day_003/seed_3"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 3.460927250001987
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_003",
+            "--log",
+            "results/insertion_sa/day_003/seed_3/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.039724209000269184
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_003/seed_3/log.txt": "f7bad6bcfa374bc6e0cafe3ea96ec0e516e9cfc99fe1a8d8eeae597c202daf79",
+        "results/insertion_sa/day_003/seed_3/metrics.json": "711239cbd822b5ab23014b812c27ca2e1bf88ac349cf25db0d2ed5f03665d2ba",
+        "results/insertion_sa/day_003/seed_3/settings.json": "cfdbb0c87bfa89bf51c94386032096b5eab6e93f07de6d45a54407996cc8630e",
+        "results/insertion_sa/day_003/seed_3/planning_audit.jsonl": "c9a50a95a5ceb640107511fdbc5fd000f51b8775ae9a99e5aeb0c6b80fe137f7"
+      }
+    },
+    {
+      "day": "day_003",
+      "seed": 4,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_003/seed_4",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_003",
+            "--seed",
+            "4",
+            "--output",
+            "results/insertion_sa/day_003/seed_4"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 3.462700957999914
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_003",
+            "--log",
+            "results/insertion_sa/day_003/seed_4/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.04087074999915785
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_003/seed_4/log.txt": "8a167b06482b9d703ac346461901618af872fa1edc8fd7c5e367abf9634beb46",
+        "results/insertion_sa/day_003/seed_4/metrics.json": "711239cbd822b5ab23014b812c27ca2e1bf88ac349cf25db0d2ed5f03665d2ba",
+        "results/insertion_sa/day_003/seed_4/settings.json": "bdfe1f1784c995ca7ef727f28e9391504cf766dbe997921cd9d93a98595d5129",
+        "results/insertion_sa/day_003/seed_4/planning_audit.jsonl": "7768160fe80e89a3bb8f691ef843d3ee8f5f4899f113f23e430f62cfdf5a3a12"
+      }
+    },
+    {
+      "day": "day_004",
+      "seed": 0,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_004/seed_0",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_004",
+            "--seed",
+            "0",
+            "--output",
+            "results/insertion_sa/day_004/seed_0"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.675431457999366
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_004",
+            "--log",
+            "results/insertion_sa/day_004/seed_0/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.04364574999999604
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_004/seed_0/log.txt": "e3493cb5be25d1ff654a108593b399e90f2ac10da54256492caa3b5f43d89b09",
+        "results/insertion_sa/day_004/seed_0/metrics.json": "773f5148fb8c3bb9f4e53748f13bbfb8342197208f5ec5c9a03c58aea16da011",
+        "results/insertion_sa/day_004/seed_0/settings.json": "cf8ddf590b7c3897ea1ceca5fa8a16e1a9fd7156a641b2b22f687c8368756c95",
+        "results/insertion_sa/day_004/seed_0/planning_audit.jsonl": "838963fb8410714e7d423328365fdcddcce6502fdc2c0039f3a9022d88586e70"
+      }
+    },
+    {
+      "day": "day_004",
+      "seed": 1,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_004/seed_1",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_004",
+            "--seed",
+            "1",
+            "--output",
+            "results/insertion_sa/day_004/seed_1"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.7438262089999625
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_004",
+            "--log",
+            "results/insertion_sa/day_004/seed_1/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.04038424999816925
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_004/seed_1/log.txt": "bf8eaa70f11199788ed6e3d7b23f9f6996edd3fac6bb23f988f196556051e353",
+        "results/insertion_sa/day_004/seed_1/metrics.json": "773f5148fb8c3bb9f4e53748f13bbfb8342197208f5ec5c9a03c58aea16da011",
+        "results/insertion_sa/day_004/seed_1/settings.json": "0b184b3e10b93e1f2614fb8b97d218e441e20f371b692fd220a398ce5eacb4bf",
+        "results/insertion_sa/day_004/seed_1/planning_audit.jsonl": "99eca3adb7809f5d0116368214feb30484ab318f7dd397898bad4c5ad869054a"
+      }
+    },
+    {
+      "day": "day_004",
+      "seed": 2,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_004/seed_2",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_004",
+            "--seed",
+            "2",
+            "--output",
+            "results/insertion_sa/day_004/seed_2"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.813218082999811
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_004",
+            "--log",
+            "results/insertion_sa/day_004/seed_2/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.041833374998532236
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_004/seed_2/log.txt": "1a3467e3f202b272bbd0e9f47c57f46a54a64099f73b267fb05dd5d1ff802437",
+        "results/insertion_sa/day_004/seed_2/metrics.json": "5cb4523572a8ddf6e6f6399f831e7660de606dc4a7bf42aced018ceea4b6d3b2",
+        "results/insertion_sa/day_004/seed_2/settings.json": "46fdb983e97cc48c57928dd128b4db11ed0ec5a6d8f9d4a40a42029fd1c0fa81",
+        "results/insertion_sa/day_004/seed_2/planning_audit.jsonl": "bc8b43d775f9ec2d7c2b03fa19ba8f119248d52b5fe546f2b397d1a109ae9be6"
+      }
+    },
+    {
+      "day": "day_004",
+      "seed": 3,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_004/seed_3",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_004",
+            "--seed",
+            "3",
+            "--output",
+            "results/insertion_sa/day_004/seed_3"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.795292750000954
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_004",
+            "--log",
+            "results/insertion_sa/day_004/seed_3/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.04268983300062246
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_004/seed_3/log.txt": "bf8eaa70f11199788ed6e3d7b23f9f6996edd3fac6bb23f988f196556051e353",
+        "results/insertion_sa/day_004/seed_3/metrics.json": "773f5148fb8c3bb9f4e53748f13bbfb8342197208f5ec5c9a03c58aea16da011",
+        "results/insertion_sa/day_004/seed_3/settings.json": "baab5591bd26862922e3dba5e060883f565897a252135b1e8fdb7f71a2085583",
+        "results/insertion_sa/day_004/seed_3/planning_audit.jsonl": "c36d89ed0ba6b060b835eb248f08ce201ed66c77f824866f500783b6580a665d"
+      }
+    },
+    {
+      "day": "day_004",
+      "seed": 4,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_004/seed_4",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_004",
+            "--seed",
+            "4",
+            "--output",
+            "results/insertion_sa/day_004/seed_4"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.7010197499985225
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_004",
+            "--log",
+            "results/insertion_sa/day_004/seed_4/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.04159187500044936
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_004/seed_4/log.txt": "6b339f7ed925b4ec8b134d3b3992050017722b055d2105d3977268e4a056c2cb",
+        "results/insertion_sa/day_004/seed_4/metrics.json": "773f5148fb8c3bb9f4e53748f13bbfb8342197208f5ec5c9a03c58aea16da011",
+        "results/insertion_sa/day_004/seed_4/settings.json": "3a36801852c1d4c0ff7f80cc560d1ec671f6cdec0e08f67a90347b8538af281f",
+        "results/insertion_sa/day_004/seed_4/planning_audit.jsonl": "2baffee0e09b3dafd31a6226a022a1036316e06b07475e773994e76aacc825d3"
+      }
+    },
+    {
+      "day": "day_005",
+      "seed": 0,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_005/seed_0",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_005",
+            "--seed",
+            "0",
+            "--output",
+            "results/insertion_sa/day_005/seed_0"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.380651666000631
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_005",
+            "--log",
+            "results/insertion_sa/day_005/seed_0/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.0420325410013902
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_005/seed_0/log.txt": "d171aadd39e82b18300520490517f8f7e2bc4ee9e4eb300726cbf75d0693eb37",
+        "results/insertion_sa/day_005/seed_0/metrics.json": "90de8ac1cc61cf9b65986192a7ccac094c66bf929817eb2020c52735b2ac4b13",
+        "results/insertion_sa/day_005/seed_0/settings.json": "54ac91778378e926f0a30a2695d7225f24f947ee869ec0ffa01de27d005834bd",
+        "results/insertion_sa/day_005/seed_0/planning_audit.jsonl": "408d568c98e7294542b24b027b931563e02402e2f32fda893db956953a266610"
+      }
+    },
+    {
+      "day": "day_005",
+      "seed": 1,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_005/seed_1",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_005",
+            "--seed",
+            "1",
+            "--output",
+            "results/insertion_sa/day_005/seed_1"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.539956374999747
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_005",
+            "--log",
+            "results/insertion_sa/day_005/seed_1/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.04135895799845457
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_005/seed_1/log.txt": "af766d25728fb3a80c4210281643551e5597dd85a46030bfd077669901514d98",
+        "results/insertion_sa/day_005/seed_1/metrics.json": "2b078b111a0c9016fa8bd9da6a8dd11a4f5f44a3d6ed1e6779e231875e4bddd9",
+        "results/insertion_sa/day_005/seed_1/settings.json": "468f0287f5213ccd4e9accbc69634a3a45c821feaac14218e238045944e81ae8",
+        "results/insertion_sa/day_005/seed_1/planning_audit.jsonl": "59d3d7ff0bd4e8cba78d532d367b20a0b31aa5c7a7559d4b6d99b3c561bd9ef7"
+      }
+    },
+    {
+      "day": "day_005",
+      "seed": 2,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_005/seed_2",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_005",
+            "--seed",
+            "2",
+            "--output",
+            "results/insertion_sa/day_005/seed_2"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.376652457998716
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_005",
+            "--log",
+            "results/insertion_sa/day_005/seed_2/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.04315833299915539
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_005/seed_2/log.txt": "6ec8878894f9e7d3dba9235f3a6385cd6fd48f66ed4d51c7679fbf2a4865d5fc",
+        "results/insertion_sa/day_005/seed_2/metrics.json": "9e81e21859304f78c217083c16e65a3b58ab2a9903e7d26ca14809702c5717b1",
+        "results/insertion_sa/day_005/seed_2/settings.json": "9bb3b42ce0040e377f761f104288e84ac1cf2ce7ba196ef97a6f685ac680bfaf",
+        "results/insertion_sa/day_005/seed_2/planning_audit.jsonl": "3c9bbdc55c845ffc8c4f215d2d5633819e793a3019519fe83ad221275dab250e"
+      }
+    },
+    {
+      "day": "day_005",
+      "seed": 3,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_005/seed_3",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_005",
+            "--seed",
+            "3",
+            "--output",
+            "results/insertion_sa/day_005/seed_3"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.297494624999672
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_005",
+            "--log",
+            "results/insertion_sa/day_005/seed_3/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.04384395799934282
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_005/seed_3/log.txt": "70f39d289c0e98fc274564ee034266a04750e6f449ef55a234bfb5c3190bcc2f",
+        "results/insertion_sa/day_005/seed_3/metrics.json": "9013ac4d7092d242d4439c512698fa9ec245885b035b1a53e90cf2f5f781ff6d",
+        "results/insertion_sa/day_005/seed_3/settings.json": "358ae869b707822773e2c7bc8ee01bbaa6293e71e4ad6f4fd178b16e3f1b6cb2",
+        "results/insertion_sa/day_005/seed_3/planning_audit.jsonl": "fb5cf8b27d4c0ee5b239dfa7b2160815e6f0fae7a2228269bbf30d619745a2e3"
+      }
+    },
+    {
+      "day": "day_005",
+      "seed": 4,
+      "policy": "insertion_sa",
+      "output_dir": "results/insertion_sa/day_005/seed_4",
+      "steps": [
+        {
+          "stage": "simulation",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.run_sa",
+            "--data",
+            "data",
+            "--day",
+            "day_005",
+            "--seed",
+            "4",
+            "--output",
+            "results/insertion_sa/day_005/seed_4"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 4.3444631669990486
+        },
+        {
+          "stage": "metrics",
+          "command": [
+            "/opt/homebrew/opt/python@3.15/bin/python3.15",
+            "-m",
+            "solution.performance_monitor",
+            "--data",
+            "data",
+            "--day",
+            "day_005",
+            "--log",
+            "results/insertion_sa/day_005/seed_4/log.txt"
+          ],
+          "returncode": 0,
+          "elapsed_seconds": 0.040488333001121646
+        }
+      ],
+      "sha256": {
+        "results/insertion_sa/day_005/seed_4/log.txt": "387bdcbf72299b5737d5a4fa69587ac6bdd029cbcdf2780f224db37b8ff16007",
+        "results/insertion_sa/day_005/seed_4/metrics.json": "70a92f25b41e8190d2dfcce297f7358598c8b3a8b90b8c0ba065609123494563",
+        "results/insertion_sa/day_005/seed_4/settings.json": "23ea2c8cd22b3b35befcff167d998ef6d31c91116c1162fc5ba8f4fd31802a45",
+        "results/insertion_sa/day_005/seed_4/planning_audit.jsonl": "bff03ab0cef2f652e5678a9aeb419da4a73c671c764b53853fa5f0862ec0480a"
+      }
+    }
+  ],
+  "sha256_after": {
+    "data/config.json": "6041005abea965629ca15dbdb4d7038cdfc3f0a30ee0cd08f3efdb98cd04fdd8",
+    "data/demand/day_001.csv": "a73f06a9faf4c11f45a2b373f50fe2379c4dd23f0b733c8b0bdc36bfaa8226e7",
+    "data/demand/day_002.csv": "486fcf013d39ea1bf8eaf97650156d146fe2be852ebd2c4caa3cdc5c5592be8b",
+    "data/demand/day_003.csv": "0a096f1a766d6c27ffa4518eca6c0be76a3d8904de4c7810fcdd04a2f750fab1",
+    "data/demand/day_004.csv": "f70d2d1494fa34a93677f838459c57c39475427f06ae8a5ae27be4d7d658257d",
+    "data/demand/day_005.csv": "0428a18cc60a726a376fa5a6cb14f099bec806ab1807675d796401633cb0086b",
+    "data/demand/day_006.csv": "2cfc0c6cfe0346156f753e26dcdc7f743764fc0c778ef55ea9bdf27c7f937257",
+    "data/demand/day_007.csv": "634fdd58c914acb46d3c1e2a55e4c32f8ef18625c37f36a68a8d26e38d1860f8",
+    "data/demand/day_008.csv": "ff3c7a08692a84f244aa7d9a9f72d297e01138a8e8b63206d72e238dda055ebf",
+    "data/demand/day_009.csv": "7ed8de6633637ee940dfcb18c0570dbdc93c1f9599f73696503d746f4db8b7d5",
+    "data/demand/day_010.csv": "04609481a6b058c3ebf743f322113bdf1f673067c849690d5e5819b41c66219a",
+    "data/demand/day_011.csv": "ff7368ec9bde9fd4d39369d2817624f0f33693ac3e49110ed390f7b2e6d9995d",
+    "data/demand/day_012.csv": "fd52ad164433c76eda608438f668c56ac8d3d6e8caa6c4b3993961a8b782d09e",
+    "data/demand/day_013.csv": "e2ed35ce3b0811b97f61d06cb827b4bca711a607b1d546b46ab9093ee289c018",
+    "data/demand/day_014.csv": "251d077f1fcbcc83bc70c26499e6e917c58da5b7dccba9646348d32cd3d5d888",
+    "data/demand/day_015.csv": "63fd8a589044b11cc34e849f5789b2faba89631cfe94833ba16a2be218efc1fc",
+    "data/demand/day_016.csv": "e8ebf7ba942deae305786fa4848accfd7678fc0125edf6c9c5a8e09afdfe5a1d",
+    "data/demand/day_017.csv": "0b7fab749dbada5b54bdfbaeaed04763236bede6d987db89bdd82472e5e23678",
+    "data/demand/day_018.csv": "043d0d5bd306c7a5f80d5c62410fc1fd1e3c770f6cc243fd71778bd898bd1543",
+    "data/demand/day_019.csv": "062f78caa3426b3e119cdcf7661ce5448216f66f111fd0095db57e33604b1b84",
+    "data/demand/day_020.csv": "9cdac010186eb557d6f62436bbadce84f21d445e676d3d52ab5faa1c80cf87b8",
+    "data/dist.csv": "56a58884cdcbd609c14bd627c70691d272e2f2faf8262d3b9e9131423659c16a",
+    "simulator/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "simulator/__main__.py": "ce83b6b69c3e295bb142cbb07993f695b111da057444889620ef15acc1b33265",
+    "simulator/loaders.py": "35ae560a399a21ddb160db5a53771a0141336e42030f53d3c37fa9fc912f5891",
+    "simulator/models.py": "8989d3d64a183389c911cd257603e5e07dc846f5dbbe0f02700f4620fd9dfc52",
+    "simulator/simulator.py": "c8c7f874371665e34141a4f40b69127ef5d60e17126cade42ce4bad0f2a8f469",
+    "solution/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "solution/performance_monitor.py": "2e1f35b8cb0c057fdd34c4d743ce9cc0517b26597dddd3fc8d346235f43ae37b",
+    "solution/policies/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "solution/policies/_insertion_variants.py": "d80da3546071a0063673858ed4367a0cd3b44adbe524eed6981a13832c1c38bb",
+    "solution/policies/baseline.py": "4df03c9828d9eb42140417752308ba7a8026219aa4c6c584483f8d18c6a33985",
+    "solution/policies/greedy_insertion.py": "4c3afdba1bde628b0966b4f2d721a2498d145e97371a6dd4914dbabd97ddb4d2",
+    "solution/policies/greedy_insertion_efficiency.py": "c9e52a887c3b6790e0fd9078fc897121f89bb899eae3cd60584732f0918f27eb",
+    "solution/policies/greedy_insertion_protect.py": "6253e32b5618ad20f989c027da3a92b1e25343c0adb38f6c96ae9ebece8403a1",
+    "solution/policies/nearest_neighbour.py": "9e738b9cee6969441d80004edca314bd16646a1ee573b6ac0b753e202b501ede",
+    "solution/policies/window_first_nearest.py": "9c97552eebc0561b588ef45ab25abb9d117a566050c2d920df95563037e0d508",
+    "solution/policies/insertion_sa.py": "8356a14802b12435c40d6e8475031849d6418813fe2c0436b1a5bb7ac5f2c7c6",
+    "solution/run_sa.py": "288327567548b02612bf7bf263225bf943a0d543daba1cf9d966b2eee2a34b1f"
+  },
+  "sources_and_reference_results_unchanged": true
+}

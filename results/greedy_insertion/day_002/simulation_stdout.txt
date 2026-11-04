@@ -1,0 +1,7 @@
+Parcels: 772
+Vehicles: 10
+Vehicle capacity: 30
+EV range per trip: 320 km (fully recharged at hub)
+Scheduled events: 840
+Delivered: 738
+Event log: results/greedy_insertion/day_002/log.txt

@@ -1,0 +1,324 @@
+{
+  "method": "Independent standard-library input/JSONL parsing and planning replay; no solution, monitor, or simulator imports and no simulation executions.",
+  "all_passed": true,
+  "manifest_process_statuses_successful": true,
+  "hash_checks": {
+    "data/config.json": true,
+    "data/demand/day_001.csv": true,
+    "data/demand/day_002.csv": true,
+    "data/demand/day_003.csv": true,
+    "data/demand/day_004.csv": true,
+    "data/demand/day_005.csv": true,
+    "data/demand/day_006.csv": true,
+    "data/demand/day_007.csv": true,
+    "data/demand/day_008.csv": true,
+    "data/demand/day_009.csv": true,
+    "data/demand/day_010.csv": true,
+    "data/demand/day_011.csv": true,
+    "data/demand/day_012.csv": true,
+    "data/demand/day_013.csv": true,
+    "data/demand/day_014.csv": true,
+    "data/demand/day_015.csv": true,
+    "data/demand/day_016.csv": true,
+    "data/demand/day_017.csv": true,
+    "data/demand/day_018.csv": true,
+    "data/demand/day_019.csv": true,
+    "data/demand/day_020.csv": true,
+    "data/dist.csv": true,
+    "simulator/__init__.py": true,
+    "simulator/__main__.py": true,
+    "simulator/loaders.py": true,
+    "simulator/models.py": true,
+    "simulator/simulator.py": true,
+    "solution/__init__.py": true,
+    "solution/performance_monitor.py": true,
+    "solution/policies/__init__.py": true,
+    "solution/policies/baseline.py": true,
+    "solution/policies/nearest_neighbour.py": true,
+    "solution/policies/window_first_nearest.py": true,
+    "results/development_check_002_005/baseline/day_002/log.txt": true,
+    "results/development_check_002_005/baseline/day_002/metrics.json": true,
+    "results/development_check_002_005/nearest_neighbour/day_002/log.txt": true,
+    "results/development_check_002_005/nearest_neighbour/day_002/metrics.json": true,
+    "results/development_check_002_005/baseline/day_003/log.txt": true,
+    "results/development_check_002_005/baseline/day_003/metrics.json": true,
+    "results/development_check_002_005/nearest_neighbour/day_003/log.txt": true,
+    "results/development_check_002_005/nearest_neighbour/day_003/metrics.json": true,
+    "results/development_check_002_005/baseline/day_004/log.txt": true,
+    "results/development_check_002_005/baseline/day_004/metrics.json": true,
+    "results/development_check_002_005/nearest_neighbour/day_004/log.txt": true,
+    "results/development_check_002_005/nearest_neighbour/day_004/metrics.json": true,
+    "results/development_check_002_005/baseline/day_005/log.txt": true,
+    "results/development_check_002_005/baseline/day_005/metrics.json": true,
+    "results/development_check_002_005/nearest_neighbour/day_005/log.txt": true,
+    "results/development_check_002_005/nearest_neighbour/day_005/metrics.json": true,
+    "results/baseline/day_001/log.txt": true,
+    "results/baseline/day_001/metrics.json": true,
+    "results/nearest_neighbour/day_001/log.txt": true,
+    "results/nearest_neighbour/day_001/metrics.json": true,
+    "results/window_first_nearest/day_001/log.txt": true,
+    "results/window_first_nearest/day_001/metrics.json": true,
+    "results/window_first_nearest/day_002/log.txt": true,
+    "results/window_first_nearest/day_002/metrics.json": true,
+    "results/window_first_nearest/day_003/log.txt": true,
+    "results/window_first_nearest/day_003/metrics.json": true,
+    "results/window_first_nearest/day_004/log.txt": true,
+    "results/window_first_nearest/day_004/metrics.json": true,
+    "results/window_first_nearest/day_005/log.txt": true,
+    "results/window_first_nearest/day_005/metrics.json": true
+  },
+  "runs": [
+    {
+      "day": "day_001",
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_decisions_reconstructed": 91,
+      "independent_metrics": {
+        "total_parcels": 799,
+        "delivered_parcels": 762,
+        "on_time_parcels": 688,
+        "early_parcels": 0,
+        "late_parcels": 74,
+        "undelivered_parcels": 37,
+        "completion_rate_pct": 95.36921151439299,
+        "on_time_service_rate_pct": 86.10763454317897,
+        "score_a": {
+          "completion_rate_pct": 95.36921151439299,
+          "on_time_tiebreak_pct": 86.10763454317897
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 90.73842302878599,
+        "score_b_sensitivity": {
+          "0.25": 88.42302878598248,
+          "0.5": 90.73842302878599,
+          "0.75": 93.05381727158948
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 4088.208,
+        "average_load_utilisation_pct": 73.34343434343434
+      }
+    },
+    {
+      "day": "day_002",
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_decisions_reconstructed": 80,
+      "independent_metrics": {
+        "total_parcels": 772,
+        "delivered_parcels": 736,
+        "on_time_parcels": 682,
+        "early_parcels": 0,
+        "late_parcels": 54,
+        "undelivered_parcels": 36,
+        "completion_rate_pct": 95.33678756476684,
+        "on_time_service_rate_pct": 88.34196891191709,
+        "score_a": {
+          "completion_rate_pct": 95.33678756476684,
+          "on_time_tiebreak_pct": 88.34196891191709
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 91.83937823834196,
+        "score_b_sensitivity": {
+          "0.25": 90.09067357512953,
+          "0.5": 91.83937823834196,
+          "0.75": 93.5880829015544
+        },
+        "number_of_trips": 33,
+        "total_distance_km": 4230.924,
+        "average_load_utilisation_pct": 73.35353535353535
+      }
+    },
+    {
+      "day": "day_003",
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_decisions_reconstructed": 75,
+      "independent_metrics": {
+        "total_parcels": 794,
+        "delivered_parcels": 758,
+        "on_time_parcels": 631,
+        "early_parcels": 0,
+        "late_parcels": 127,
+        "undelivered_parcels": 36,
+        "completion_rate_pct": 95.46599496221663,
+        "on_time_service_rate_pct": 79.47103274559194,
+        "score_a": {
+          "completion_rate_pct": 95.46599496221663,
+          "on_time_tiebreak_pct": 79.47103274559194
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 87.46851385390428,
+        "score_b_sensitivity": {
+          "0.25": 83.46977329974811,
+          "0.5": 87.46851385390428,
+          "0.75": 91.46725440806046
+        },
+        "number_of_trips": 32,
+        "total_distance_km": 4269.819,
+        "average_load_utilisation_pct": 75.71875
+      }
+    },
+    {
+      "day": "day_004",
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_decisions_reconstructed": 90,
+      "independent_metrics": {
+        "total_parcels": 808,
+        "delivered_parcels": 779,
+        "on_time_parcels": 676,
+        "early_parcels": 1,
+        "late_parcels": 102,
+        "undelivered_parcels": 29,
+        "completion_rate_pct": 96.41089108910892,
+        "on_time_service_rate_pct": 83.66336633663366,
+        "score_a": {
+          "completion_rate_pct": 96.41089108910892,
+          "on_time_tiebreak_pct": 83.66336633663366
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 90.0371287128713,
+        "score_b_sensitivity": {
+          "0.25": 86.85024752475248,
+          "0.5": 90.0371287128713,
+          "0.75": 93.2240099009901
+        },
+        "number_of_trips": 34,
+        "total_distance_km": 4087.515,
+        "average_load_utilisation_pct": 71.34313725490196
+      }
+    },
+    {
+      "day": "day_005",
+      "passed": true,
+      "issues": [],
+      "metric_mismatches": [],
+      "rule_mismatches": [],
+      "planning_decisions_reconstructed": 97,
+      "independent_metrics": {
+        "total_parcels": 806,
+        "delivered_parcels": 781,
+        "on_time_parcels": 667,
+        "early_parcels": 12,
+        "late_parcels": 102,
+        "undelivered_parcels": 25,
+        "completion_rate_pct": 96.89826302729529,
+        "on_time_service_rate_pct": 82.75434243176178,
+        "score_a": {
+          "completion_rate_pct": 96.89826302729529,
+          "on_time_tiebreak_pct": 82.75434243176178
+        },
+        "outside_window_credit": 0.5,
+        "score_b": 89.82630272952854,
+        "score_b_sensitivity": {
+          "0.25": 86.29032258064517,
+          "0.5": 89.82630272952854,
+          "0.75": 93.3622828784119
+        },
+        "number_of_trips": 32,
+        "total_distance_km": 4058.625,
+        "average_load_utilisation_pct": 76.57291666666667
+      }
+    }
+  ],
+  "paired_comparisons_vs_nearest": [
+    {
+      "day": "day_001",
+      "score_a_winner": "nearest_neighbour",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": 10.262828535669598,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": -1,
+      "on_time_change": 165,
+      "early_change": -138,
+      "late_change": -28,
+      "distance_change_km": -125.83800000000019,
+      "distance_change_pct": -2.9861562972971862
+    },
+    {
+      "day": "day_002",
+      "score_a_winner": "window_first_nearest",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": 8.290155440414509,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 2,
+      "on_time_change": 126,
+      "early_change": -93,
+      "late_change": -31,
+      "distance_change_km": 43.39800000000014,
+      "distance_change_pct": 1.0363637145178355
+    },
+    {
+      "day": "day_003",
+      "score_a_winner": "window_first_nearest",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": 12.720403022670027,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 1,
+      "on_time_change": 201,
+      "early_change": -211,
+      "late_change": 11,
+      "distance_change_km": 343.25400000000036,
+      "distance_change_pct": 8.741839241168817
+    },
+    {
+      "day": "day_004",
+      "score_a_winner": "window_first_nearest",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": 9.158415841584159,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": 1,
+      "on_time_change": 147,
+      "early_change": -183,
+      "late_change": 37,
+      "distance_change_km": -39.62699999999995,
+      "distance_change_pct": -0.9601559626492123
+    },
+    {
+      "day": "day_005",
+      "score_a_winner": "nearest_neighbour",
+      "score_b_winner": "window_first_nearest",
+      "score_b_improvement_points": 6.389578163771716,
+      "sensitivity_winners": {
+        "0.25": "window_first_nearest",
+        "0.5": "window_first_nearest",
+        "0.75": "window_first_nearest"
+      },
+      "delivered_change": -2,
+      "on_time_change": 105,
+      "early_change": -116,
+      "late_change": 9,
+      "distance_change_km": -26.40000000000009,
+      "distance_change_pct": -0.6462628747682105
+    }
+  ],
+  "limitations": [
+    "Development days001\u2013005 only; no overall aggregation method selected.",
+    "Per-day comparisons do not establish statistical significance or performance on untested days.",
+    "Strict local window priority has no guarantee of globally optimal service."
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "method": "Identical fixed dispatch snapshots; one warmup and five sequential measured passes per version. Order alternates each pass. Median elapsed constructor time; no simulator or file IO inside timed sections.",
+  "python": "3.15.2",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "repeats": 5,
+  "snapshots": [
+    {
+      "day": "day_001",
+      "planning_time": 480.0,
+      "vehicle_id": 1,
+      "supplied_parcels": 8,
+      "eligible_parcels": 8
+    },
+    {
+      "day": "day_001",
+      "planning_time": 490.0,
+      "vehicle_id": 3,
+      "supplied_parcels": 72,
+      "eligible_parcels": 31
+    },
+    {
+      "day": "day_001",
+      "planning_time": 500.0,
+      "vehicle_id": 6,
+      "supplied_parcels": 133,
+      "eligible_parcels": 5
+    },
+    {
+      "day": "day_001",
+      "planning_time": 510.0,
+      "vehicle_id": 9,
+      "supplied_parcels": 196,
+      "eligible_parcels": 8
+    },
+    {
+      "day": "day_001",
+      "planning_time": 650.0,
+      "vehicle_id": 9,
+      "supplied_parcels": 376,
+      "eligible_parcels": 132
+    },
+    {
+      "day": "day_001",
+      "planning_time": 740.0,
+      "vehicle_id": 6,
+      "supplied_parcels": 656,
+      "eligible_parcels": 314
+    },
+    {
+      "day": "day_001",
+      "planning_time": 750.0,
+      "vehicle_id": 1,
+      "supplied_parcels": 692,
+      "eligible_parcels": 256
+    },
+    {
+      "day": "day_001",
+      "planning_time": 760.0,
+      "vehicle_id": 8,
+      "supplied_parcels": 692,
+      "eligible_parcels": 160
+    },
+    {
+      "day": "day_001",
+      "planning_time": 850.0,
+      "vehicle_id": 5,
+      "supplied_parcels": 692,
+      "eligible_parcels": 97
+    },
+    {
+      "day": "day_001",
+      "planning_time": 900.0,
+      "vehicle_id": 4,
+      "supplied_parcels": 696,
+      "eligible_parcels": 10
+    },
+    {
+      "day": "day_001",
+      "planning_time": 930.0,
+      "vehicle_id": 1,
+      "supplied_parcels": 728,
+      "eligible_parcels": 4
+    },
+    {
+      "day": "day_001",
+      "planning_time": 990.0,
+      "vehicle_id": 4,
+      "supplied_parcels": 777,
+      "eligible_parcels": 16
+    },
+    {
+      "day": "day_010",
+      "planning_time": 480.0,
+      "vehicle_id": 1,
+      "supplied_parcels": 8,
+      "eligible_parcels": 8
+    },
+    {
+      "day": "day_010",
+      "planning_time": 490.0,
+      "vehicle_id": 3,
+      "supplied_parcels": 71,
+      "eligible_parcels": 35
+    },
+    {
+      "day": "day_010",
+      "planning_time": 500.0,
+      "vehicle_id": 6,
+      "supplied_parcels": 133,
+      "eligible_parcels": 27
+    },
+    {
+      "day": "day_010",
+      "planning_time": 510.0,
+      "vehicle_id": 9,
+      "supplied_parcels": 196,
+      "eligible_parcels": 3
+    },
+    {
+      "day": "day_010",
+      "planning_time": 650.0,
+      "vehicle_id": 9,
+      "supplied_parcels": 394,
+      "eligible_parcels": 159
+    },
+    {
+      "day": "day_010",
+      "planning_time": 730.0,
+      "vehicle_id": 4,
+      "supplied_parcels": 642,
+      "eligible_parcels": 309
+    },
+    {
+      "day": "day_010",
+      "planning_time": 760.0,
+      "vehicle_id": 7,
+      "supplied_parcels": 710,
+      "eligible_parcels": 282
+    },
+    {
+      "day": "day_010",
+      "planning_time": 790.0,
+      "vehicle_id": 9,
+      "supplied_parcels": 710,
+      "eligible_parcels": 180
+    },
+    {
+      "day": "day_010",
+      "planning_time": 840.0,
+      "vehicle_id": 2,
+      "supplied_parcels": 710,
+      "eligible_parcels": 117
+    },
+    {
+      "day": "day_010",
+      "planning_time": 890.0,
+      "vehicle_id": 7,
+      "supplied_parcels": 710,
+      "eligible_parcels": 21
+    },
+    {
+      "day": "day_010",
+      "planning_time": 930.0,
+      "vehicle_id": 4,
+      "supplied_parcels": 743,
+      "eligible_parcels": 4
+    },
+    {
+      "day": "day_010",
+      "planning_time": 980.0,
+      "vehicle_id": 2,
+      "supplied_parcels": 794,
+      "eligible_parcels": 19
+    },
+    {
+      "day": "day_020",
+      "planning_time": 480.0,
+      "vehicle_id": 1,
+      "supplied_parcels": 8,
+      "eligible_parcels": 8
+    },
+    {
+      "day": "day_020",
+      "planning_time": 490.0,
+      "vehicle_id": 3,
+      "supplied_parcels": 65,
+      "eligible_parcels": 29
+    },
+    {
+      "day": "day_020",
+      "planning_time": 500.0,
+      "vehicle_id": 6,
+      "supplied_parcels": 126,
+      "eligible_parcels": 29
+    },
+    {
+      "day": "day_020",
+      "planning_time": 510.0,
+      "vehicle_id": 9,
+      "supplied_parcels": 182,
+      "eligible_parcels": 25
+    },
+    {
+      "day": "day_020",
+      "planning_time": 690.0,
+      "vehicle_id": 6,
+      "supplied_parcels": 476,
+      "eligible_parcels": 228
+    },
+    {
+      "day": "day_020",
+      "planning_time": 740.0,
+      "vehicle_id": 7,
+      "supplied_parcels": 645,
+      "eligible_parcels": 309
+    },
+    {
+      "day": "day_020",
+      "planning_time": 740.0,
+      "vehicle_id": 1,
+      "supplied_parcels": 645,
+      "eligible_parcels": 243
+    },
+    {
+      "day": "day_020",
+      "planning_time": 830.0,
+      "vehicle_id": 10,
+      "supplied_parcels": 682,
+      "eligible_parcels": 181
+    },
+    {
+      "day": "day_020",
+      "planning_time": 880.0,
+      "vehicle_id": 7,
+      "supplied_parcels": 682,
+      "eligible_parcels": 86
+    },
+    {
+      "day": "day_020",
+      "planning_time": 900.0,
+      "vehicle_id": 8,
+      "supplied_parcels": 686,
+      "eligible_parcels": 4
+    },
+    {
+      "day": "day_020",
+      "planning_time": 940.0,
+      "vehicle_id": 4,
+      "supplied_parcels": 745,
+      "eligible_parcels": 27
+    },
+    {
+      "day": "day_020",
+      "planning_time": 990.0,
+      "vehicle_id": 10,
+      "supplied_parcels": 768,
+      "eligible_parcels": 18
+    }
+  ],
+  "results": {
+    "greedy_insertion": {
+      "routes_identical": true,
+      "seconds": {
+        "before": [
+          4.1365498330123955,
+          4.131673209005385,
+          4.127948542009108,
+          4.120184125000378,
+          4.128309291991172
+        ],
+        "after": [
+          3.4039350829989417,
+          3.401819209000678,
+          3.3081162500020582,
+          3.2912454159959452,
+          3.285525165993022
+        ]
+      },
+      "before_median_seconds": 4.128309291991172,
+      "after_median_seconds": 3.3081162500020582,
+      "elapsed_reduction_pct": 19.86752890778485,
+      "speedup_ratio": 1.2479335609770679
+    },
+    "greedy_insertion_efficiency": {
+      "routes_identical": true,
+      "seconds": {
+        "before": [
+          4.5011463340051705,
+          4.499455957993632,
+          4.599103041997296,
+          4.517265791990212,
+          4.530733375009731
+        ],
+        "after": [
+          3.6124568749946775,
+          3.6055992920009885,
+          3.6210681249940535,
+          3.633297667009174,
+          3.6166525830049068
+        ]
+      },
+      "before_median_seconds": 4.517265791990212,
+      "after_median_seconds": 3.6166525830049068,
+      "elapsed_reduction_pct": 19.937131230626882,
+      "speedup_ratio": 1.2490184468415344
+    },
+    "greedy_insertion_protect": {
+      "routes_identical": true,
+      "seconds": {
+        "before": [
+          4.557862166999257,
+          4.553135458001634,
+          4.550430167000741,
+          4.546702124993317,
+          4.5405257910024375
+        ],
+        "after": [
+          3.74753054100438,
+          3.7449572080076905,
+          3.746242583991261,
+          3.7559983329992974,
+          3.749415834012325
+        ]
+      },
+      "before_median_seconds": 4.550430167000741,
+      "after_median_seconds": 3.74753054100438,
+      "elapsed_reduction_pct": 17.644477478610867,
+      "speedup_ratio": 1.2142476538112947
+    }
+  },
+  "source_sha256": {
+    "scripts/benchmark_insertion_distance.py": "9cdf0ad740dc9ab584aea2012948e8b38105790dc8c068333cd004ba1c05aa6b",
+    "/Users/isaac/Desktop/Algo/project/solution/policies/greedy_insertion.py": "a4840c1d8d1b7e1068ba38bb5951a347ed2e6b08e4f0a2b43ce91301977e333d",
+    "/Users/isaac/Desktop/Algo/project/solution/policies/_insertion_variants.py": "7ddc244e3d55542c1541b295c1eceb266ce89b1af3545b1b65a5dc01da23aae4",
+    "results/insertion_distance_optimisation/reference_source/_insertion_variants.py": "d80da3546071a0063673858ed4367a0cd3b44adbe524eed6981a13832c1c38bb",
+    "results/insertion_distance_optimisation/reference_source/greedy_insertion.py": "4c3afdba1bde628b0966b4f2d721a2498d145e97371a6dd4914dbabd97ddb4d2"
+  }
+}
