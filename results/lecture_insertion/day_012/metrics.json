@@ -1,0 +1,24 @@
+{
+  "total_parcels": 783,
+  "delivered_parcels": 746,
+  "on_time_parcels": 541,
+  "early_parcels": 98,
+  "late_parcels": 107,
+  "undelivered_parcels": 37,
+  "completion_rate_pct": 95.27458492975734,
+  "on_time_service_rate_pct": 69.09323116219667,
+  "score_a": {
+    "completion_rate_pct": 95.27458492975734,
+    "on_time_tiebreak_pct": 69.09323116219667
+  },
+  "outside_window_credit": 0.5,
+  "score_b": 82.183908045977,
+  "score_b_sensitivity": {
+    "0.25": 75.63856960408684,
+    "0.5": 82.183908045977,
+    "0.75": 88.72924648786717
+  },
+  "number_of_trips": 35,
+  "total_distance_km": 4110.24,
+  "average_load_utilisation_pct": 69.31428571428572
+}

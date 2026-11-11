@@ -1,12 +1,13 @@
 """Compare saved pre-optimisation constructors with current code on fixed snapshots.
 
 Run from the project root with:
-    PYTHONPATH=. python3 scripts/benchmark_insertion_distance.py
+    PYTHONPATH=. python3 scripts/benchmark_insertion_distance.py --output results/benchmark_rerun
 This benchmark uses only supplied data, does not edit old results, and runs
 versions sequentially with alternating order. It measures constructor time,
 not simulator time or SA's 2,000-swap search.
 """
 
+import argparse
 import hashlib
 import importlib.util
 import json
@@ -16,10 +17,10 @@ import statistics
 import time
 
 from simulator.simulator import Simulator
-from solution.policies import greedy_insertion, _insertion_variants
+from solution.policies import greedy_insertion, helpers
 
 
-OUTPUT = Path("results/insertion_distance_optimisation")
+REFERENCE = Path("results/insertion_distance_optimisation/reference_source")
 REPEATS = 5
 
 
@@ -31,10 +32,20 @@ def load_reference(name, path):
 
 
 def main():
-    old_gi = load_reference("reference_gi", OUTPUT / "reference_source/greedy_insertion.py")
-    old_variants = load_reference("reference_variants", OUTPUT / "reference_source/_insertion_variants.py")
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path, required=True, help="new benchmark output directory")
+    output = parser.parse_args().output.resolve()
+    if output.exists():
+        parser.error("output already exists; choose a new directory to preserve prior results")
+    data = Path("data").resolve()
+    if output == data or data in output.parents:
+        parser.error("output must be outside the input data directory")
+    output.mkdir(parents=True)
+
+    old_gi = load_reference("reference_gi", REFERENCE / "greedy_insertion.py")
+    old_variants = load_reference("reference_variants", REFERENCE / "_insertion_variants.py")
     snapshots = []
-    collection = OUTPUT / "benchmark_collection"
+    collection = output / "benchmark_collection"
     for day in ("day_001", "day_010", "day_020"):
         candidates = []
 
@@ -55,10 +66,10 @@ def main():
         "greedy_insertion": (old_gi.dispatch, greedy_insertion.dispatch),
         "greedy_insertion_efficiency": (
             lambda p, c: old_variants.build_route(p, c, "efficiency"),
-            lambda p, c: _insertion_variants.build_route(p, c, "efficiency")),
+            lambda p, c: helpers.build_route(p, c, "efficiency")),
         "greedy_insertion_protect": (
             lambda p, c: old_variants.build_route(p, c, "protect"),
-            lambda p, c: _insertion_variants.build_route(p, c, "protect")),
+            lambda p, c: helpers.build_route(p, c, "protect")),
     }
     report = {
         "method": "Identical fixed dispatch snapshots; one warmup and five sequential measured passes per version. Order alternates each pass. Median elapsed constructor time; no simulator or file IO inside timed sections.",
@@ -94,10 +105,10 @@ def main():
             "speedup_ratio": old_median / new_median,
         }
         print(policy, json.dumps(report["results"][policy]), flush=True)
-    sources = [Path(__file__), Path(greedy_insertion.__file__),
-               Path(_insertion_variants.__file__), *sorted((OUTPUT / "reference_source").glob("*.py"))]
+    sources = [Path(__file__), Path(greedy_insertion.__file__), Path(helpers.__file__),
+               *sorted(REFERENCE.glob("*.py"))]
     report["source_sha256"] = {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in sources}
-    (OUTPUT / "benchmark.json").write_text(json.dumps(report, indent=2) + "\n")
+    (output / "benchmark.json").write_text(json.dumps(report, indent=2) + "\n")
 
 
 if __name__ == "__main__":

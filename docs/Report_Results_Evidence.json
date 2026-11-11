@@ -5,7 +5,7 @@
     "nearest_neighbour",
     "window_first_nearest",
     "greedy_insertion",
-    "greedy_insertion_protect"
+    "lecture_insertion"
   ],
   "aggregate": {
     "baseline": {
@@ -108,29 +108,29 @@
         "0.75": 91.69502741539043
       }
     },
-    "greedy_insertion_protect": {
-      "delivered_parcels": 15204,
-      "on_time_parcels": 12585,
-      "early_parcels": 19,
-      "late_parcels": 2600,
-      "undelivered_parcels": 663,
-      "number_of_trips": 659,
+    "lecture_insertion": {
+      "delivered_parcels": 15217,
+      "on_time_parcels": 10436,
+      "early_parcels": 1969,
+      "late_parcels": 2812,
+      "undelivered_parcels": 650,
+      "number_of_trips": 678,
       "total_parcels": 15867,
-      "credit_units": 27789,
-      "total_distance_km": 83017.008,
-      "total_departure_load": 14568.8,
-      "average_load_utilisation_pct": 73.6914516944866,
-      "completion_rate_pct": 95.82151635469843,
-      "on_time_service_rate_pct": 79.31556059746644,
+      "credit_units": 25653,
+      "total_distance_km": 84143.025,
+      "total_departure_load": 14577.1,
+      "average_load_utilisation_pct": 71.66715830875123,
+      "completion_rate_pct": 95.90344740656708,
+      "on_time_service_rate_pct": 65.7717274847167,
       "score_a": {
-        "completion_rate_pct": 95.82151635469843,
-        "on_time_tiebreak_pct": 79.31556059746644
+        "completion_rate_pct": 95.90344740656708,
+        "on_time_tiebreak_pct": 65.7717274847167
       },
-      "score_b": 87.56853847608244,
+      "score_b": 80.8375874456419,
       "score_b_sensitivity": {
-        "0.25": 83.44204953677443,
-        "0.5": 87.56853847608244,
-        "0.75": 91.69502741539043
+        "0.25": 73.3046574651793,
+        "0.5": 80.8375874456419,
+        "0.75": 88.3705174261045
       }
     }
   },
@@ -162,7 +162,26 @@
   "source_sha256": "eedb8ea074d265afef78cdbacb61d87b08d535100f95c9b291c22768ffbd1260",
   "benchmark_source": "results/insertion_distance_optimisation/benchmark.json",
   "figures": [
-    "/tmp/is115-results-figures/delivery-outcomes.pdf",
-    "/tmp/is115-results-figures/daily-difference.pdf"
-  ]
+    "Figure 5 in the Google Docs report: delivery outcome counts across the five selected policies",
+    "Figure 6 in the Google Docs report: paired daily window-first minus time-window insertion Score B"
+  ],
+  "lecture_insertion_source": "results/lecture_insertion/summary.json",
+  "lecture_insertion_source_sha256": "c65f389e3f3b6f8b36b16a7f7058505655a30aebc70060cc69c96adf513d6f1c",
+  "lecture_minus_time_window": {
+    "delivered_parcels": 13,
+    "on_time_parcels": -2149,
+    "score_b": -6.730951030440536,
+    "daily_score_b": {
+      "win": 0,
+      "tie": 0,
+      "loss": 20
+    }
+  },
+  "lecture_insertion_distance_validation": {
+    "runs": 20,
+    "byte_identical_logs_and_metrics": 40,
+    "aggregate_results_match": true,
+    "previous_policy_sha256": "a3ed2a424b78a44d4db01460c059c299aa2cdcc45abeb8b3984044f1739d8223",
+    "current_policy_sha256": "735f50f0262d8f3812b555f533ed60c37ff742960227cdd81c64d0e46b3ced27"
+  }
 }

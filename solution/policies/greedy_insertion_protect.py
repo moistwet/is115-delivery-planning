@@ -3,7 +3,7 @@
 from typing import Dict, List
 
 from simulator.models import Parcel, SimulationContext
-from ._insertion_variants import build_route
+from solution.policies.helpers import build_route
 
 
 def dispatch(parcel: Dict[str, Parcel], context: SimulationContext) -> List[str]:

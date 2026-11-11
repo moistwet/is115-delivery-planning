@@ -286,6 +286,41 @@
       "return_minutes": 592.0,
       "return_time": "09:52",
       "feasible": true
+    },
+    "L": {
+      "route": [
+        "B",
+        "C"
+      ],
+      "delivery_times": [
+        {
+          "parcel_id": "B",
+          "eta_minutes": 575.0,
+          "eta": "09:35",
+          "window": [
+            "09:45",
+            "10:00"
+          ],
+          "status": "early"
+        },
+        {
+          "parcel_id": "C",
+          "eta_minutes": 581.0,
+          "eta": "09:41",
+          "window": [
+            "09:30",
+            "09:50"
+          ],
+          "status": "on_time"
+        }
+      ],
+      "load": 30.0,
+      "credit_units": 3,
+      "raw_credit": 1.5,
+      "full_trip_km": 21.0,
+      "return_minutes": 591.0,
+      "return_time": "09:51",
+      "feasible": true
     }
   },
   "GI_initial_candidates": [
@@ -959,5 +994,29 @@
   },
   "correction_to_proposal": "Candidate [A,C] loses the previously on-time C: C changes from 09:40 to 10:02. Its lost-on-time count is 1; the other candidate counts are 0. This changes no selected route.",
   "input_unchanged": true,
-  "all_assertions_passed": true
+  "all_assertions_passed": true,
+  "lecture_insertion_illustration": {
+    "first_stop": "B",
+    "next_waiting_parcel": "C",
+    "closest_stop": "B",
+    "directed_anchor_distance_km": 6,
+    "before_B": {
+      "route": [
+        "C",
+        "B"
+      ],
+      "full_trip_km": 22.0
+    },
+    "after_B": {
+      "route": [
+        "B",
+        "C"
+      ],
+      "full_trip_km": 21.0
+    },
+    "committed": [
+      "B",
+      "C"
+    ]
+  }
 }

@@ -1,0 +1,2547 @@
+{
+  "policy": "solution.policies.lecture_insertion",
+  "days": [
+    "day_001",
+    "day_002",
+    "day_003",
+    "day_004",
+    "day_005",
+    "day_006",
+    "day_007",
+    "day_008",
+    "day_009",
+    "day_010",
+    "day_011",
+    "day_012",
+    "day_013",
+    "day_014",
+    "day_015",
+    "day_016",
+    "day_017",
+    "day_018",
+    "day_019",
+    "day_020"
+  ],
+  "python": "3.15.2",
+  "lecture_insertion": {
+    "kind": "deterministic",
+    "aggregation": "pooled_days",
+    "aggregate": {
+      "delivered_parcels": 15217,
+      "on_time_parcels": 10436,
+      "early_parcels": 1969,
+      "late_parcels": 2812,
+      "undelivered_parcels": 650,
+      "number_of_trips": 678,
+      "total_parcels": 15867,
+      "credit_units": 25653,
+      "total_distance_km": 84143.025,
+      "total_departure_load": 14577.1,
+      "average_load_utilisation_pct": 71.66715830875123,
+      "completion_rate_pct": 95.90344740656708,
+      "on_time_service_rate_pct": 65.7717274847167,
+      "score_a": {
+        "completion_rate_pct": 95.90344740656708,
+        "on_time_tiebreak_pct": 65.7717274847167
+      },
+      "score_b": 80.8375874456419,
+      "score_b_sensitivity": {
+        "0.25": 73.3046574651793,
+        "0.5": 80.8375874456419,
+        "0.75": 88.3705174261045
+      }
+    },
+    "exact_scores": {
+      "score_a": {
+        "completion_rate_pct": {
+          "numerator": 1521700,
+          "denominator": 15867
+        },
+        "on_time_tiebreak_pct": {
+          "numerator": 1043600,
+          "denominator": 15867
+        }
+      },
+      "score_b": {
+        "numerator": 427550,
+        "denominator": 5289
+      },
+      "score_b_sensitivity": {
+        "0.25": {
+          "numerator": 1163125,
+          "denominator": 15867
+        },
+        "0.5": {
+          "numerator": 427550,
+          "denominator": 5289
+        },
+        "0.75": {
+          "numerator": 1402175,
+          "denominator": 15867
+        }
+      }
+    },
+    "daily": {
+      "day_001": {
+        "metrics": {
+          "delivered_parcels": 762,
+          "on_time_parcels": 478,
+          "early_parcels": 99,
+          "late_parcels": 185,
+          "undelivered_parcels": 37,
+          "number_of_trips": 33,
+          "total_parcels": 799,
+          "credit_units": 1240,
+          "total_distance_km": 4233.738,
+          "total_departure_load": 727.3,
+          "average_load_utilisation_pct": 73.46464646464646,
+          "completion_rate_pct": 95.36921151439299,
+          "on_time_service_rate_pct": 59.824780976220275,
+          "score_a": {
+            "completion_rate_pct": 95.36921151439299,
+            "on_time_tiebreak_pct": 59.824780976220275
+          },
+          "score_b": 77.59699624530663,
+          "score_b_sensitivity": {
+            "0.25": 68.71088861076345,
+            "0.5": 77.59699624530663,
+            "0.75": 86.4831038798498
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 76200,
+              "denominator": 799
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 47800,
+              "denominator": 799
+            }
+          },
+          "score_b": {
+            "numerator": 62000,
+            "denominator": 799
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 54900,
+              "denominator": 799
+            },
+            "0.5": {
+              "numerator": 62000,
+              "denominator": 799
+            },
+            "0.75": {
+              "numerator": 69100,
+              "denominator": 799
+            }
+          }
+        }
+      },
+      "day_002": {
+        "metrics": {
+          "delivered_parcels": 738,
+          "on_time_parcels": 513,
+          "early_parcels": 108,
+          "late_parcels": 117,
+          "undelivered_parcels": 34,
+          "number_of_trips": 34,
+          "total_parcels": 772,
+          "credit_units": 1251,
+          "total_distance_km": 4083.957,
+          "total_departure_load": 727.2,
+          "average_load_utilisation_pct": 71.29411764705883,
+          "completion_rate_pct": 95.5958549222798,
+          "on_time_service_rate_pct": 66.45077720207254,
+          "score_a": {
+            "completion_rate_pct": 95.5958549222798,
+            "on_time_tiebreak_pct": 66.45077720207254
+          },
+          "score_b": 81.02331606217616,
+          "score_b_sensitivity": {
+            "0.25": 73.73704663212435,
+            "0.5": 81.02331606217616,
+            "0.75": 88.30958549222798
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 18450,
+              "denominator": 193
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 12825,
+              "denominator": 193
+            }
+          },
+          "score_b": {
+            "numerator": 31275,
+            "denominator": 386
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 56925,
+              "denominator": 772
+            },
+            "0.5": {
+              "numerator": 31275,
+              "denominator": 386
+            },
+            "0.75": {
+              "numerator": 68175,
+              "denominator": 772
+            }
+          }
+        }
+      },
+      "day_003": {
+        "metrics": {
+          "delivered_parcels": 758,
+          "on_time_parcels": 511,
+          "early_parcels": 85,
+          "late_parcels": 162,
+          "undelivered_parcels": 36,
+          "number_of_trips": 34,
+          "total_parcels": 794,
+          "credit_units": 1269,
+          "total_distance_km": 4227.933,
+          "total_departure_load": 727.6,
+          "average_load_utilisation_pct": 71.33333333333333,
+          "completion_rate_pct": 95.46599496221663,
+          "on_time_service_rate_pct": 64.35768261964735,
+          "score_a": {
+            "completion_rate_pct": 95.46599496221663,
+            "on_time_tiebreak_pct": 64.35768261964735
+          },
+          "score_b": 79.911838790932,
+          "score_b_sensitivity": {
+            "0.25": 72.13476070528968,
+            "0.5": 79.911838790932,
+            "0.75": 87.68891687657431
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 37900,
+              "denominator": 397
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 25550,
+              "denominator": 397
+            }
+          },
+          "score_b": {
+            "numerator": 31725,
+            "denominator": 397
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 57275,
+              "denominator": 794
+            },
+            "0.5": {
+              "numerator": 31725,
+              "denominator": 397
+            },
+            "0.75": {
+              "numerator": 69625,
+              "denominator": 794
+            }
+          }
+        }
+      },
+      "day_004": {
+        "metrics": {
+          "delivered_parcels": 776,
+          "on_time_parcels": 517,
+          "early_parcels": 125,
+          "late_parcels": 134,
+          "undelivered_parcels": 32,
+          "number_of_trips": 34,
+          "total_parcels": 808,
+          "credit_units": 1293,
+          "total_distance_km": 4252.461,
+          "total_departure_load": 725.2,
+          "average_load_utilisation_pct": 71.09803921568627,
+          "completion_rate_pct": 96.03960396039604,
+          "on_time_service_rate_pct": 63.98514851485149,
+          "score_a": {
+            "completion_rate_pct": 96.03960396039604,
+            "on_time_tiebreak_pct": 63.98514851485149
+          },
+          "score_b": 80.01237623762377,
+          "score_b_sensitivity": {
+            "0.25": 71.99876237623762,
+            "0.5": 80.01237623762377,
+            "0.75": 88.0259900990099
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 9700,
+              "denominator": 101
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 12925,
+              "denominator": 202
+            }
+          },
+          "score_b": {
+            "numerator": 32325,
+            "denominator": 404
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 58175,
+              "denominator": 808
+            },
+            "0.5": {
+              "numerator": 32325,
+              "denominator": 404
+            },
+            "0.75": {
+              "numerator": 71125,
+              "denominator": 808
+            }
+          }
+        }
+      },
+      "day_005": {
+        "metrics": {
+          "delivered_parcels": 779,
+          "on_time_parcels": 542,
+          "early_parcels": 77,
+          "late_parcels": 160,
+          "undelivered_parcels": 27,
+          "number_of_trips": 31,
+          "total_parcels": 806,
+          "credit_units": 1321,
+          "total_distance_km": 4209.501,
+          "total_departure_load": 733.4,
+          "average_load_utilisation_pct": 78.86021505376344,
+          "completion_rate_pct": 96.6501240694789,
+          "on_time_service_rate_pct": 67.24565756823822,
+          "score_a": {
+            "completion_rate_pct": 96.6501240694789,
+            "on_time_tiebreak_pct": 67.24565756823822
+          },
+          "score_b": 81.94789081885857,
+          "score_b_sensitivity": {
+            "0.25": 74.59677419354838,
+            "0.5": 81.94789081885857,
+            "0.75": 89.29900744416874
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 38950,
+              "denominator": 403
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 27100,
+              "denominator": 403
+            }
+          },
+          "score_b": {
+            "numerator": 33025,
+            "denominator": 403
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 4625,
+              "denominator": 62
+            },
+            "0.5": {
+              "numerator": 33025,
+              "denominator": 403
+            },
+            "0.75": {
+              "numerator": 71975,
+              "denominator": 806
+            }
+          }
+        }
+      },
+      "day_006": {
+        "metrics": {
+          "delivered_parcels": 747,
+          "on_time_parcels": 554,
+          "early_parcels": 76,
+          "late_parcels": 117,
+          "undelivered_parcels": 37,
+          "number_of_trips": 35,
+          "total_parcels": 784,
+          "credit_units": 1301,
+          "total_distance_km": 4181.079,
+          "total_departure_load": 726.3,
+          "average_load_utilisation_pct": 69.17142857142858,
+          "completion_rate_pct": 95.28061224489795,
+          "on_time_service_rate_pct": 70.66326530612245,
+          "score_a": {
+            "completion_rate_pct": 95.28061224489795,
+            "on_time_tiebreak_pct": 70.66326530612245
+          },
+          "score_b": 82.97193877551021,
+          "score_b_sensitivity": {
+            "0.25": 76.81760204081633,
+            "0.5": 82.97193877551021,
+            "0.75": 89.12627551020408
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 18675,
+              "denominator": 196
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 6925,
+              "denominator": 98
+            }
+          },
+          "score_b": {
+            "numerator": 32525,
+            "denominator": 392
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 60225,
+              "denominator": 784
+            },
+            "0.5": {
+              "numerator": 32525,
+              "denominator": 392
+            },
+            "0.75": {
+              "numerator": 69875,
+              "denominator": 784
+            }
+          }
+        }
+      },
+      "day_007": {
+        "metrics": {
+          "delivered_parcels": 773,
+          "on_time_parcels": 496,
+          "early_parcels": 125,
+          "late_parcels": 152,
+          "undelivered_parcels": 32,
+          "number_of_trips": 34,
+          "total_parcels": 805,
+          "credit_units": 1269,
+          "total_distance_km": 4200.195,
+          "total_departure_load": 729.6,
+          "average_load_utilisation_pct": 71.52941176470588,
+          "completion_rate_pct": 96.0248447204969,
+          "on_time_service_rate_pct": 61.61490683229814,
+          "score_a": {
+            "completion_rate_pct": 96.0248447204969,
+            "on_time_tiebreak_pct": 61.61490683229814
+          },
+          "score_b": 78.81987577639751,
+          "score_b_sensitivity": {
+            "0.25": 70.21739130434783,
+            "0.5": 78.81987577639751,
+            "0.75": 87.4223602484472
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 15460,
+              "denominator": 161
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 9920,
+              "denominator": 161
+            }
+          },
+          "score_b": {
+            "numerator": 12690,
+            "denominator": 161
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 1615,
+              "denominator": 23
+            },
+            "0.5": {
+              "numerator": 12690,
+              "denominator": 161
+            },
+            "0.75": {
+              "numerator": 14075,
+              "denominator": 161
+            }
+          }
+        }
+      },
+      "day_008": {
+        "metrics": {
+          "delivered_parcels": 780,
+          "on_time_parcels": 535,
+          "early_parcels": 107,
+          "late_parcels": 138,
+          "undelivered_parcels": 28,
+          "number_of_trips": 34,
+          "total_parcels": 808,
+          "credit_units": 1315,
+          "total_distance_km": 4209.117,
+          "total_departure_load": 730.2,
+          "average_load_utilisation_pct": 71.58823529411765,
+          "completion_rate_pct": 96.53465346534654,
+          "on_time_service_rate_pct": 66.2128712871287,
+          "score_a": {
+            "completion_rate_pct": 96.53465346534654,
+            "on_time_tiebreak_pct": 66.2128712871287
+          },
+          "score_b": 81.37376237623762,
+          "score_b_sensitivity": {
+            "0.25": 73.79331683168317,
+            "0.5": 81.37376237623762,
+            "0.75": 88.95420792079207
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 9750,
+              "denominator": 101
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 13375,
+              "denominator": 202
+            }
+          },
+          "score_b": {
+            "numerator": 32875,
+            "denominator": 404
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 59625,
+              "denominator": 808
+            },
+            "0.5": {
+              "numerator": 32875,
+              "denominator": 404
+            },
+            "0.75": {
+              "numerator": 71875,
+              "denominator": 808
+            }
+          }
+        }
+      },
+      "day_009": {
+        "metrics": {
+          "delivered_parcels": 763,
+          "on_time_parcels": 459,
+          "early_parcels": 139,
+          "late_parcels": 165,
+          "undelivered_parcels": 35,
+          "number_of_trips": 34,
+          "total_parcels": 798,
+          "credit_units": 1222,
+          "total_distance_km": 4309.059,
+          "total_departure_load": 726.0,
+          "average_load_utilisation_pct": 71.17647058823529,
+          "completion_rate_pct": 95.6140350877193,
+          "on_time_service_rate_pct": 57.5187969924812,
+          "score_a": {
+            "completion_rate_pct": 95.6140350877193,
+            "on_time_tiebreak_pct": 57.5187969924812
+          },
+          "score_b": 76.56641604010025,
+          "score_b_sensitivity": {
+            "0.25": 67.04260651629073,
+            "0.5": 76.56641604010025,
+            "0.75": 86.09022556390977
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 5450,
+              "denominator": 57
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 7650,
+              "denominator": 133
+            }
+          },
+          "score_b": {
+            "numerator": 30550,
+            "denominator": 399
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 26750,
+              "denominator": 399
+            },
+            "0.5": {
+              "numerator": 30550,
+              "denominator": 399
+            },
+            "0.75": {
+              "numerator": 11450,
+              "denominator": 133
+            }
+          }
+        }
+      },
+      "day_010": {
+        "metrics": {
+          "delivered_parcels": 782,
+          "on_time_parcels": 539,
+          "early_parcels": 79,
+          "late_parcels": 164,
+          "undelivered_parcels": 29,
+          "number_of_trips": 34,
+          "total_parcels": 811,
+          "credit_units": 1321,
+          "total_distance_km": 4179.627,
+          "total_departure_load": 731.0,
+          "average_load_utilisation_pct": 71.66666666666667,
+          "completion_rate_pct": 96.42416769420468,
+          "on_time_service_rate_pct": 66.46115906288533,
+          "score_a": {
+            "completion_rate_pct": 96.42416769420468,
+            "on_time_tiebreak_pct": 66.46115906288533
+          },
+          "score_b": 81.442663378545,
+          "score_b_sensitivity": {
+            "0.25": 73.95191122071516,
+            "0.5": 81.442663378545,
+            "0.75": 88.93341553637485
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 78200,
+              "denominator": 811
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 53900,
+              "denominator": 811
+            }
+          },
+          "score_b": {
+            "numerator": 66050,
+            "denominator": 811
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 59975,
+              "denominator": 811
+            },
+            "0.5": {
+              "numerator": 66050,
+              "denominator": 811
+            },
+            "0.75": {
+              "numerator": 72125,
+              "denominator": 811
+            }
+          }
+        }
+      },
+      "day_011": {
+        "metrics": {
+          "delivered_parcels": 771,
+          "on_time_parcels": 564,
+          "early_parcels": 104,
+          "late_parcels": 103,
+          "undelivered_parcels": 37,
+          "number_of_trips": 33,
+          "total_parcels": 808,
+          "credit_units": 1335,
+          "total_distance_km": 4077.504,
+          "total_departure_load": 720.1,
+          "average_load_utilisation_pct": 72.73737373737374,
+          "completion_rate_pct": 95.42079207920793,
+          "on_time_service_rate_pct": 69.8019801980198,
+          "score_a": {
+            "completion_rate_pct": 95.42079207920793,
+            "on_time_tiebreak_pct": 69.8019801980198
+          },
+          "score_b": 82.61138613861387,
+          "score_b_sensitivity": {
+            "0.25": 76.20668316831683,
+            "0.5": 82.61138613861387,
+            "0.75": 89.01608910891089
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 19275,
+              "denominator": 202
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 7050,
+              "denominator": 101
+            }
+          },
+          "score_b": {
+            "numerator": 33375,
+            "denominator": 404
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 61575,
+              "denominator": 808
+            },
+            "0.5": {
+              "numerator": 33375,
+              "denominator": 404
+            },
+            "0.75": {
+              "numerator": 71925,
+              "denominator": 808
+            }
+          }
+        }
+      },
+      "day_012": {
+        "metrics": {
+          "delivered_parcels": 746,
+          "on_time_parcels": 541,
+          "early_parcels": 98,
+          "late_parcels": 107,
+          "undelivered_parcels": 37,
+          "number_of_trips": 35,
+          "total_parcels": 783,
+          "credit_units": 1287,
+          "total_distance_km": 4110.24,
+          "total_departure_load": 727.8,
+          "average_load_utilisation_pct": 69.31428571428572,
+          "completion_rate_pct": 95.27458492975734,
+          "on_time_service_rate_pct": 69.09323116219667,
+          "score_a": {
+            "completion_rate_pct": 95.27458492975734,
+            "on_time_tiebreak_pct": 69.09323116219667
+          },
+          "score_b": 82.183908045977,
+          "score_b_sensitivity": {
+            "0.25": 75.63856960408684,
+            "0.5": 82.183908045977,
+            "0.75": 88.72924648786717
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 74600,
+              "denominator": 783
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 54100,
+              "denominator": 783
+            }
+          },
+          "score_b": {
+            "numerator": 7150,
+            "denominator": 87
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 59225,
+              "denominator": 783
+            },
+            "0.5": {
+              "numerator": 7150,
+              "denominator": 87
+            },
+            "0.75": {
+              "numerator": 69475,
+              "denominator": 783
+            }
+          }
+        }
+      },
+      "day_013": {
+        "metrics": {
+          "delivered_parcels": 760,
+          "on_time_parcels": 549,
+          "early_parcels": 77,
+          "late_parcels": 134,
+          "undelivered_parcels": 29,
+          "number_of_trips": 35,
+          "total_parcels": 789,
+          "credit_units": 1309,
+          "total_distance_km": 4426.713,
+          "total_departure_load": 731.3,
+          "average_load_utilisation_pct": 69.64761904761905,
+          "completion_rate_pct": 96.32446134347275,
+          "on_time_service_rate_pct": 69.58174904942966,
+          "score_a": {
+            "completion_rate_pct": 96.32446134347275,
+            "on_time_tiebreak_pct": 69.58174904942966
+          },
+          "score_b": 82.9531051964512,
+          "score_b_sensitivity": {
+            "0.25": 76.26742712294043,
+            "0.5": 82.9531051964512,
+            "0.75": 89.63878326996198
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 76000,
+              "denominator": 789
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 18300,
+              "denominator": 263
+            }
+          },
+          "score_b": {
+            "numerator": 65450,
+            "denominator": 789
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 60175,
+              "denominator": 789
+            },
+            "0.5": {
+              "numerator": 65450,
+              "denominator": 789
+            },
+            "0.75": {
+              "numerator": 23575,
+              "denominator": 263
+            }
+          }
+        }
+      },
+      "day_014": {
+        "metrics": {
+          "delivered_parcels": 744,
+          "on_time_parcels": 491,
+          "early_parcels": 150,
+          "late_parcels": 103,
+          "undelivered_parcels": 34,
+          "number_of_trips": 35,
+          "total_parcels": 778,
+          "credit_units": 1235,
+          "total_distance_km": 4100.664,
+          "total_departure_load": 728.5,
+          "average_load_utilisation_pct": 69.38095238095238,
+          "completion_rate_pct": 95.62982005141389,
+          "on_time_service_rate_pct": 63.11053984575835,
+          "score_a": {
+            "completion_rate_pct": 95.62982005141389,
+            "on_time_tiebreak_pct": 63.11053984575835
+          },
+          "score_b": 79.37017994858611,
+          "score_b_sensitivity": {
+            "0.25": 71.24035989717224,
+            "0.5": 79.37017994858611,
+            "0.75": 87.5
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 37200,
+              "denominator": 389
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 24550,
+              "denominator": 389
+            }
+          },
+          "score_b": {
+            "numerator": 30875,
+            "denominator": 389
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 55425,
+              "denominator": 778
+            },
+            "0.5": {
+              "numerator": 30875,
+              "denominator": 389
+            },
+            "0.75": {
+              "numerator": 175,
+              "denominator": 2
+            }
+          }
+        }
+      },
+      "day_015": {
+        "metrics": {
+          "delivered_parcels": 767,
+          "on_time_parcels": 556,
+          "early_parcels": 67,
+          "late_parcels": 144,
+          "undelivered_parcels": 29,
+          "number_of_trips": 34,
+          "total_parcels": 796,
+          "credit_units": 1323,
+          "total_distance_km": 4132.959,
+          "total_departure_load": 728.5,
+          "average_load_utilisation_pct": 71.42156862745098,
+          "completion_rate_pct": 96.35678391959799,
+          "on_time_service_rate_pct": 69.84924623115577,
+          "score_a": {
+            "completion_rate_pct": 96.35678391959799,
+            "on_time_tiebreak_pct": 69.84924623115577
+          },
+          "score_b": 83.10301507537689,
+          "score_b_sensitivity": {
+            "0.25": 76.47613065326634,
+            "0.5": 83.10301507537689,
+            "0.75": 89.72989949748744
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 19175,
+              "denominator": 199
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 13900,
+              "denominator": 199
+            }
+          },
+          "score_b": {
+            "numerator": 33075,
+            "denominator": 398
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 60875,
+              "denominator": 796
+            },
+            "0.5": {
+              "numerator": 33075,
+              "denominator": 398
+            },
+            "0.75": {
+              "numerator": 71425,
+              "denominator": 796
+            }
+          }
+        }
+      },
+      "day_016": {
+        "metrics": {
+          "delivered_parcels": 764,
+          "on_time_parcels": 544,
+          "early_parcels": 99,
+          "late_parcels": 121,
+          "undelivered_parcels": 33,
+          "number_of_trips": 35,
+          "total_parcels": 797,
+          "credit_units": 1308,
+          "total_distance_km": 4070.841,
+          "total_departure_load": 729.0,
+          "average_load_utilisation_pct": 69.42857142857143,
+          "completion_rate_pct": 95.8594730238394,
+          "on_time_service_rate_pct": 68.25595984943538,
+          "score_a": {
+            "completion_rate_pct": 95.8594730238394,
+            "on_time_tiebreak_pct": 68.25595984943538
+          },
+          "score_b": 82.05771643663739,
+          "score_b_sensitivity": {
+            "0.25": 75.15683814303638,
+            "0.5": 82.05771643663739,
+            "0.75": 88.95859473023839
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 76400,
+              "denominator": 797
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 54400,
+              "denominator": 797
+            }
+          },
+          "score_b": {
+            "numerator": 65400,
+            "denominator": 797
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 59900,
+              "denominator": 797
+            },
+            "0.5": {
+              "numerator": 65400,
+              "denominator": 797
+            },
+            "0.75": {
+              "numerator": 70900,
+              "denominator": 797
+            }
+          }
+        }
+      },
+      "day_017": {
+        "metrics": {
+          "delivered_parcels": 758,
+          "on_time_parcels": 561,
+          "early_parcels": 92,
+          "late_parcels": 105,
+          "undelivered_parcels": 31,
+          "number_of_trips": 34,
+          "total_parcels": 789,
+          "credit_units": 1319,
+          "total_distance_km": 4239.276,
+          "total_departure_load": 732.6,
+          "average_load_utilisation_pct": 71.82352941176471,
+          "completion_rate_pct": 96.07097591888467,
+          "on_time_service_rate_pct": 71.10266159695817,
+          "score_a": {
+            "completion_rate_pct": 96.07097591888467,
+            "on_time_tiebreak_pct": 71.10266159695817
+          },
+          "score_b": 83.58681875792142,
+          "score_b_sensitivity": {
+            "0.25": 77.3447401774398,
+            "0.5": 83.58681875792142,
+            "0.75": 89.82889733840304
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 75800,
+              "denominator": 789
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 18700,
+              "denominator": 263
+            }
+          },
+          "score_b": {
+            "numerator": 65950,
+            "denominator": 789
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 61025,
+              "denominator": 789
+            },
+            "0.5": {
+              "numerator": 65950,
+              "denominator": 789
+            },
+            "0.75": {
+              "numerator": 23625,
+              "denominator": 263
+            }
+          }
+        }
+      },
+      "day_018": {
+        "metrics": {
+          "delivered_parcels": 732,
+          "on_time_parcels": 505,
+          "early_parcels": 78,
+          "late_parcels": 149,
+          "undelivered_parcels": 31,
+          "number_of_trips": 34,
+          "total_parcels": 763,
+          "credit_units": 1237,
+          "total_distance_km": 4308.2880000000005,
+          "total_departure_load": 731.9,
+          "average_load_utilisation_pct": 71.75490196078431,
+          "completion_rate_pct": 95.93709043250328,
+          "on_time_service_rate_pct": 66.18610747051115,
+          "score_a": {
+            "completion_rate_pct": 95.93709043250328,
+            "on_time_tiebreak_pct": 66.18610747051115
+          },
+          "score_b": 81.06159895150721,
+          "score_b_sensitivity": {
+            "0.25": 73.62385321100918,
+            "0.5": 81.06159895150721,
+            "0.75": 88.49934469200524
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 73200,
+              "denominator": 763
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 50500,
+              "denominator": 763
+            }
+          },
+          "score_b": {
+            "numerator": 61850,
+            "denominator": 763
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 8025,
+              "denominator": 109
+            },
+            "0.5": {
+              "numerator": 61850,
+              "denominator": 763
+            },
+            "0.75": {
+              "numerator": 67525,
+              "denominator": 763
+            }
+          }
+        }
+      },
+      "day_019": {
+        "metrics": {
+          "delivered_parcels": 766,
+          "on_time_parcels": 531,
+          "early_parcels": 93,
+          "late_parcels": 142,
+          "undelivered_parcels": 31,
+          "number_of_trips": 34,
+          "total_parcels": 797,
+          "credit_units": 1297,
+          "total_distance_km": 4364.796,
+          "total_departure_load": 733.4,
+          "average_load_utilisation_pct": 71.90196078431373,
+          "completion_rate_pct": 96.11041405269762,
+          "on_time_service_rate_pct": 66.62484316185696,
+          "score_a": {
+            "completion_rate_pct": 96.11041405269762,
+            "on_time_tiebreak_pct": 66.62484316185696
+          },
+          "score_b": 81.3676286072773,
+          "score_b_sensitivity": {
+            "0.25": 73.99623588456713,
+            "0.5": 81.3676286072773,
+            "0.75": 88.73902132998745
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 76600,
+              "denominator": 797
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 53100,
+              "denominator": 797
+            }
+          },
+          "score_b": {
+            "numerator": 64850,
+            "denominator": 797
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 58975,
+              "denominator": 797
+            },
+            "0.5": {
+              "numerator": 64850,
+              "denominator": 797
+            },
+            "0.75": {
+              "numerator": 70725,
+              "denominator": 797
+            }
+          }
+        }
+      },
+      "day_020": {
+        "metrics": {
+          "delivered_parcels": 751,
+          "on_time_parcels": 450,
+          "early_parcels": 91,
+          "late_parcels": 210,
+          "undelivered_parcels": 31,
+          "number_of_trips": 32,
+          "total_parcels": 782,
+          "credit_units": 1201,
+          "total_distance_km": 4225.077,
+          "total_departure_load": 730.2,
+          "average_load_utilisation_pct": 76.0625,
+          "completion_rate_pct": 96.03580562659846,
+          "on_time_service_rate_pct": 57.54475703324808,
+          "score_a": {
+            "completion_rate_pct": 96.03580562659846,
+            "on_time_tiebreak_pct": 57.54475703324808
+          },
+          "score_b": 76.79028132992327,
+          "score_b_sensitivity": {
+            "0.25": 67.16751918158567,
+            "0.5": 76.79028132992327,
+            "0.75": 86.41304347826087
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 37550,
+              "denominator": 391
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 22500,
+              "denominator": 391
+            }
+          },
+          "score_b": {
+            "numerator": 30025,
+            "denominator": 391
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 52525,
+              "denominator": 782
+            },
+            "0.5": {
+              "numerator": 30025,
+              "denominator": 391
+            },
+            "0.75": {
+              "numerator": 3975,
+              "denominator": 46
+            }
+          }
+        }
+      }
+    },
+    "daily_summary": {
+      "mean_daily_score_b": 80.83763564949797,
+      "minimum_daily_score_b": 76.56641604010025,
+      "worst_days": [
+        "day_009"
+      ]
+    }
+  },
+  "time_window_insertion": {
+    "kind": "deterministic",
+    "aggregation": "pooled_days",
+    "aggregate": {
+      "delivered_parcels": 15204,
+      "on_time_parcels": 12585,
+      "early_parcels": 19,
+      "late_parcels": 2600,
+      "undelivered_parcels": 663,
+      "number_of_trips": 659,
+      "total_parcels": 15867,
+      "credit_units": 27789,
+      "total_distance_km": 83017.008,
+      "total_departure_load": 14568.8,
+      "average_load_utilisation_pct": 73.6914516944866,
+      "completion_rate_pct": 95.82151635469843,
+      "on_time_service_rate_pct": 79.31556059746644,
+      "score_a": {
+        "completion_rate_pct": 95.82151635469843,
+        "on_time_tiebreak_pct": 79.31556059746644
+      },
+      "score_b": 87.56853847608244,
+      "score_b_sensitivity": {
+        "0.25": 83.44204953677443,
+        "0.5": 87.56853847608244,
+        "0.75": 91.69502741539043
+      }
+    },
+    "exact_scores": {
+      "score_a": {
+        "completion_rate_pct": {
+          "numerator": 506800,
+          "denominator": 5289
+        },
+        "on_time_tiebreak_pct": {
+          "numerator": 419500,
+          "denominator": 5289
+        }
+      },
+      "score_b": {
+        "numerator": 463150,
+        "denominator": 5289
+      },
+      "score_b_sensitivity": {
+        "0.25": {
+          "numerator": 441325,
+          "denominator": 5289
+        },
+        "0.5": {
+          "numerator": 463150,
+          "denominator": 5289
+        },
+        "0.75": {
+          "numerator": 484975,
+          "denominator": 5289
+        }
+      }
+    },
+    "daily": {
+      "day_001": {
+        "metrics": {
+          "delivered_parcels": 763,
+          "on_time_parcels": 628,
+          "early_parcels": 0,
+          "late_parcels": 135,
+          "undelivered_parcels": 36,
+          "number_of_trips": 33,
+          "total_parcels": 799,
+          "credit_units": 1391,
+          "total_distance_km": 4239.267,
+          "total_departure_load": 727.3,
+          "average_load_utilisation_pct": 73.46464646464646,
+          "completion_rate_pct": 95.49436795994994,
+          "on_time_service_rate_pct": 78.5982478097622,
+          "score_a": {
+            "completion_rate_pct": 95.49436795994994,
+            "on_time_tiebreak_pct": 78.5982478097622
+          },
+          "score_b": 87.04630788485608,
+          "score_b_sensitivity": {
+            "0.25": 82.82227784730914,
+            "0.5": 87.04630788485608,
+            "0.75": 91.270337922403
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 76300,
+              "denominator": 799
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 62800,
+              "denominator": 799
+            }
+          },
+          "score_b": {
+            "numerator": 69550,
+            "denominator": 799
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 66175,
+              "denominator": 799
+            },
+            "0.5": {
+              "numerator": 69550,
+              "denominator": 799
+            },
+            "0.75": {
+              "numerator": 72925,
+              "denominator": 799
+            }
+          }
+        }
+      },
+      "day_002": {
+        "metrics": {
+          "delivered_parcels": 738,
+          "on_time_parcels": 617,
+          "early_parcels": 1,
+          "late_parcels": 120,
+          "undelivered_parcels": 34,
+          "number_of_trips": 33,
+          "total_parcels": 772,
+          "credit_units": 1355,
+          "total_distance_km": 4196.331,
+          "total_departure_load": 727.2,
+          "average_load_utilisation_pct": 73.45454545454545,
+          "completion_rate_pct": 95.5958549222798,
+          "on_time_service_rate_pct": 79.92227979274611,
+          "score_a": {
+            "completion_rate_pct": 95.5958549222798,
+            "on_time_tiebreak_pct": 79.92227979274611
+          },
+          "score_b": 87.75906735751295,
+          "score_b_sensitivity": {
+            "0.25": 83.84067357512953,
+            "0.5": 87.75906735751295,
+            "0.75": 91.67746113989638
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 18450,
+              "denominator": 193
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 15425,
+              "denominator": 193
+            }
+          },
+          "score_b": {
+            "numerator": 33875,
+            "denominator": 386
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 64725,
+              "denominator": 772
+            },
+            "0.5": {
+              "numerator": 33875,
+              "denominator": 386
+            },
+            "0.75": {
+              "numerator": 70775,
+              "denominator": 772
+            }
+          }
+        }
+      },
+      "day_003": {
+        "metrics": {
+          "delivered_parcels": 759,
+          "on_time_parcels": 693,
+          "early_parcels": 1,
+          "late_parcels": 65,
+          "undelivered_parcels": 35,
+          "number_of_trips": 34,
+          "total_parcels": 794,
+          "credit_units": 1452,
+          "total_distance_km": 4012.239,
+          "total_departure_load": 728.9,
+          "average_load_utilisation_pct": 71.46078431372548,
+          "completion_rate_pct": 95.59193954659949,
+          "on_time_service_rate_pct": 87.27959697732997,
+          "score_a": {
+            "completion_rate_pct": 95.59193954659949,
+            "on_time_tiebreak_pct": 87.27959697732997
+          },
+          "score_b": 91.43576826196474,
+          "score_b_sensitivity": {
+            "0.25": 89.35768261964735,
+            "0.5": 91.43576826196474,
+            "0.75": 93.51385390428212
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 37950,
+              "denominator": 397
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 34650,
+              "denominator": 397
+            }
+          },
+          "score_b": {
+            "numerator": 36300,
+            "denominator": 397
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 35475,
+              "denominator": 397
+            },
+            "0.5": {
+              "numerator": 36300,
+              "denominator": 397
+            },
+            "0.75": {
+              "numerator": 37125,
+              "denominator": 397
+            }
+          }
+        }
+      },
+      "day_004": {
+        "metrics": {
+          "delivered_parcels": 776,
+          "on_time_parcels": 668,
+          "early_parcels": 0,
+          "late_parcels": 108,
+          "undelivered_parcels": 32,
+          "number_of_trips": 33,
+          "total_parcels": 808,
+          "credit_units": 1444,
+          "total_distance_km": 4110.126,
+          "total_departure_load": 725.2,
+          "average_load_utilisation_pct": 73.25252525252525,
+          "completion_rate_pct": 96.03960396039604,
+          "on_time_service_rate_pct": 82.67326732673267,
+          "score_a": {
+            "completion_rate_pct": 96.03960396039604,
+            "on_time_tiebreak_pct": 82.67326732673267
+          },
+          "score_b": 89.35643564356435,
+          "score_b_sensitivity": {
+            "0.25": 86.01485148514851,
+            "0.5": 89.35643564356435,
+            "0.75": 92.6980198019802
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 9700,
+              "denominator": 101
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 8350,
+              "denominator": 101
+            }
+          },
+          "score_b": {
+            "numerator": 9025,
+            "denominator": 101
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 17375,
+              "denominator": 202
+            },
+            "0.5": {
+              "numerator": 9025,
+              "denominator": 101
+            },
+            "0.75": {
+              "numerator": 18725,
+              "denominator": 202
+            }
+          }
+        }
+      },
+      "day_005": {
+        "metrics": {
+          "delivered_parcels": 781,
+          "on_time_parcels": 590,
+          "early_parcels": 3,
+          "late_parcels": 188,
+          "undelivered_parcels": 25,
+          "number_of_trips": 34,
+          "total_parcels": 806,
+          "credit_units": 1371,
+          "total_distance_km": 4068.243,
+          "total_departure_load": 735.3,
+          "average_load_utilisation_pct": 72.08823529411765,
+          "completion_rate_pct": 96.89826302729529,
+          "on_time_service_rate_pct": 73.20099255583126,
+          "score_a": {
+            "completion_rate_pct": 96.89826302729529,
+            "on_time_tiebreak_pct": 73.20099255583126
+          },
+          "score_b": 85.04962779156328,
+          "score_b_sensitivity": {
+            "0.25": 79.12531017369727,
+            "0.5": 85.04962779156328,
+            "0.75": 90.97394540942928
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 39050,
+              "denominator": 403
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 29500,
+              "denominator": 403
+            }
+          },
+          "score_b": {
+            "numerator": 34275,
+            "denominator": 403
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 63775,
+              "denominator": 806
+            },
+            "0.5": {
+              "numerator": 34275,
+              "denominator": 403
+            },
+            "0.75": {
+              "numerator": 73325,
+              "denominator": 806
+            }
+          }
+        }
+      },
+      "day_006": {
+        "metrics": {
+          "delivered_parcels": 745,
+          "on_time_parcels": 634,
+          "early_parcels": 0,
+          "late_parcels": 111,
+          "undelivered_parcels": 39,
+          "number_of_trips": 33,
+          "total_parcels": 784,
+          "credit_units": 1379,
+          "total_distance_km": 4219.458,
+          "total_departure_load": 725.6,
+          "average_load_utilisation_pct": 73.29292929292929,
+          "completion_rate_pct": 95.02551020408163,
+          "on_time_service_rate_pct": 80.86734693877551,
+          "score_a": {
+            "completion_rate_pct": 95.02551020408163,
+            "on_time_tiebreak_pct": 80.86734693877551
+          },
+          "score_b": 87.94642857142857,
+          "score_b_sensitivity": {
+            "0.25": 84.40688775510205,
+            "0.5": 87.94642857142857,
+            "0.75": 91.4859693877551
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 18625,
+              "denominator": 196
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 7925,
+              "denominator": 98
+            }
+          },
+          "score_b": {
+            "numerator": 4925,
+            "denominator": 56
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 66175,
+              "denominator": 784
+            },
+            "0.5": {
+              "numerator": 4925,
+              "denominator": 56
+            },
+            "0.75": {
+              "numerator": 71725,
+              "denominator": 784
+            }
+          }
+        }
+      },
+      "day_007": {
+        "metrics": {
+          "delivered_parcels": 772,
+          "on_time_parcels": 603,
+          "early_parcels": 7,
+          "late_parcels": 162,
+          "undelivered_parcels": 33,
+          "number_of_trips": 32,
+          "total_parcels": 805,
+          "credit_units": 1375,
+          "total_distance_km": 4214.256,
+          "total_departure_load": 728.4,
+          "average_load_utilisation_pct": 75.875,
+          "completion_rate_pct": 95.90062111801242,
+          "on_time_service_rate_pct": 74.90683229813665,
+          "score_a": {
+            "completion_rate_pct": 95.90062111801242,
+            "on_time_tiebreak_pct": 74.90683229813665
+          },
+          "score_b": 85.40372670807453,
+          "score_b_sensitivity": {
+            "0.25": 80.15527950310559,
+            "0.5": 85.40372670807453,
+            "0.75": 90.65217391304348
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 15440,
+              "denominator": 161
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 12060,
+              "denominator": 161
+            }
+          },
+          "score_b": {
+            "numerator": 13750,
+            "denominator": 161
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 12905,
+              "denominator": 161
+            },
+            "0.5": {
+              "numerator": 13750,
+              "denominator": 161
+            },
+            "0.75": {
+              "numerator": 2085,
+              "denominator": 23
+            }
+          }
+        }
+      },
+      "day_008": {
+        "metrics": {
+          "delivered_parcels": 778,
+          "on_time_parcels": 598,
+          "early_parcels": 1,
+          "late_parcels": 179,
+          "undelivered_parcels": 30,
+          "number_of_trips": 34,
+          "total_parcels": 808,
+          "credit_units": 1376,
+          "total_distance_km": 4202.295,
+          "total_departure_load": 728.8,
+          "average_load_utilisation_pct": 71.45098039215686,
+          "completion_rate_pct": 96.2871287128713,
+          "on_time_service_rate_pct": 74.00990099009901,
+          "score_a": {
+            "completion_rate_pct": 96.2871287128713,
+            "on_time_tiebreak_pct": 74.00990099009901
+          },
+          "score_b": 85.14851485148515,
+          "score_b_sensitivity": {
+            "0.25": 79.57920792079207,
+            "0.5": 85.14851485148515,
+            "0.75": 90.71782178217822
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 9725,
+              "denominator": 101
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 7475,
+              "denominator": 101
+            }
+          },
+          "score_b": {
+            "numerator": 8600,
+            "denominator": 101
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 16075,
+              "denominator": 202
+            },
+            "0.5": {
+              "numerator": 8600,
+              "denominator": 101
+            },
+            "0.75": {
+              "numerator": 18325,
+              "denominator": 202
+            }
+          }
+        }
+      },
+      "day_009": {
+        "metrics": {
+          "delivered_parcels": 762,
+          "on_time_parcels": 658,
+          "early_parcels": 0,
+          "late_parcels": 104,
+          "undelivered_parcels": 36,
+          "number_of_trips": 34,
+          "total_parcels": 798,
+          "credit_units": 1420,
+          "total_distance_km": 4159.77,
+          "total_departure_load": 724.0,
+          "average_load_utilisation_pct": 70.98039215686275,
+          "completion_rate_pct": 95.48872180451127,
+          "on_time_service_rate_pct": 82.45614035087719,
+          "score_a": {
+            "completion_rate_pct": 95.48872180451127,
+            "on_time_tiebreak_pct": 82.45614035087719
+          },
+          "score_b": 88.97243107769424,
+          "score_b_sensitivity": {
+            "0.25": 85.71428571428571,
+            "0.5": 88.97243107769424,
+            "0.75": 92.23057644110276
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 12700,
+              "denominator": 133
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 4700,
+              "denominator": 57
+            }
+          },
+          "score_b": {
+            "numerator": 35500,
+            "denominator": 399
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 600,
+              "denominator": 7
+            },
+            "0.5": {
+              "numerator": 35500,
+              "denominator": 399
+            },
+            "0.75": {
+              "numerator": 36800,
+              "denominator": 399
+            }
+          }
+        }
+      },
+      "day_010": {
+        "metrics": {
+          "delivered_parcels": 782,
+          "on_time_parcels": 640,
+          "early_parcels": 0,
+          "late_parcels": 142,
+          "undelivered_parcels": 29,
+          "number_of_trips": 33,
+          "total_parcels": 811,
+          "credit_units": 1422,
+          "total_distance_km": 4249.746,
+          "total_departure_load": 731.0,
+          "average_load_utilisation_pct": 73.83838383838383,
+          "completion_rate_pct": 96.42416769420468,
+          "on_time_service_rate_pct": 78.91491985203453,
+          "score_a": {
+            "completion_rate_pct": 96.42416769420468,
+            "on_time_tiebreak_pct": 78.91491985203453
+          },
+          "score_b": 87.6695437731196,
+          "score_b_sensitivity": {
+            "0.25": 83.29223181257707,
+            "0.5": 87.6695437731196,
+            "0.75": 92.04685573366214
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 78200,
+              "denominator": 811
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 64000,
+              "denominator": 811
+            }
+          },
+          "score_b": {
+            "numerator": 71100,
+            "denominator": 811
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 67550,
+              "denominator": 811
+            },
+            "0.5": {
+              "numerator": 71100,
+              "denominator": 811
+            },
+            "0.75": {
+              "numerator": 74650,
+              "denominator": 811
+            }
+          }
+        }
+      },
+      "day_011": {
+        "metrics": {
+          "delivered_parcels": 772,
+          "on_time_parcels": 653,
+          "early_parcels": 0,
+          "late_parcels": 119,
+          "undelivered_parcels": 36,
+          "number_of_trips": 34,
+          "total_parcels": 808,
+          "credit_units": 1425,
+          "total_distance_km": 4134.288,
+          "total_departure_load": 721.0,
+          "average_load_utilisation_pct": 70.68627450980392,
+          "completion_rate_pct": 95.54455445544555,
+          "on_time_service_rate_pct": 80.81683168316832,
+          "score_a": {
+            "completion_rate_pct": 95.54455445544555,
+            "on_time_tiebreak_pct": 80.81683168316832
+          },
+          "score_b": 88.18069306930693,
+          "score_b_sensitivity": {
+            "0.25": 84.49876237623762,
+            "0.5": 88.18069306930693,
+            "0.75": 91.86262376237623
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 9650,
+              "denominator": 101
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 16325,
+              "denominator": 202
+            }
+          },
+          "score_b": {
+            "numerator": 35625,
+            "denominator": 404
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 68275,
+              "denominator": 808
+            },
+            "0.5": {
+              "numerator": 35625,
+              "denominator": 404
+            },
+            "0.75": {
+              "numerator": 74225,
+              "denominator": 808
+            }
+          }
+        }
+      },
+      "day_012": {
+        "metrics": {
+          "delivered_parcels": 740,
+          "on_time_parcels": 598,
+          "early_parcels": 2,
+          "late_parcels": 140,
+          "undelivered_parcels": 43,
+          "number_of_trips": 30,
+          "total_parcels": 783,
+          "credit_units": 1338,
+          "total_distance_km": 4230.873,
+          "total_departure_load": 723.7,
+          "average_load_utilisation_pct": 80.41111111111111,
+          "completion_rate_pct": 94.50830140485313,
+          "on_time_service_rate_pct": 76.37292464878672,
+          "score_a": {
+            "completion_rate_pct": 94.50830140485313,
+            "on_time_tiebreak_pct": 76.37292464878672
+          },
+          "score_b": 85.44061302681992,
+          "score_b_sensitivity": {
+            "0.25": 80.90676883780333,
+            "0.5": 85.44061302681992,
+            "0.75": 89.97445721583652
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 74000,
+              "denominator": 783
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 59800,
+              "denominator": 783
+            }
+          },
+          "score_b": {
+            "numerator": 22300,
+            "denominator": 261
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 63350,
+              "denominator": 783
+            },
+            "0.5": {
+              "numerator": 22300,
+              "denominator": 261
+            },
+            "0.75": {
+              "numerator": 70450,
+              "denominator": 783
+            }
+          }
+        }
+      },
+      "day_013": {
+        "metrics": {
+          "delivered_parcels": 759,
+          "on_time_parcels": 645,
+          "early_parcels": 1,
+          "late_parcels": 113,
+          "undelivered_parcels": 30,
+          "number_of_trips": 34,
+          "total_parcels": 789,
+          "credit_units": 1404,
+          "total_distance_km": 4199.232,
+          "total_departure_load": 730.5,
+          "average_load_utilisation_pct": 71.61764705882354,
+          "completion_rate_pct": 96.1977186311787,
+          "on_time_service_rate_pct": 81.74904942965779,
+          "score_a": {
+            "completion_rate_pct": 96.1977186311787,
+            "on_time_tiebreak_pct": 81.74904942965779
+          },
+          "score_b": 88.97338403041825,
+          "score_b_sensitivity": {
+            "0.25": 85.36121673003802,
+            "0.5": 88.97338403041825,
+            "0.75": 92.58555133079848
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 25300,
+              "denominator": 263
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 21500,
+              "denominator": 263
+            }
+          },
+          "score_b": {
+            "numerator": 23400,
+            "denominator": 263
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 22450,
+              "denominator": 263
+            },
+            "0.5": {
+              "numerator": 23400,
+              "denominator": 263
+            },
+            "0.75": {
+              "numerator": 24350,
+              "denominator": 263
+            }
+          }
+        }
+      },
+      "day_014": {
+        "metrics": {
+          "delivered_parcels": 745,
+          "on_time_parcels": 637,
+          "early_parcels": 0,
+          "late_parcels": 108,
+          "undelivered_parcels": 33,
+          "number_of_trips": 33,
+          "total_parcels": 778,
+          "credit_units": 1382,
+          "total_distance_km": 4012.824,
+          "total_departure_load": 729.5,
+          "average_load_utilisation_pct": 73.68686868686869,
+          "completion_rate_pct": 95.75835475578405,
+          "on_time_service_rate_pct": 81.87660668380462,
+          "score_a": {
+            "completion_rate_pct": 95.75835475578405,
+            "on_time_tiebreak_pct": 81.87660668380462
+          },
+          "score_b": 88.81748071979435,
+          "score_b_sensitivity": {
+            "0.25": 85.34704370179949,
+            "0.5": 88.81748071979435,
+            "0.75": 92.2879177377892
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 37250,
+              "denominator": 389
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 31850,
+              "denominator": 389
+            }
+          },
+          "score_b": {
+            "numerator": 34550,
+            "denominator": 389
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 33200,
+              "denominator": 389
+            },
+            "0.5": {
+              "numerator": 34550,
+              "denominator": 389
+            },
+            "0.75": {
+              "numerator": 35900,
+              "denominator": 389
+            }
+          }
+        }
+      },
+      "day_015": {
+        "metrics": {
+          "delivered_parcels": 767,
+          "on_time_parcels": 624,
+          "early_parcels": 0,
+          "late_parcels": 143,
+          "undelivered_parcels": 29,
+          "number_of_trips": 33,
+          "total_parcels": 796,
+          "credit_units": 1391,
+          "total_distance_km": 4067.871,
+          "total_departure_load": 728.9,
+          "average_load_utilisation_pct": 73.62626262626263,
+          "completion_rate_pct": 96.35678391959799,
+          "on_time_service_rate_pct": 78.39195979899498,
+          "score_a": {
+            "completion_rate_pct": 96.35678391959799,
+            "on_time_tiebreak_pct": 78.39195979899498
+          },
+          "score_b": 87.37437185929649,
+          "score_b_sensitivity": {
+            "0.25": 82.88316582914572,
+            "0.5": 87.37437185929649,
+            "0.75": 91.86557788944724
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 19175,
+              "denominator": 199
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 15600,
+              "denominator": 199
+            }
+          },
+          "score_b": {
+            "numerator": 34775,
+            "denominator": 398
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 65975,
+              "denominator": 796
+            },
+            "0.5": {
+              "numerator": 34775,
+              "denominator": 398
+            },
+            "0.75": {
+              "numerator": 73125,
+              "denominator": 796
+            }
+          }
+        }
+      },
+      "day_016": {
+        "metrics": {
+          "delivered_parcels": 762,
+          "on_time_parcels": 651,
+          "early_parcels": 3,
+          "late_parcels": 108,
+          "undelivered_parcels": 35,
+          "number_of_trips": 33,
+          "total_parcels": 797,
+          "credit_units": 1413,
+          "total_distance_km": 4010.7329999999997,
+          "total_departure_load": 727.0,
+          "average_load_utilisation_pct": 73.43434343434343,
+          "completion_rate_pct": 95.60853199498118,
+          "on_time_service_rate_pct": 81.68130489335006,
+          "score_a": {
+            "completion_rate_pct": 95.60853199498118,
+            "on_time_tiebreak_pct": 81.68130489335006
+          },
+          "score_b": 88.64491844416563,
+          "score_b_sensitivity": {
+            "0.25": 85.16311166875784,
+            "0.5": 88.64491844416563,
+            "0.75": 92.1267252195734
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 76200,
+              "denominator": 797
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 65100,
+              "denominator": 797
+            }
+          },
+          "score_b": {
+            "numerator": 70650,
+            "denominator": 797
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 67875,
+              "denominator": 797
+            },
+            "0.5": {
+              "numerator": 70650,
+              "denominator": 797
+            },
+            "0.75": {
+              "numerator": 73425,
+              "denominator": 797
+            }
+          }
+        }
+      },
+      "day_017": {
+        "metrics": {
+          "delivered_parcels": 751,
+          "on_time_parcels": 600,
+          "early_parcels": 0,
+          "late_parcels": 151,
+          "undelivered_parcels": 38,
+          "number_of_trips": 31,
+          "total_parcels": 789,
+          "credit_units": 1351,
+          "total_distance_km": 4264.647,
+          "total_departure_load": 728.1,
+          "average_load_utilisation_pct": 78.29032258064517,
+          "completion_rate_pct": 95.18377693282636,
+          "on_time_service_rate_pct": 76.04562737642586,
+          "score_a": {
+            "completion_rate_pct": 95.18377693282636,
+            "on_time_tiebreak_pct": 76.04562737642586
+          },
+          "score_b": 85.61470215462612,
+          "score_b_sensitivity": {
+            "0.25": 80.83016476552598,
+            "0.5": 85.61470215462612,
+            "0.75": 90.39923954372624
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 75100,
+              "denominator": 789
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 20000,
+              "denominator": 263
+            }
+          },
+          "score_b": {
+            "numerator": 67550,
+            "denominator": 789
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 63775,
+              "denominator": 789
+            },
+            "0.5": {
+              "numerator": 67550,
+              "denominator": 789
+            },
+            "0.75": {
+              "numerator": 23775,
+              "denominator": 263
+            }
+          }
+        }
+      },
+      "day_018": {
+        "metrics": {
+          "delivered_parcels": 731,
+          "on_time_parcels": 620,
+          "early_parcels": 0,
+          "late_parcels": 111,
+          "undelivered_parcels": 32,
+          "number_of_trips": 32,
+          "total_parcels": 763,
+          "credit_units": 1351,
+          "total_distance_km": 4214.136,
+          "total_departure_load": 732.1,
+          "average_load_utilisation_pct": 76.26041666666667,
+          "completion_rate_pct": 95.80602883355176,
+          "on_time_service_rate_pct": 81.25819134993446,
+          "score_a": {
+            "completion_rate_pct": 95.80602883355176,
+            "on_time_tiebreak_pct": 81.25819134993446
+          },
+          "score_b": 88.53211009174312,
+          "score_b_sensitivity": {
+            "0.25": 84.8951507208388,
+            "0.5": 88.53211009174312,
+            "0.75": 92.16906946264744
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 73100,
+              "denominator": 763
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 62000,
+              "denominator": 763
+            }
+          },
+          "score_b": {
+            "numerator": 9650,
+            "denominator": 109
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 64775,
+              "denominator": 763
+            },
+            "0.5": {
+              "numerator": 9650,
+              "denominator": 109
+            },
+            "0.75": {
+              "numerator": 70325,
+              "denominator": 763
+            }
+          }
+        }
+      },
+      "day_019": {
+        "metrics": {
+          "delivered_parcels": 768,
+          "on_time_parcels": 675,
+          "early_parcels": 0,
+          "late_parcels": 93,
+          "undelivered_parcels": 29,
+          "number_of_trips": 34,
+          "total_parcels": 797,
+          "credit_units": 1443,
+          "total_distance_km": 4054.371,
+          "total_departure_load": 734.6,
+          "average_load_utilisation_pct": 72.01960784313725,
+          "completion_rate_pct": 96.36135508155583,
+          "on_time_service_rate_pct": 84.69259723964868,
+          "score_a": {
+            "completion_rate_pct": 96.36135508155583,
+            "on_time_tiebreak_pct": 84.69259723964868
+          },
+          "score_b": 90.52697616060226,
+          "score_b_sensitivity": {
+            "0.25": 87.60978670012547,
+            "0.5": 90.52697616060226,
+            "0.75": 93.44416562107905
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 76800,
+              "denominator": 797
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 67500,
+              "denominator": 797
+            }
+          },
+          "score_b": {
+            "numerator": 72150,
+            "denominator": 797
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 69825,
+              "denominator": 797
+            },
+            "0.5": {
+              "numerator": 72150,
+              "denominator": 797
+            },
+            "0.75": {
+              "numerator": 74475,
+              "denominator": 797
+            }
+          }
+        }
+      },
+      "day_020": {
+        "metrics": {
+          "delivered_parcels": 753,
+          "on_time_parcels": 553,
+          "early_parcels": 0,
+          "late_parcels": 200,
+          "undelivered_parcels": 29,
+          "number_of_trips": 32,
+          "total_parcels": 782,
+          "credit_units": 1306,
+          "total_distance_km": 4156.302,
+          "total_departure_load": 731.7,
+          "average_load_utilisation_pct": 76.21875,
+          "completion_rate_pct": 96.29156010230179,
+          "on_time_service_rate_pct": 70.71611253196932,
+          "score_a": {
+            "completion_rate_pct": 96.29156010230179,
+            "on_time_tiebreak_pct": 70.71611253196932
+          },
+          "score_b": 83.50383631713555,
+          "score_b_sensitivity": {
+            "0.25": 77.10997442455243,
+            "0.5": 83.50383631713555,
+            "0.75": 89.89769820971867
+          }
+        },
+        "exact_scores": {
+          "score_a": {
+            "completion_rate_pct": {
+              "numerator": 37650,
+              "denominator": 391
+            },
+            "on_time_tiebreak_pct": {
+              "numerator": 27650,
+              "denominator": 391
+            }
+          },
+          "score_b": {
+            "numerator": 32650,
+            "denominator": 391
+          },
+          "score_b_sensitivity": {
+            "0.25": {
+              "numerator": 30150,
+              "denominator": 391
+            },
+            "0.5": {
+              "numerator": 32650,
+              "denominator": 391
+            },
+            "0.75": {
+              "numerator": 35150,
+              "denominator": 391
+            }
+          }
+        }
+      }
+    },
+    "daily_summary": {
+      "mean_daily_score_b": 87.56984688975861,
+      "minimum_daily_score_b": 83.50383631713555,
+      "worst_days": [
+        "day_020"
+      ]
+    }
+  },
+  "paired_daily": {
+    "score_a": {
+      "win": 9,
+      "tie": 0,
+      "loss": 11
+    },
+    "score_b": {
+      "win": 0,
+      "tie": 0,
+      "loss": 20
+    },
+    "0.25": {
+      "win": 0,
+      "tie": 0,
+      "loss": 20
+    },
+    "0.5": {
+      "win": 0,
+      "tie": 0,
+      "loss": 20
+    },
+    "0.75": {
+      "win": 0,
+      "tie": 0,
+      "loss": 20
+    }
+  },
+  "input_sha256": {
+    "config.json": "6041005abea965629ca15dbdb4d7038cdfc3f0a30ee0cd08f3efdb98cd04fdd8",
+    "dist.csv": "56a58884cdcbd609c14bd627c70691d272e2f2faf8262d3b9e9131423659c16a",
+    "demand/day_001.csv": "a73f06a9faf4c11f45a2b373f50fe2379c4dd23f0b733c8b0bdc36bfaa8226e7",
+    "demand/day_002.csv": "486fcf013d39ea1bf8eaf97650156d146fe2be852ebd2c4caa3cdc5c5592be8b",
+    "demand/day_003.csv": "0a096f1a766d6c27ffa4518eca6c0be76a3d8904de4c7810fcdd04a2f750fab1",
+    "demand/day_004.csv": "f70d2d1494fa34a93677f838459c57c39475427f06ae8a5ae27be4d7d658257d",
+    "demand/day_005.csv": "0428a18cc60a726a376fa5a6cb14f099bec806ab1807675d796401633cb0086b",
+    "demand/day_006.csv": "2cfc0c6cfe0346156f753e26dcdc7f743764fc0c778ef55ea9bdf27c7f937257",
+    "demand/day_007.csv": "634fdd58c914acb46d3c1e2a55e4c32f8ef18625c37f36a68a8d26e38d1860f8",
+    "demand/day_008.csv": "ff3c7a08692a84f244aa7d9a9f72d297e01138a8e8b63206d72e238dda055ebf",
+    "demand/day_009.csv": "7ed8de6633637ee940dfcb18c0570dbdc93c1f9599f73696503d746f4db8b7d5",
+    "demand/day_010.csv": "04609481a6b058c3ebf743f322113bdf1f673067c849690d5e5819b41c66219a",
+    "demand/day_011.csv": "ff7368ec9bde9fd4d39369d2817624f0f33693ac3e49110ed390f7b2e6d9995d",
+    "demand/day_012.csv": "fd52ad164433c76eda608438f668c56ac8d3d6e8caa6c4b3993961a8b782d09e",
+    "demand/day_013.csv": "e2ed35ce3b0811b97f61d06cb827b4bca711a607b1d546b46ab9093ee289c018",
+    "demand/day_014.csv": "251d077f1fcbcc83bc70c26499e6e917c58da5b7dccba9646348d32cd3d5d888",
+    "demand/day_015.csv": "63fd8a589044b11cc34e849f5789b2faba89631cfe94833ba16a2be218efc1fc",
+    "demand/day_016.csv": "e8ebf7ba942deae305786fa4848accfd7678fc0125edf6c9c5a8e09afdfe5a1d",
+    "demand/day_017.csv": "0b7fab749dbada5b54bdfbaeaed04763236bede6d987db89bdd82472e5e23678",
+    "demand/day_018.csv": "043d0d5bd306c7a5f80d5c62410fc1fd1e3c770f6cc243fd71778bd898bd1543",
+    "demand/day_019.csv": "062f78caa3426b3e119cdcf7661ce5448216f66f111fd0095db57e33604b1b84",
+    "demand/day_020.csv": "9cdac010186eb557d6f62436bbadce84f21d445e676d3d52ab5faa1c80cf87b8"
+  },
+  "source_sha256": {
+    "solution/run_lecture_insertion.py": "cf3d101c232c4926bf2f06990cda3f0ad91cf56505d21b30a7aff7d179647d2b",
+    "solution/policies/lecture_insertion.py": "735f50f0262d8f3812b555f533ed60c37ff742960227cdd81c64d0e46b3ced27",
+    "solution/policies/greedy_insertion.py": "a4840c1d8d1b7e1068ba38bb5951a347ed2e6b08e4f0a2b43ce91301977e333d",
+    "solution/performance_monitor.py": "2e1f35b8cb0c057fdd34c4d743ce9cc0517b26597dddd3fc8d346235f43ae37b",
+    "solution/evaluation.py": "7339e3ec6c75b41561daabe98c12579f5e9a394705d037cae232bc0fc43aca4e",
+    "simulator/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "simulator/__main__.py": "ce83b6b69c3e295bb142cbb07993f695b111da057444889620ef15acc1b33265",
+    "simulator/loaders.py": "35ae560a399a21ddb160db5a53771a0141336e42030f53d3c37fa9fc912f5891",
+    "simulator/models.py": "8989d3d64a183389c911cd257603e5e07dc846f5dbbe0f02700f4620fd9dfc52",
+    "simulator/simulator.py": "c8c7f874371665e34141a4f40b69127ef5d60e17126cade42ce4bad0f2a8f469"
+  },
+  "output_sha256": {
+    "day_001/log.txt": "30b8ecfe42d51691a4d2212b4430cb93d583a73217667baa8ebd101cb26bb3dc",
+    "day_001/metrics.json": "770f3670de21898c1a49fc9f1adfcc66636a2d163d1ffb0363825b3d1764b8cc",
+    "day_002/log.txt": "f1cbc911f4dd433aba999ca58946b1bde0c38e31410fd71360625e1d85e2e1a4",
+    "day_002/metrics.json": "74b2f837717a0824a0218985e3013b6ba890f94b9f1fc8f0036745856f812911",
+    "day_003/log.txt": "4af5b01136e1a92de91109bf4e25ec9bfa0cd2ca9a3d3f1168892191205c7aec",
+    "day_003/metrics.json": "b0e09f63e5317e33c6dbb298466a2e4ca7fbdc2b1db1c7227c1cfa9c38bbe7b8",
+    "day_004/log.txt": "6554666d0da98b387fe991d7c4ab5f828ffa2ee2982617ee3f3c232be7228ade",
+    "day_004/metrics.json": "bc024c2a35c6fc26600aad13cbea1e05ac9872a72830057932a8fe8745f8f0d9",
+    "day_005/log.txt": "c277ece2549f4961276fba9f01ce91e6ca9c202f43c889df07728420b6bed1a5",
+    "day_005/metrics.json": "61a9758fa66290e70792e588bc3e20e64c7f530a6d612f275e6b6d351050e4f3",
+    "day_006/log.txt": "8ca8bfe397442a217fee37c4ba69f134eb970170b89cff3e08da7120a75d4e16",
+    "day_006/metrics.json": "d60333ea9a6ed1fe44900fdf64678214f3f4e863361c79126b2e4a2b6bba7cc1",
+    "day_007/log.txt": "f4d5cbef2135914987fd78be74b8b6bd15d8d7fe2f9d8cc76eadecd27e7c6996",
+    "day_007/metrics.json": "d507f34787baafbe8d7396c3b129aada42ba330fd660fabe70d63e1603f784f8",
+    "day_008/log.txt": "c7d274998ed266442eb6ef4a8eed19111d15f247813d81137f8e756852fcaf33",
+    "day_008/metrics.json": "3a9a69b0a3ed7a0908eb606d7c767f1f7b47b7bd2e88b4c6b34285e6e91500aa",
+    "day_009/log.txt": "de4bb231fe448c4796eb42a1309fffb9697efb58fe7ef6566b2e93a95332c699",
+    "day_009/metrics.json": "3dc6dc4cb98485b4469fb95b1975a879787ea3ca1d07e79c67baa90726ff5fb9",
+    "day_010/log.txt": "9e1bb7a549c83726fb24f7e0e36e3ff9e184f73ff1a0bd2c89917a633e2380fd",
+    "day_010/metrics.json": "a3cb2727c30de6596c32e907645fd502ce786b628011f40dbd7626babf3b8699",
+    "day_011/log.txt": "a731224d2c361a017212fb4e67f740984171d4dd29c459f0b82211c02c08cebf",
+    "day_011/metrics.json": "c6d7c0c45839ca366594c0cf70c53739b96d048d03a9d5e33a1256741d64d5de",
+    "day_012/log.txt": "1b3dc51cb88b5aab93ca56deac6a5c8643db263f7b4d0c34d7aba617b810e5fe",
+    "day_012/metrics.json": "5e4f12f0b8f50a48f71361d4231286af129c55e6b6fe21a3888e755d2a59423d",
+    "day_013/log.txt": "d7bc1a5fec81294a5ef79dfa6d78783930a3c55f117ee917f9ddcfaa15a3d082",
+    "day_013/metrics.json": "5d1beb19e4aa28a7f572668b100f0016cf1257d5c159decef7873da8ce7e2d79",
+    "day_014/log.txt": "22392e2f3232f7c15eb63c9768de69fb53272b82916c57fdba5402a0918969cb",
+    "day_014/metrics.json": "36bbdadb00424c1e18cb6d163ffda2f8728e29a80275b17f9d7075ac62e0dae4",
+    "day_015/log.txt": "1e6a295f2e743704a3d4e41cd117d3b4d07c4e8e3de9fb6f2c25adf550f86c09",
+    "day_015/metrics.json": "d6e749316628ea8678827866105074fd6897397a4fbe78b44cf1edde62de0805",
+    "day_016/log.txt": "5f4f5d2b25663ec73ca120df2c3aacbd5ee4a5df569964aa1a52a0df5c81692f",
+    "day_016/metrics.json": "54182274d87f4be2193df4d724e5ff528c132c4a3d08ed67620c8b6b7905e9ed",
+    "day_017/log.txt": "a4c02bcdd512c7952a519512cd4643d2ed836b13ac44e02221c90954d2995159",
+    "day_017/metrics.json": "511e051eb15772f0fd7adddce4246280b2e35d48c3f56e8ae05f3ec05c8b11d4",
+    "day_018/log.txt": "fa1cf5668d33b267b4088154282b87bad409c2b1c836d641da4758f414bca617",
+    "day_018/metrics.json": "c2ccc3793846a64848707ed3f76f2ea94c50c18de9059e8b0984f642c8f9ef03",
+    "day_019/log.txt": "4b1f3fa50db420f944b126432ba724c4cdebad20119f228532f31c5a3ce7cdb5",
+    "day_019/metrics.json": "1262336c1f0d3b17fd20f84592b62cc21c2481d6c2fcd8d1906555355386a07f",
+    "day_020/log.txt": "e47fd39216679730bcbc6b054ceb0e550588e51f9f4fa61e363a30e918b59984",
+    "day_020/metrics.json": "4746383a14dce324aa706bad589274e963b7718f0ce03a336a72b99680173188"
+  }
+}

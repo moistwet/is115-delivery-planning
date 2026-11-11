@@ -1,0 +1,56 @@
+{
+  "method": "Fresh reruns with the shared-helper layout. Compared every run output and each aggregate directly against archived bytes.",
+  "full_evaluation": {
+    "archived_directory": "results/full_evaluation_distance_optimised",
+    "original_manifest": "results/full_evaluation_distance_optimised/run_manifest.json",
+    "rerun_manifest": "results/submission_verification/full_run_manifest.json",
+    "rerun_output_path_in_manifest": ".is115-verification.f4VbWa/full",
+    "successful_day_runs": 220,
+    "byte_identical_run_files": 640,
+    "byte_identical_aggregate_sha256": {
+      "results/full_evaluation_distance_optimised/comparison.json": "eedb8ea074d265afef78cdbacb61d87b08d535100f95c9b291c22768ffbd1260",
+      "results/full_evaluation_distance_optimised/summary.csv": "b26743c550221a979cb2f57dc2adf04abc54fd2e83af533a27d730eb45924ad2",
+      "results/full_evaluation_distance_optimised/daily_scores.csv": "29226088c078ebb6b546887e4fa780661c10e4fe1a68f3db87f99ce97c9d4d8a"
+    }
+  },
+  "slide_style_insertion": {
+    "archived_directory": "results/lecture_insertion",
+    "original_summary": "results/lecture_insertion/summary.json",
+    "rerun_summary": "results/submission_verification/slide_style_summary.json",
+    "successful_day_runs": 20,
+    "byte_identical_log_and_metric_files": 40
+  },
+  "unit_tests_passed": 107,
+  "protected_files_matched_to_original_course_package": [
+    "data/config.json",
+    "data/demand/day_001.csv",
+    "data/demand/day_002.csv",
+    "data/demand/day_003.csv",
+    "data/demand/day_004.csv",
+    "data/demand/day_005.csv",
+    "data/demand/day_006.csv",
+    "data/demand/day_007.csv",
+    "data/demand/day_008.csv",
+    "data/demand/day_009.csv",
+    "data/demand/day_010.csv",
+    "data/demand/day_011.csv",
+    "data/demand/day_012.csv",
+    "data/demand/day_013.csv",
+    "data/demand/day_014.csv",
+    "data/demand/day_015.csv",
+    "data/demand/day_016.csv",
+    "data/demand/day_017.csv",
+    "data/demand/day_018.csv",
+    "data/demand/day_019.csv",
+    "data/demand/day_020.csv",
+    "data/dist.csv",
+    "simulator/__init__.py",
+    "simulator/__main__.py",
+    "simulator/loaders.py",
+    "simulator/models.py",
+    "simulator/simulator.py",
+    "solution/__init__.py",
+    "solution/policies/__init__.py",
+    "solution/policies/baseline.py"
+  ]
+}

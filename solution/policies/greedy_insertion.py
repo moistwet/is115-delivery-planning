@@ -1,89 +1,12 @@
 """Construct each trip from scratch by its best positive-credit insertion."""
 
-import math
 from typing import Dict, List, Optional, Tuple
 
 from simulator.models import Parcel, SimulationContext
-
-HUB = "HUB"
-CONSTRAINT_TOLERANCE = 1e-9  # Same load/range tolerance as the simulator.
-
-
-def _evaluate_route(
-    route: List[str],
-    parcel: Dict[str, Parcel],
-    context: SimulationContext,
-    departure: float,
-    *,
-    total_distance: Optional[float] = None,
-) -> Optional[Tuple[int, float]]:
-    """Return twice service credit and full distance, or None if infeasible.
-
-    Departure load is checked by dispatch before calling this helper. Integer
-    credit units avoid rounding in the reward: an in-window parcel earns two
-    units and an early/late parcel earns one. Thus units = len(route) + on_time.
-    Travel timing follows every delivery leg, as in the simulator; complete-trip
-    range and return feasibility use the sum including the final hub leg.
-    Insertion construction supplies a cached total_distance; standalone calls
-    (including SA swaps) calculate the full distance here.
-    """
-
-    distances = context["travel_distance"]
-    if total_distance is None:
-        # Full evaluation remains available for SA swaps and standalone checks.
-        locations = [HUB] + [parcel[pid]["delivery_location_id"] for pid in route] + [HUB]
-        total_distance = math.fsum(distances[a][b] for a, b in zip(locations, locations[1:]))
-    if total_distance > context["max_trip_distance_km"] + CONSTRAINT_TOLERANCE:
-        return None
-    if departure + total_distance > context["return_cutoff"]:
-        return None
-
-    delivery_time = departure
-    on_time = 0
-    location = HUB
-    for parcel_id in route:
-        destination = parcel[parcel_id]["delivery_location_id"]
-        delivery_time += distances[location][destination]  # At 60 km/h, one km is one minute.
-        location = destination
-        record = parcel[parcel_id]
-        if record["delivery_window_start"] <= delivery_time <= record["delivery_window_end"]:
-            on_time += 1
-    return len(route) + on_time, total_distance
-
-
-def _full_distance(route, parcel, distances):
-    """Canonical complete sum, used for saved winners and close comparisons."""
-
-    locations = [HUB] + [parcel[pid]["delivery_location_id"] for pid in route] + [HUB]
-    return math.fsum(distances[a][b] for a, b in zip(locations, locations[1:]))
-
-
-def _insertion_distance(route, parcel_id, position, parcel, distances, route_distance,
-                        *, distance_limit=math.inf):
-    """Replace A->C with A->B->C, including the hub at either end.
-
-    Recheck close zero-cost moves and hard boundaries using the complete sum.
-    Closeness triggers a recalculation; it never changes a comparison's rules.
-    """
-
-    before = parcel[route[position - 1]]["delivery_location_id"] if position else HUB
-    after = parcel[route[position]]["delivery_location_id"] if position < len(route) else HUB
-    inserted = parcel[parcel_id]["delivery_location_id"]
-    distance = math.fsum((route_distance, distances[before][inserted],
-                          distances[inserted][after], -distances[before][after]))
-    if (math.isclose(distance, route_distance, rel_tol=1e-12, abs_tol=1e-12)
-            or math.isclose(distance, distance_limit, rel_tol=1e-12, abs_tol=1e-12)):
-        candidate = route[:position] + [parcel_id] + route[position:]
-        return _full_distance(candidate, parcel, distances)
-    return distance
-
-
-def _distance_needs_recheck(key, best_key, distance_component):
-    """Fully sum possible winners and numerically close priority comparisons."""
-
-    return (best_key is None or key < best_key
-            or math.isclose(key[distance_component], best_key[distance_component],
-                            rel_tol=1e-12, abs_tol=1e-12))
+from solution.policies.helpers import (
+    CONSTRAINT_TOLERANCE, HUB, _distance_needs_recheck, _evaluate_route,
+    _full_distance, _insertion_distance,
+)
 
 
 def dispatch(parcel: Dict[str, Parcel], context: SimulationContext) -> List[str]:
