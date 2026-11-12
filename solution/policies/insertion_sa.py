@@ -5,7 +5,8 @@ import random
 from typing import Any, Callable, Dict, List, Optional
 
 from simulator.models import Parcel, SimulationContext
-from .greedy_insertion import _evaluate_route, dispatch as greedy_dispatch
+from .greedy_insertion import dispatch as greedy_dispatch
+from .helpers import CONSTRAINT_TOLERANCE, _evaluate_route
 
 DEFAULT_SEED = 0
 ITERATIONS = 2000
@@ -27,21 +28,11 @@ def simulated_annealing(
     iterations: int = ITERATIONS,
     audit: Optional[Audit] = None,
 ) -> List[str]:
-    """Search fixed-membership orderings and return the best feasible one seen.
+    """Search feasible fixed-membership orders by swapping two route positions.
 
-    Acceptance uses raw service credit R = on_time + 0.5*outside, not doubled
-    evaluator units or a distance-penalised score. Equal/better credit is always
-    accepted; a worse route is accepted with exp(delta_credit/temperature).
-    Distance selects the saved best only when credits tie. Seeded RNG ownership
-    belongs to the calling simulation run; this function never resets it.
-
-    Each attempt copies and swaps two parcel positions, fully replays directed
-    travel/window timing and checks range/return feasibility. Cooling occurs
-    after every attempt, including infeasible and identical-outcome proposals.
-    Capacity and membership are fixed and validated once. Inputs are read-only.
-
-    For r selected parcels and I attempts, additional time is O(I*r), space
-    O(r). The original greedy-construction cost is separate.
+    Equal or better service credit is accepted; worse credit follows the
+    temperature probability. The saved best prefers credit, then less distance.
+    Every proposal rechecks directed timing, range and return feasibility.
     """
 
     if not math.isfinite(temperature) or temperature <= 0:
@@ -64,7 +55,7 @@ def simulated_annealing(
                 or record["arrival_time"] > context["current_time"]):
             raise ValueError(f"initial parcel is not eligible: {parcel_id!r}")
         load += record["size"]
-    if load > context["capacity"] + 1e-9:
+    if load > context["capacity"] + CONSTRAINT_TOLERANCE:
         raise ValueError("initial route exceeds departure capacity")
 
     departure = context["current_time"] + context["departure_delay"]
@@ -86,11 +77,13 @@ def simulated_annealing(
             # 2,000-attempt schedule stays positive and does not reach this guard.
             if temperature == 0.0:
                 break
-            candidate = current[:]
-            i, j = rng.sample(range(len(candidate)), 2)
-            candidate[i], candidate[j] = candidate[j], candidate[i]
+            candidate_route = current[:]
+            i, j = rng.sample(range(len(candidate_route)), 2)
+            candidate_route[i], candidate_route[j] = candidate_route[j], candidate_route[i]
             attempted += 1
-            candidate_evaluation = _evaluate_route(candidate, parcel, context, departure)
+            candidate_evaluation = _evaluate_route(
+                candidate_route, parcel, context, departure,
+            )
             if candidate_evaluation is None:
                 infeasible += 1
             else:
@@ -106,7 +99,7 @@ def simulated_annealing(
                         accepted_equal += 1
                     else:
                         accepted_worse += 1
-                    current = candidate
+                    current = candidate_route
                     current_units = candidate_units
                     current_distance = candidate_distance
                     if (current_units, -current_distance) > (best_units, -best_distance):

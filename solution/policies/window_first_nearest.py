@@ -3,26 +3,15 @@
 from typing import Dict, List, Optional, Tuple
 
 from simulator.models import Parcel, SimulationContext
-
-HUB = "HUB"
-CONSTRAINT_TOLERANCE = 1e-9  # Same load/range tolerance as the simulator.
+from solution.policies.helpers import CONSTRAINT_TOLERANCE, HUB
 
 
 def dispatch(parcel: Dict[str, Parcel], context: SimulationContext) -> List[str]:
-    """Build one trip with an in-window-first nearest-neighbour priority.
+    """Append an in-window feasible parcel before an outside-window one.
 
-    Hard feasibility is identical to nearest_neighbour: all selected parcels
-    must fit at departure, and the complete trip must fit the range and return
-    deadline. Among feasible candidates, prefer those whose projected delivery
-    times are inside their inclusive preferred windows. Within either group,
-    choose the shortest next leg, then earliest arrival, then parcel ID.
-
-    Projected time includes preparation once and the full planned travel prefix.
-    Recompute every candidate after each append. Outside-window deliveries stay
-    eligible; there is no intentional waiting or deadline-urgency priority.
-    Inputs are read-only. For n supplied parcels and m eligible candidates,
-    worst-case time is O(n + m**2), extra space O(m), assuming average constant
-    dictionary access. The policy has no tunable parameters.
+    Further ties use next-leg distance, arrival and parcel ID. Projected times
+    include preparation and the route prefix; departure capacity, full range
+    and return cutoff remain hard constraints, with no intentional waiting.
     """
 
     distances = context["travel_distance"]
@@ -37,7 +26,7 @@ def dispatch(parcel: Dict[str, Parcel], context: SimulationContext) -> List[str]
     location = HUB
 
     while waiting:
-        best_id: Optional[str] = None
+        best_parcel_id: Optional[str] = None
         best_key: Optional[Tuple[bool, float, float, str]] = None
         for parcel_id, record in waiting.items():
             if load + record["size"] > context["capacity"] + CONSTRAINT_TOLERANCE:
@@ -58,15 +47,15 @@ def dispatch(parcel: Dict[str, Parcel], context: SimulationContext) -> List[str]
             )
             key = (outside_window, next_leg, record["arrival_time"], parcel_id)
             if best_key is None or key < best_key:
-                best_id = parcel_id
+                best_parcel_id = parcel_id
                 best_key = key
 
-        if best_id is None:
+        if best_parcel_id is None:
             break
 
-        selected = waiting.pop(best_id)
+        selected = waiting.pop(best_parcel_id)
         destination = selected["delivery_location_id"]
-        route.append(best_id)
+        route.append(best_parcel_id)
         load += selected["size"]
         travelled += distances[location][destination]
         location = destination
